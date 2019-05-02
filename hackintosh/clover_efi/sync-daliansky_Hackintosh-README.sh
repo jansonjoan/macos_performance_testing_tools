@@ -1,2 +1,0 @@
- echo -e "fork by https://github.com/daliansky/Hackintosh" > daliansky-Hackintosh-README.md 
- curl https://raw.githubusercontent.com/daliansky/Hackintosh/master/README.md >> daliansky-Hackintosh-README.md
