@@ -1,0 +1,1 @@
+Gpuinfo.exe /i2cdump

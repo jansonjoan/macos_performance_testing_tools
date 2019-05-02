@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+
+<glsl_hacker>	
+
+  <window name="win3d01" title="Shadertoy / Rainforest" 
+          width="800" height="480"
+          gl_version_major="2" gl_version_minor="1" />
+
+
+          
+          
+<gpu_program name="rt_viewer" 
+             filename_vs="../_common/_vs_gl2.glsl" 
+             filename_ps="../_common/_ps_gl2_rt_viewer.glsl" 
+             />
+
+<gpu_program name="rt_clear" 
+             filename_vs="../_common/_vs_gl2.glsl" 
+             filename_ps="../_common/_ps_gl2_rt_clear.glsl" 
+             />
+
+<gpu_program name="shadertoy_prog_buf_a" 
+             filename_vs="../_common/_vs_gl2.glsl" 
+             filename_ps="ps-gl21-buf_A.glsl" 
+             />
+
+<gpu_program name="shadertoy_prog_img" 
+             filename_vs="../_common/_vs_gl2.glsl" 
+             filename_ps="ps-gl21-img.glsl" 
+             />
+
+             
+             
+             
+             
+<script name="init_begin" run_mode="INIT" filename="../_common/_init_begin.lua" />		
+<script name="init_user" run_mode="INIT" filename="./init_user.lua" />		
+<script name="init_end" run_mode="INIT" filename="../_common/_init_end.lua" />		
+
+
+
+<script name="frame_begin" run_mode="FRAME" filename="../_common/_frame_begin.lua" />		
+<script name="frame_user" run_mode="FRAME" filename="./frame_user.lua" />		
+<script name="frame_end" run_mode="FRAME" filename="../_common/_frame_end.lua" />		
+
+
+
+<script name="terminate_scene" run_mode="TERMINATE" filename="../_common/_terminate.lua" />
+<script name="resize_scene" run_mode="SIZE" filename="../_common/_resize.lua" />
+
+
+</glsl_hacker>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+
+<glsl_hacker>
+	
+  <window name="win3d01" title="Geometry Shaders - Mesh Exploder (OpenGL 3.2)" 
+          width="800" height="600" 
+          gl_version_major="3" gl_version_minor="2" />
+ 
+
+ 
+  
+	<script name="init_scene" run_mode="INIT" >
+		<raw_data><![CDATA[	
+
+    local lib_dir = gh_utils.get_scripting_libs_dir() 		
+local framework_dir = lib_dir .. "lua/framework_v1/"
+dofile(framework_dir .. "kx.lua") -- kx framework.
+
+kx_init_begin(framework_dir)
+
+
+
+winW, winH = gh_window.getsize(0)
+
+-- font_a = gh_utils.font_create("Tahoma", 14)
+-- gh_utils.font_set_viewport_info(font_a, 0, 0, winW, winH)
+
+
+-- A perspective camera for the 3D scene.
+--
+local aspect = 1.333
+if (winH > 0) then
+  aspect = winW / winH
+end  
+camera = gh_camera.create_persp(60, aspect, 0.1, 1000.0)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+gh_camera.set_position(camera, 0, 0, 30)
+gh_camera.set_lookat(camera, 0, 0, 0, 1)
+gh_camera.setupvec(camera, 0, 1, 0, 0)
+
+
+-- An ortho cam for the background quad.
+--
+camera_ortho = gh_camera.create_ortho(-winW/2, winW/2, -winH/2, winH/2, 1.0, 10.0)
+gh_camera.set_viewport(camera_ortho, 0, 0, winW, winH)
+gh_camera.set_position(camera_ortho, 0, 0, 2)
+
+mesh_quad = gh_mesh.create_quad(winW, winH)
+gh_mesh.set_vertex_color(mesh_quad, 0, 0.5, 0.2, 0.0, 1) --bottom-left
+gh_mesh.set_vertex_color(mesh_quad, 1, 0.5, 0.5, 0.5, 1) -- top-left
+gh_mesh.set_vertex_color(mesh_quad, 2, 0.5, 0.5, 0.5, 1) --top-right
+gh_mesh.set_vertex_color(mesh_quad, 3, 0.5, 0.2, 0.0, 1) --bottom-right
+
+
+
+-- GPU programs.
+--
+phong_exploder_prog = gh_node.getid("phong_exploder_prog")
+color_exploder_prog = gh_node.getid("color_exploder_prog")
+color_prog = gh_node.getid("color_prog")
+
+
+
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_position", 0.0, 50.0, 50.0, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_diffuse", 0.9, 0.7, 0.7, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_specular", 0.9, 0.9, 0.9, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "material_diffuse", 0.7, 0.7, 0.7, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "material_specular", 0.6, 0.6, 0.6, 1.0)
+gh_gpu_program.uniform1f(phong_exploder_prog, "material_shininess", 60.0)
+gh_gpu_program.uniform1f(phong_exploder_prog, "normal_length", 2.0)
+
+
+gh_gpu_program.uniform1f(color_exploder_prog, "normal_length", 2.0)
+
+
+
+-- A mesh sphere.
+--
+mesh_sphere = gh_mesh.create_sphere(10, 40, 40)
+
+
+-- Misc renderer states.
+--
+gh_renderer.set_vsync(0)
+gh_renderer.set_scissor_state(0)
+gh_renderer.set_depth_test_state(1)
+
+
+
+kx_init_end()
+
+		]]></raw_data>
+	</script> 
+
+  
+  
+	<script name="kill_scene" run_mode="TERMINATE" >
+		<raw_data><![CDATA[	
+
+kx_terminate()
+
+		]]></raw_data>
+	</script> 
+
+
+  
+ 
+	<script name="update_scene" run_mode="FRAME" >
+		<raw_data><![CDATA[	
+kx_frame_begin(0.2, 0.2, 0.2)
+
+local elapsed_time = gh_utils.get_elapsed_time()
+
+
+gh_camera.bind(camera_ortho)
+gh_renderer.clear_color_depth_buffers(0, 0, 0, 0, 1.0)
+gh_renderer.set_depth_test_state(0)
+
+gh_gpu_program.bind(color_prog)
+gh_object.render(mesh_quad)
+
+
+gh_camera.set_position(camera, 0, 10, 30)
+gh_camera.set_lookat(camera, 0, 0, 0, 1)
+gh_camera.bind(camera)
+
+
+gh_renderer.set_depth_test_state(1)
+
+gh_gpu_program.bind(phong_exploder_prog)
+--[[
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_position", 0.0, 50.0, 50.0, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_diffuse", 0.9, 0.7, 0.7, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "light_specular", 0.9, 0.9, 0.9, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "material_diffuse", 0.7, 0.7, 0.7, 1.0)
+gh_gpu_program.uniform4f(phong_exploder_prog, "material_specular", 0.6, 0.6, 0.6, 1.0)
+gh_gpu_program.uniform1f(phong_exploder_prog, "material_shininess", 60.0)
+gh_gpu_program.uniform1f(phong_exploder_prog, "normal_length", 2.0)
+--]]
+gh_gpu_program.uniform1f(phong_exploder_prog, "time", elapsed_time)
+gh_object.set_euler_angles(mesh_sphere, 0, elapsed_time*50, 0)
+gh_object.render(mesh_sphere)
+
+
+
+gh_renderer.wireframe()
+
+gh_gpu_program.bind(color_exploder_prog)
+--gh_gpu_program.uniform1f(color_exploder_prog, "normal_length", 2.0)
+gh_gpu_program.uniform1f(color_exploder_prog, "time", elapsed_time)
+gh_object.render(mesh_sphere)
+
+gh_renderer.solid()
+
+
+--gh_utils.font_render(font_a, 10, 20, 0.2, 1.0, 0.0, 1.0, "OpenGL 3.2 geometry shaders demo")
+
+local show_osi = kx_get_osi_state()
+kx_frame_end(show_osi)
+
+		]]></raw_data>
+	</script> 
+	
+
+	<script name="resize_scene" run_mode="SIZE" >
+		<raw_data><![CDATA[	
+
+kx_resize()
+--winW, winH = gh_window.getsize(0)
+
+local aspect = 1.333
+if (winH > 0) then
+  aspect = winW / winH
+end  
+gh_camera.update_persp(camera, 60, aspect, 0.1, 1000.0)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+
+gh_camera.update_ortho(camera_ortho, -winW/2, winW/2, -winH/2, winH/2, 1.0, 10.0)
+gh_camera.set_viewport(camera_ortho, 0, 0, winW, winH)
+gh_mesh.update_quad_size(mesh_quad, winW, winH)
+
+-- gh_utils.font_set_viewport_info(font_a, 0, 0, winW, winH)
+
+		]]></raw_data>
+	</script> 
+  
+  
+  <gpu_program name="color_prog" >
+    <raw_data_vs><![CDATA[	 
+#version 150
+in vec4 gxl3d_Position;
+in vec4 gxl3d_Color;
+uniform mat4 gxl3d_ModelViewProjectionMatrix;
+out vec4 Vertex_Color;
+void main()
+{
+  gl_Position = gxl3d_ModelViewProjectionMatrix * gxl3d_Position;		
+  Vertex_Color = gxl3d_Color;
+}
+  ]]></raw_data_vs>
+    <raw_data_ps><![CDATA[	 
+#version 150
+in vec4 Vertex_Color;
+out vec4 FragColor;
+void main (void)
+{
+  FragColor = Vertex_Color;
+}
+    ]]></raw_data_ps>
+  </gpu_program>
+  
+  
+  <gpu_program name="phong_exploder_prog" >
+    <raw_data_vs><![CDATA[	 
+#version 150
+in vec4 gxl3d_Position;
+in vec4 gxl3d_Normal;
+
+out Vertex
+{
+  vec4 normal;
+  vec4 color;
+} vertex;
+
+void main()
+{
+  gl_Position = gxl3d_Position;
+  vertex.normal = gxl3d_Normal;
+  vertex.color =  vec4(1.0, 1.0, 0.0, 1.0);
+}
+  ]]></raw_data_vs>
+  
+    <raw_data_gs><![CDATA[	 
+#version 150
+layout(triangles) in;
+layout(triangle_strip, max_vertices=3) out;
+
+uniform float normal_length;
+uniform float time;
+uniform vec4 light_position;
+
+// GLSL Hacker automatic uniform
+uniform mat4 gxl3d_ModelViewProjectionMatrix;
+uniform mat4 gxl3d_ModelViewMatrix;
+uniform mat4 gxl3d_ViewMatrix;
+
+
+in Vertex
+{
+  vec4 normal;
+  vec4 color;
+} vertex[];
+
+out vec4 vertex_color;
+out vec4 vertex_normal;
+out vec4 vertex_light_dir;
+out vec4 vertex_cam_space;
+
+void main()
+{
+  //------ Face normal
+  //
+  vec3 P0 = gl_in[0].gl_Position.xyz;
+  vec3 P1 = gl_in[1].gl_Position.xyz;
+  vec3 P2 = gl_in[2].gl_Position.xyz;
+  
+  vec3 V0 = P0 - P1;
+  vec3 V1 = P2 - P1;
+  
+  vec3 N = cross(V1, V0);
+  N = normalize(N);
+  
+  
+  vec4 lightEye =  gxl3d_ViewMatrix * light_position;
+  
+
+  //------ Generate a new face along th direction of the face normal
+  //
+  int i;
+  for(i=0; i<gl_in.length(); i++)
+  {
+    vec4 P = gl_in[i].gl_Position;
+    float len = sqrt(P.x*P.x + P.z*P.z);
+    float scale = 2.0 + 1.0 * cos(time*2.0 + len);
+    P = vec4(P.xyz + N * normal_length * scale, 1.0);
+    gl_Position = gxl3d_ModelViewProjectionMatrix * P;
+    vertex_color = vertex[i].color;
+    
+    vertex_normal = gxl3d_ModelViewMatrix  * vec4(vertex[i].normal.xyz, 0.0);
+    vec4 view_vertex = gxl3d_ModelViewMatrix * P;
+    vertex_light_dir = lightEye - view_vertex;
+    vertex_cam_space = -view_vertex;
+    
+    EmitVertex();
+  }
+  EndPrimitive();
+}
+  ]]></raw_data_gs>
+
+  <raw_data_ps><![CDATA[	 
+#version 150
+precision highp float;
+in vec4 vertex_color;
+in vec4 vertex_normal;
+in vec4 vertex_light_dir;
+in vec4 vertex_cam_space;
+
+uniform vec4 light_diffuse;
+uniform vec4 material_diffuse;
+uniform vec4 light_specular;
+uniform vec4 material_specular;
+uniform float material_shininess;
+
+
+out vec4 FragColor;
+void main()
+{
+  vec4 final_color = vec4(0.2, 0.15, 0.15, 1.0); 
+  vec4 N = normalize(vertex_normal);
+  vec4 L = normalize(vertex_light_dir);
+  float lambertTerm = dot(N,L);
+  if (lambertTerm > 0.0)
+  {
+    final_color += light_diffuse * material_diffuse * lambertTerm;	
+    vec4 E = normalize(vertex_cam_space);
+    vec4 R = reflect(-L, N);
+    float specular = pow( max(dot(R, E), 0.0), material_shininess);
+    final_color += light_specular * material_specular * specular;	
+  }
+  FragColor.rgb = final_color.rgb;
+  FragColor.a = 1.0;
+}
+    ]]></raw_data_ps>
+  </gpu_program>
+  
+
+  <gpu_program name="color_exploder_prog" >
+    <raw_data_vs><![CDATA[	 
+#version 150
+in vec4 gxl3d_Position;
+in vec4 gxl3d_Normal;
+
+out Vertex
+{
+  vec4 normal;
+  vec4 color;
+} vertex;
+
+void main()
+{
+  gl_Position = gxl3d_Position;
+  vertex.normal = gxl3d_Normal;
+  vertex.color =  vec4(1.0, 1.0, 0.0, 1.0);
+}
+  ]]></raw_data_vs>
+  
+    <raw_data_gs><![CDATA[	 
+#version 150
+layout(triangles) in;
+layout(triangle_strip, max_vertices=3) out;
+
+uniform float normal_length;
+uniform float time;
+
+// GLSL Hacker automatic uniform
+uniform mat4 gxl3d_ModelViewProjectionMatrix;
+
+in Vertex
+{
+  vec4 normal;
+  vec4 color;
+} vertex[];
+
+out vec4 vertex_color;
+
+void main()
+{
+  //------ Face normal
+  //
+  vec3 P0 = gl_in[0].gl_Position.xyz;
+  vec3 P1 = gl_in[1].gl_Position.xyz;
+  vec3 P2 = gl_in[2].gl_Position.xyz;
+  
+  vec3 V0 = P0 - P1;
+  vec3 V1 = P2 - P1;
+  
+  // If the diff between p0 and p2 is too small, 
+  // the normal is incorrect as well as the deformation.
+  //
+  vec3 diff = V1 - V0;
+  float diff_len = length(diff);
+  
+  vec3 N = normalize(cross(V1, V0));
+
+  //------ Generate a new face along the direction of the face normal
+  // only if diff_len is not too small.
+  //
+  if (length(diff_len) > 0.001)
+  {
+    int i;
+    for(i=0; i<gl_in.length(); i++)
+    {
+      vec4 P = gl_in[i].gl_Position;
+      vec3 N = normalize(cross(V1, V0));
+      float len = sqrt(P.x*P.x + P.z*P.z);
+      float scale = 2.0 + 1.0 * cos(time*2.0 + len);
+      P = vec4(P.xyz + (N * normal_length * scale) + (N * vec3(0.05, 0.05, 0.05)), 1.0);
+      gl_Position = gxl3d_ModelViewProjectionMatrix * P;
+      vertex_color = vertex[i].color;
+      EmitVertex();
+    }
+    EndPrimitive();
+  }
+}
+  ]]></raw_data_gs>
+
+  <raw_data_ps><![CDATA[	 
+#version 150
+in vec4 vertex_color;
+out vec4 FragColor;
+void main()
+{
+  FragColor = vertex_color;
+}
+    ]]></raw_data_ps>
+  </gpu_program>
+
+
+  
+</glsl_hacker>

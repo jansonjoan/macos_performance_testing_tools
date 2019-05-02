@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Przegląd" />
+    <element key="menuItem.Optimize" value="Optymalizacja" />
+    <element key="menuItem.Settings" value="Ustawienia i wsparcie" />
+    <element key="Version" value="Wersja" />
+    <element key="Language" value="Język" />
+    <element key="defragsvc" value="Defragmentacja" />
+    <element key="defragsvcDescription" value="Ponieważ dyski SSD mają taki sam czas dostępu dla wszystkich komórek pamięci, nie ma potrzeby defragmentowania dysku. Poza tym proces defragmentacji dysku generuje wywołania, które zmniejszają żywotność SSD. Dlatego zalecamy wyłączyć proces defragmentacji." />
+    <element key="WSearch" value="Indeksowanie" />
+    <element key="WSearchDescription" value="Aby przyspieszyć wyszukiwanie, Windows tworzy tzw. indeks. Wiąże się to z wywołaniami zapisu do dysku SSD, które zmniejszają jego żywotność. Jeśli nie korzystasz często z wyszukiwania plików w systemie Windows polecamy wyłączyć tę funkcję." />
+    <element key="SysMain" value="Usługa Superfetch" />
+    <element key="SysMainDescription" value="Prefetch pozwala na wczytywanie najczęściej używanych aplikacji do pamięci RAM. Ze względu na krótki czasy dostępu dysków SSD, usługa ta jest bezużyteczna i powinna być wyłączona." />
+    <element key="NtfsAccessTime" value="Timestamp" />
+    <element key="NtfsAccessTimeDescription" value="System Windows przechowuje dane dotyczące czasu dostępu do każdego pliku. Tworzy to niepotrzebne wywołania zapisu i tym samym skraca okres żywotności dysku SSD. Wyłączenie tej funkcji jest wysoce zalecane." />
+    <element key="Prefech" value="Prefech" />
+    <element key="PrefechDescription" value="Prefetch pozwala na wczytywanie najczęściej używanych aplikacji do pamięci RAM. Ze względu na krótki czasy dostępu dysków SSD, funkcja ta jest bezużyteczna i powinna być wyłączona." />
+    <element key="Bootdefrag" value="Defragmentacja pliku Boot" />
+    <element key="BootDefragDescription" value="Ze względu na sposób, w jaki zapisywane są dane na dyskach SSD, defragmentacja plików startowych nie ma sensu i powinna być wyłączona, ponieważ zmniejsza żywotność dysku SSD." />
+    <element key="EventLogging" value="Rejestrowanie zdarzeń w Windows" />
+    <element key="EventLoggingDescription" value="System Windows stale rejestruje zmiany konfiguracji systemu, a także awarie i inne wydarzenia z różnych usługach i programach. Stwarza to niepotrzebne wywoływanie dostępu do zapisu i zmniejsza żywotność działania dysków SSD." />
+    <element key="SystemRestore" value="Przywracanie systemu" />
+    <element key="SystemRestoreDescription" value="Windows tworzy punkty przywracania po instalacji oprogramowania i wprowadzenia dużych zmian w systemie, które mogą być przywrócone w przypadku, gdy wystąpi błąd. Funkcja ta tworzy procesy zapisu i powinna być wyłączona jeśli korzystasz z narzędzia &quot;Kopia zapasowa&quot; i jeśli opcja odzyskiwania nie jest wykorzystywana." />
+    <element key="ShortNames" value="tworzenie nazw 8.3" />
+    <element key="ShortNamesDescription" value="Dla kompatybilności ze starymi16-bitowymi aplikacjami DOS, Windows tworzy krótkie nazwy plików i folderów, co powoduje dodatkowe obciązenie dysków SSD. Obecne aplikacje nie potrzebują krótkich nazw, dlatego funkcja ta może być wyłączona." />
+    <element key="Optimize" value="Optymalizuj" />
+    <element key="Restore" value="Przywróć kopię zapasową" />
+    <element key="Active" value="Aktywny" />
+    <element key="Deactive" value="Nieaktywny" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Optimized settings" />
+    <element key="RestoreAll" value="Przywróć" />
+    <element key="OptimizeAll" value="Optymalizuj" />
+    <element key="RestoreAllInfo" value="Przywróć wszystkie kopie zapasowe" />
+    <element key="OptimizeAllInfo" value="Optymalizuj wszystkie ustawienia" />
+    <element key="Update" value="Aktualizuj" />
+    <element key="UpdateInfo" value="Sprawdź dostępność nowych wersji" />
+    <element key="Support" value="Wsparcie techniczne" />
+    <element key="SupportInfo" value="Przejdź do strony wsparcia technicznego" />
+    <element key="UpdateExists" value="Dostępne aktualizacje" />
+    <element key="UpdateExistsInfo" value="Dostępna jest aktualizacja. Pobrać ją teraz?" />
+    <element key="UpdateCheck" value="Sprawdzaj dostępność aktualizacji po uruchomieniu programu." />
+    <element key="TipText" value="SSD Fresh to program bezpłatny. Jeśli korzystasz z niego regularnie fajnie by było jakbys mógł wesprzeć nas napiwkiem ;)&#xD;&#xA;&#xD;&#xA;Pomóż nam w ten spodób ulepszyć program! Następnie otrzymasz automatycznie &quot;SSD Fresh Plus&quot;, która nie posiada reklam i tego okna dialogowego." />
+    <element key="TipYesHeader" value="Tak, chcę dać mały napiwek" />
+    <element key="TipYesText" value="Dając nam napiwek 10, - nie tylko wspierasz rozwój naszych aplikacji, ale również otrzymasz wersję &quot;Plus SSD Fresh&quot;" />
+    <element key="TipNo" value="Nie, nie chcę dać napiwku" />
+    <element key="TipText2" value="SSD Fresh to program bezpłatny. Jeśli korzystasz z niego regularnie fajnie by było jakbys mógł wesprzeć nas napiwkiem ;)&#xD;&#xA;&#xD;&#xA;Pomóż nam w ten spodób ulepszyć program! Następnie otrzymasz automatycznie &quot;SSD Fresh Plus&quot;, która nie posiada reklam i tego okna dialogowego." />
+    <element key="tooltipOptimized" value="Ustawienie zoptymalizowane!" />
+    <element key="tooltipManual" value="To ustawienie nie jest jeszcze zoptymalizowane. Jeśli potrzebujesz tą funkcjonalność wybierz ją ręcznie." />
+    <element key="tooltipUnoptimized" value="To ustawienie nie jest jeszcze zoptymalizowane, a zmiana jest wysoce zalecana!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Nazwa" />
+    <element key="SmartData.HeaderValue" value="Wartość" />
+    <element key="SmartData.WorstHeader" value="Najgorsza" />
+    <element key="SmartData.HeaderThreshold" value="Wartość progowa" />
+    <element key="SmartData.HeaderRow" value="Dane RAW" />
+    <element key="SmartData.Drive" value="Dysk:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Zajęte miejsce na dysku" />
+    <element key="DriveInformation.FreeDiskSpace" value="Wolne miejsce na dysku" />
+    <element key="DriveInformation.Yes" value="tak" />
+    <element key="DriveInformation.No" value="nie" />
+    <element key="DriveInformation.DriveName" value="Nazwa dysku twardego" />
+    <element key="DriveInformation.DriveType" value="Typ dysku twardego" />
+    <element key="DriveInformation.DriveSize" value="Wielkość dysku twardego" />
+    <element key="DriveInformation.SSD" value="Czy ten dysk to SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Liczba partycji" />
+    <element key="DriveInformation.DiskName" value="Nazwa dysku" />
+    <element key="DriveInformation.DiskSize" value="Wielkość dysku" />
+    <element key="DriveInformation.FileSystem" value="System plików" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. data" />
+    <element key="DriveInformation.MemoryUsage" value="Wykorzystanie pamięci" />
+    <element key="DriveInformation.DriveInformation" value="Informacje o dysku" />
+    <element key="Overview.WarningHeader" value="Ostrzeżenie" />
+    <element key="Overview.WarningText" value="Nie wykryto dysku SSD w systemie. Program dostosowuje ustawienia systemu do potrzeb napędów SSD. Jeśli korzystasz z programu gdy nie posaidasz dysku SSD, niektóre ustawienia zostaną wyłączone choć normalnie powinny być aktywowane dla zwykłych dysków twardych. Nie zalecamy korzystać z programu SSD Fresh na innych dyskach niż SSD." />
+    <element key="Overview.QuestionText" value="Jeżeli jesteś pewien, że korzystasz z dysku SSD, prześlij nam proszę raport o błędach, a my usprawnimy naszą aplikację." />
+    <element key="Overview.ButtonTitle" value="Tak, korzystam z dysku SSD" />
+    <element key="Overview.ButtonInfo" value="Wyślij raport i kontynuuj" />
+    <element key="SmartData.Back" value="Cofnij" />
+    <element key="DriveInformation.NotAvailable" value="Niedostępne" />
+    <element key="Overview.Error" value="Brak danych o dysku" />
+    <element key="Overview.ErrorText" value="Nie można odczytać danych dysku. Przyczyną tego stanu może być brak wystarczających uprawnień systemowych lub brak odpowiedniego interfejsu. Również maszyny wirtualne nie obsługują tego interfejsu. Jeżeli jesteś pewien, że posiadasz dysk SSD mozesz wykorzystać tą opcję do optymalizacji!" />
+    <element key="trim" value="Funkcja TRIM" />
+    <element key="trimDescription" value="Aby zwiększyć żywotność i wydajność dysków Solid State Drive (SSD) należy aktywować tą funkcję. Nie jest jednak dostępna dla wszystkich typów dysków SSD. Po więcej informacji odsyłamy do strony producenta dysku." />
+    <element key="LanguageMissing" value="Twój plik językowy jest niedostępny lub niekompletny?" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="22.02.2012 12:56:09" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="pl" />
+    <element key="AbFlexTrans.SpecialInfo.Language.ID" value="v129449212437216506-346599" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Polish [pl]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

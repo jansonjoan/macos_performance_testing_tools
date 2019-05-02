@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Vue d'ensemble" />
+    <element key="menuItem.Optimize" value="Optimisation" />
+    <element key="menuItem.Settings" value="Paramètres &amp; Support" />
+    <element key="Version" value="Version:" />
+    <element key="Language" value="Langage" />
+    <element key="defragsvc" value="Défragmentation" />
+    <element key="defragsvcDescription" value="Puisque les SSD ont des temps d'accès quasi-nul, il n'y a plus besoin de stocker les données comme sur un disque dur.En plus, la défragmentation cause des écritures non nécéssaires qui réduisent la vie du SSD.il est donc recommandé de désactiver cette option" />
+    <element key="WSearch" value="Indexation" />
+    <element key="WSearchDescription" value="Pour accélerer la recherche, Windows crée un index.Mais cela induit des écritures imtempestives qui endommagent le SSD.Si vous cherchez rarement ou jamais des fichiers, désactiver cette option" />
+    <element key="SysMain" value="Service Superfetch" />
+    <element key="SysMainDescription" value="Ce service précharge les applications couramment utilisées dans la RAM.Au vu des temps d'accès du SSD, cette fonction est inutile.Ce service peut-être désactivér avec la fonction Prefech" />
+    <element key="NtfsAccessTime" value="Horodatage (timestamp):" />
+    <element key="NtfsAccessTimeDescription" value="Windows stocke la date du dernier accès pour chaque fichier. Cela réduit la vie de votre SSD.Désactiver ceci est recommandé." />
+    <element key="Prefech" value="Prefech" />
+    <element key="PrefechDescription" value="Ce service précharge les applications couramment utilisées dans la RAM.Au vu des temps d'accés du SSD, cette fonction est inutile." />
+    <element key="Bootdefrag" value="Défragmentation des fichiers de boot" />
+    <element key="BootDefragDescription" value="La défragmentation du boot est inutile car les SSD ont un temps d'accés quasi-nul." />
+    <element key="EventLogging" value="Enregistreur d'évènement" />
+    <element key="EventLoggingDescription" value="Windows garde des sauvegardes systèmes.Ceci engendre des écritures inutiles." />
+    <element key="SystemRestore" value="Restauration Systeme" />
+    <element key="SystemRestoreDescription" value="Windows crée des points de restaurations à chaque changement du systeme, pour revenir en arrière.Cette fonction devrait etre désactivé si vous ne vous en servez pas" />
+    <element key="ShortNames" value="Creation de nom 8.3" />
+    <element key="ShortNamesDescription" value="Pour la compatibilité avec les applications 16 bits, Windows crée des noms cours pour les dossiers et fichiers, ce qui engendre des écritures inutiles." />
+    <element key="Optimize" value="Optimiser" />
+    <element key="Restore" value="Restaurer" />
+    <element key="Active" value="Activé" />
+    <element key="Deactive" value="Désactivé" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Réglages optimisé" />
+    <element key="RestoreAll" value="Restaurer" />
+    <element key="OptimizeAll" value="Optimiser" />
+    <element key="RestoreAllInfo" value="Restaurer toutes les sauvegardes" />
+    <element key="OptimizeAllInfo" value="Tout optimiser" />
+    <element key="Update" value="Mettre à jour" />
+    <element key="UpdateInfo" value="Vérifier si il existe une nouvelle version" />
+    <element key="Support" value="Support" />
+    <element key="SupportInfo" value="Envoyer au site de support" />
+    <element key="UpdateExists" value="Mise à jour disponible" />
+    <element key="UpdateExistsInfo" value="Une mise à jour est disponible. Voulez vous la télécharger ?" />
+    <element key="UpdateCheck" value="Cherchez une MAJ au démarrage" />
+    <element key="TipText" value="SSD Fresh est gratuit, mais si vous vous en servez souvent, un pourboire serait un plus.&#xD;&#xA;&#xD;&#xA;Cela vous permettra d'obtenir SSD Fresh Plus, une version sans pub" />
+    <element key="TipYesHeader" value="Oui, je veux donner un pourboire" />
+    <element key="TipYesText" value="Avec un pourboire de 10.-, vous pouvez nous aider pour le developpement de nos applications" />
+    <element key="TipNo" value="Non, je ne souhaites rien donner." />
+    <element key="TipText2" value="SSD Fresh est gratuit, mais si vous vous en servez souvent, un pourboire serait un plus.&#xD;&#xA;&#xD;&#xA;Cela vous permettra d'obtenir SSD Fresh Plus, une version sans pub" />
+    <element key="tooltipOptimized" value="Optimisé !" />
+    <element key="tooltipManual" value="Non optimisé ! Veuillez choisir manuellement" />
+    <element key="tooltipUnoptimized" value="Non optimisé !" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Nom" />
+    <element key="SmartData.HeaderValue" value="Valeur" />
+    <element key="SmartData.WorstHeader" value="Pire" />
+    <element key="SmartData.HeaderThreshold" value="Seuil" />
+    <element key="SmartData.HeaderRow" value="Données RAW" />
+    <element key="SmartData.Drive" value="Disque" />
+    <element key="DriveInformation.UsedDiskSpace" value="Espace utilisé" />
+    <element key="DriveInformation.FreeDiskSpace" value="Espace libre" />
+    <element key="DriveInformation.Yes" value="Oui" />
+    <element key="DriveInformation.No" value="Non" />
+    <element key="DriveInformation.DriveName" value="Nom disque dur" />
+    <element key="DriveInformation.DriveType" value="Type disque dur" />
+    <element key="DriveInformation.DriveSize" value="Taille disque dur" />
+    <element key="DriveInformation.SSD" value="Ce disque est un SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Nombre de partitions" />
+    <element key="DriveInformation.DiskName" value="Nom de disque" />
+    <element key="DriveInformation.DiskSize" value="Taille de disque" />
+    <element key="DriveInformation.FileSystem" value="Systeme de fichier" />
+    <element key="DriveInformation.ShowSmart" value="Données S.M.A.R.T" />
+    <element key="DriveInformation.MemoryUsage" value="Utilisation globale de l'espace disque" />
+    <element key="DriveInformation.DriveInformation" value="Information disque" />
+    <element key="Overview.WarningHeader" value="Attention" />
+    <element key="Overview.WarningText" value="Nous n'avons pas trouvé de SSD.Ce logiciel ne devrait pas etre utilisé sans cela" />
+    <element key="Overview.QuestionText" value="Si vous etes sûr d'utiliser un SSD, envoyez nous le rapport d'erreur afin d'améliorer cette application" />
+    <element key="Overview.ButtonTitle" value="Oui, j'ai un SSD" />
+    <element key="Overview.ButtonInfo" value="Envoyer rapport et continuer" />
+    <element key="SmartData.Back" value="Retour" />
+    <element key="DriveInformation.NotAvailable" value="Non disponible" />
+    <element key="Overview.Error" value="Pas de disque de données trouvé" />
+    <element key="Overview.ErrorText" value="Impossible de lire les données du disque.L'interface est peut etre désactivé,non disponible ou vous n'avez pas les droits nécessaires. A savoir aussi que les machines virtuelles ne supporte pas cette interface. Si vous êtes sûr que votre système contient un disque SSD, vous pouvez utiliser cette optimisation!" />
+    <element key="trim" value="Fonction Trim sous Windows" />
+    <element key="trimDescription" value="Pour améliorer la durée de vie et la performance des SSD, la fonction TRIM devrait être activé. Si cette fonction est toutefois utilisée, dépend du fait de savoir si votre SSD soutient cette fonction. Veuillez vous informer sur la page web du fabricant." />
+    <element key="LanguageMissing" value="Votre langue est manquante ou incomplète ?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="www.contact.willemijns.com" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="07.01.2013 10:40:25" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="fr" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="French [fr]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

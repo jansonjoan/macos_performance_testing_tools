@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>107</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="總覽" />
+    <element key="menuItem.Optimize" value="最佳化" />
+    <element key="menuItem.Settings" value="設定與支援" />
+    <element key="Version" value="版本:" />
+    <element key="Language" value="語言" />
+    <element key="defragsvc" value="磁碟重組" />
+    <element key="defragsvcDescription" value="由於 SSD 對於所有記憶體儲存格有著相同的存取時間，所以沒有必要連貫地儲存它們。此外，磁碟重組過程會造成額外的寫入操作，從而減少 SSD 的壽命。因此，強烈建議您停用磁碟重組過程。" />
+    <element key="WSearch" value="磁碟索引" />
+    <element key="WSearchDescription" value="為了加快搜尋，Windows 會建立索引。但是索引過程會產生寫入操作而減少 SSD 的壽命。如果您很少使用或從不使用 Windows 搜尋功能，我們建議您關閉此功能。" />
+    <element key="SysMain" value="Superfecth 服務" />
+    <element key="SysMainDescription" value="預先擷取支援將常用的應用程式預載入 RAM 中。由於快速存取時間功能對於 SSD 來說是無用的。因此，預先擷取功能可以停用。" />
+    <element key="NtfsAccessTime" value="時間戳記" />
+    <element key="NtfsAccessTimeDescription" value="Windows 儲存每個檔案存取的存取時間。這會產生不必要的寫入操作，因此將會減少您的 SSD 壽命。強烈建議停用此功能。" />
+    <element key="Prefech" value="預先擷取" />
+    <element key="PrefechDescription" value="預先擷取支援將常用的應用程式預載入 RAM 中。由於快速存取時間功能對於 SSD 來說是無用的。因此，預先擷取功能可以停用。" />
+    <element key="Bootdefrag" value="重組開機檔案" />
+    <element key="BootDefragDescription" value="由於開機檔案儲存在 SSD 中，因此重組開機檔案是沒有意義的，其應被停用，因為它減少了您的 SSD 壽命。" />
+    <element key="EventLogging" value="Windows 事件記錄" />
+    <element key="EventLoggingDescription" value="Windows 會永久記錄系統組態變更，以及來自各種服務和程式的當機和其他事件。這將產生不必要的寫入存取，並減少您的 SSD 壽命。" />
+    <element key="SystemRestore" value="系統還原" />
+    <element key="SystemRestoreDescription" value="Windows 建立 Windows 系統軟體安裝和重大變更時的還原點，其可以在錯誤發生時還原。此功能會產生寫入操作，如果您使用備份工具和不需要還原選項，則應將其停用。" />
+    <element key="ShortNames" value="8.3 檔名建立" />
+    <element key="ShortNamesDescription" value="為了相容於舊的 16 位元 DOS 應用程式，Windows 將為資料夾和檔案建立短名稱，這會對您的 SSD 造成額外的寫入存取。目前的應用程式不需要這些名稱，因此它們可以被停用。" />
+    <element key="AHCISetting" value="AHCI 設定" />
+    <element key="AHCISettingDescription" value="警告: 此設定僅作為專家最佳化的建議。此時不提供變更。AHCI 是一種標準 SATA 硬碟介面。SSD 固態硬碟應該使用 AHCI 連接來達到完整的效能。" />
+    <element key="AHCISetting.Tutorial.Back" value="返回" />
+    <element key="AHCISetting.Tutorial.BackInfo" value="返回「最佳化」" />
+    <element key="AHCISetting.Tutorial.Title" value="AHCI 設定教學課程" />
+    <element key="AHCISetting.Tutorial.Description" value="下列的教學課程解說如何最佳化 AHCI 設定來取得最佳的 SSD 效能。" />
+    <element key="AHCISetting.Tutorial.Warning" value="警告! 此教學課程只供專家使用。這可能會導致您的系統無法使用，所以請先做好備份。按照此教學課程操作，請自行承擔風險。" />
+    <element key="AHCISetting.Tutorial.Requirements" value="要求條件:" />
+    <element key="AHCISetting.Tutorial.RequirementsDesc" value="- 管理員權限                                                                                                                                                                                                                             - 您的主機板製造商支援的最新 Windows AHCI 驅動程式。" />
+    <element key="AHCISetting.Tutorial.Steps" value="步驟:" />
+    <element key="AHCISetting.Tutorial.StepsDesc" value="1. 啟動 Windows 登錄編輯程式(regedit.exe)。                                                                                                                                                                      2. 打開登錄機碼 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci'。                                                                                                3. 將登錄值 'Start' 設成 '0' 以及如果登錄值 'StartOverride' 存在將其刪除。                                                                                                                      4. 將您的電腦重新啟動並在 BIOS 設定中啟用 AHCI。" />
+    <element key="AHCISetting.Tutorial.StepsDescWin8" value="1. 啟動 Windows 登錄編輯程式(regedit.exe)。                                                                                                                                                                      2. 打開登錄機碼 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storahci'。                                                                                               3. 將登錄值 'Start' 設成 '0' 以及如果登錄值 'StartOverride'存在將其刪除。                                                                                                                       4. 將您的電腦重新啟動並在 BIOS 設定中啟用 AHCI。" />
+    <element key="AHCISetting.Tutorial.Tipps" value="其他資訊:" />
+    <element key="AHCISetting.Tutorial.TippsDesc" value="- 切換到 AHCI 模式時，可能變更啟動順序。                                                                                                                                                                      - 如果您的系統無法啟動，請切換回舊的 BIOS 設定並檢查您的 Windows 設定。" />
+    <element key="Optimize" value="最佳化" />
+    <element key="Restore" value="從備份還原" />
+    <element key="ShowTutorial" value="顯示教學課程" />
+    <element key="Active" value="已啟用" />
+    <element key="Deactive" value="已停用" />
+    <element key="Status" value="狀態" />
+    <element key="OptimizedSettings" value="最佳化設定" />
+    <element key="RestoreAll" value="還原" />
+    <element key="OptimizeAll" value="最佳化" />
+    <element key="RestoreAllInfo" value="還原所有備份" />
+    <element key="OptimizeAllInfo" value="最佳化所有設定" />
+    <element key="Update" value="更新" />
+    <element key="UpdateInfo" value="檢查新版本" />
+    <element key="Support" value="支援" />
+    <element key="SupportInfo" value="前往支援網站" />
+    <element key="UpdateExists" value="有可用更新" />
+    <element key="UpdateExistsInfo" value="有更新可用，您要下載嗎?" />
+    <element key="UpdateCheck" value="啟動時檢查新版本?" />
+    <element key="TipText" value="SSD Fresh 是一套免費軟體，如果您經常使用它，您可以給我們贊助。                                             (正體中文編譯:丹楓-虫二電氣診所) &#xD;&#xA;&#xD;&#xA;您的贊助將幫助我們把本軟體做得更好。隨後您將自動收到一個沒有廣告和此對話方塊的 SSD Fresh Plus 版本。" />
+    <element key="TipYesHeader" value="是的，我願意贊助" />
+    <element key="TipYesText" value="只要贊助 $10，您就可以幫助我們的應用程式開發，並且獲得 SSD Fresh Plus 版本" />
+    <element key="TipNo" value="不，我不想贊助" />
+    <element key="TipText2" value="SSD Fresh 是一套免費軟體，如果您經常使用它，您可以給我們贊助。                                             (正體中文編譯:丹楓-虫二電氣診所) &#xD;&#xA;&#xD;&#xA;您的贊助將幫助我們把本軟體做得更好。隨後您將自動收到一個沒有廣告和此對話方塊的 SSD Fresh Plus 版本。" />
+    <element key="tooltipOptimized" value="此設定已最佳化!" />
+    <element key="tooltipManual" value="此設定還沒有進行最佳化。請如果您需要此功能，請選擇手動。" />
+    <element key="tooltipUnoptimized" value="此設定仍未最佳化，並建議變更!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="十六進位 Id" />
+    <element key="SmartData.NameHeader" value="名稱" />
+    <element key="SmartData.HeaderValue" value="數值" />
+    <element key="SmartData.WorstHeader" value="最差" />
+    <element key="SmartData.HeaderThreshold" value="臨界值" />
+    <element key="SmartData.HeaderRow" value="原始資料" />
+    <element key="SmartData.Drive" value="硬碟:" />
+    <element key="DriveInformation.UsedDiskSpace" value="已用磁碟空間" />
+    <element key="DriveInformation.FreeDiskSpace" value="可用磁碟空間" />
+    <element key="DriveInformation.Yes" value="是" />
+    <element key="DriveInformation.No" value="否" />
+    <element key="DriveInformation.DriveName" value="硬碟型號" />
+    <element key="DriveInformation.DriveType" value="硬碟類型" />
+    <element key="DriveInformation.DriveSize" value="硬碟大小" />
+    <element key="DriveInformation.SSD" value="此磁碟是否為 SSD" />
+    <element key="DriveInformation.PartitionNumber" value="分割區數" />
+    <element key="DriveInformation.DiskName" value="磁碟名稱" />
+    <element key="DriveInformation.DiskSize" value="磁碟大小" />
+    <element key="DriveInformation.FileSystem" value="檔案系統" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T 資料" />
+    <element key="DriveInformation.MemoryUsage" value="記憶體使用量" />
+    <element key="DriveInformation.DriveInformation" value="磁碟資訊" />
+    <element key="Overview.WarningHeader" value="警告" />
+    <element key="Overview.WarningText" value="您的系統上找不到 SSD。此程式需要有 SSD 磁碟才能調整您的系統設定。如果您在沒有 SSD 情況下使用該程式，某些在一般硬碟應為啟動的設定將被停用。因此，如果您不使用固態硬碟，我們建議您不要在此系統上使用 SSD Fresh。" />
+    <element key="Overview.QuestionText" value="如果您確信使用 SSD，請發送錯誤報告給我們以便讓我們改善我們的軟體。" />
+    <element key="Overview.ButtonTitle" value="是的，我正在使用 SSD" />
+    <element key="Overview.ButtonInfo" value="發送錯誤報告並繼續" />
+    <element key="SmartData.Back" value="上一步" />
+    <element key="DriveInformation.NotAvailable" value="無法使用" />
+    <element key="Overview.Error" value="找不到磁碟資料" />
+    <element key="Overview.ErrorText" value="無法讀取磁碟上的資料。可能所需介面已停用、無法使用或在此系統上您沒有足夠權限。也可能是虛擬機器不支援此介面。&#xD;&#xA;如果您確定您的系統包含 SSD，您就可以使用最佳化!" />
+    <element key="trim" value="Windows Trim 功能" />
+    <element key="trimDescription" value="要增加固態硬碟(SSD)的壽命和效能，應啟動此功能。是否將使用此功能取決於您的 SSD 是否支援此功能。請在製造商的網站上尋找是否支援。" />
+    <element key="LanguageMissing" value="沒有您的語言或者翻譯不完整?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Danfong" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="2013/12/15 下午 06:40:13" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="zh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Chinese - Taiwan [zh-TW]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="TW" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Обзор" />
+    <element key="menuItem.Optimize" value="Оптимизация" />
+    <element key="menuItem.Settings" value="Настройки&#xD;&#xA;" />
+    <element key="Version" value="Версия :&#xD;&#xA;" />
+    <element key="Language" value="Язык&#xD;&#xA;" />
+    <element key="defragsvc" value="Дефрагментация&#xD;&#xA;&#xD;&#xA;" />
+    <element key="defragsvcDescription" value="Поскольку твердотельные накопители имеют то же время доступ для всех ячеек памяти, нет необходимости хранить их последовательно. Кроме этого, процесс дефрагментации генерирует wirte хиты, которые сокращают срок службы SSD. Поэтому настоятельно рекомендуется отключить процесс дефрагментации. " />
+    <element key="WSearch" value="Индексирование&#xD;&#xA;" />
+    <element key="WSearchDescription" value="Для ускорения поиска, Windows создает индекс. Но это приводит к операции записи на SSD, что уменьшает срок его службы. Если вы используете поиск редко или никогда, мы рекомендуем отключить эту функцию. " />
+    <element key="SysMain" value="Superfech службы&#xD;&#xA;" />
+    <element key="SysMainDescription" value="Prefech поддерживает предварительную загрузку часто используемых приложений в оперативную память. Из-за быстрого времяни доступа у SSD эта функция бесполезна. Таким образом, этот сервис можно отключить вместе с функцией Prefech. " />
+    <element key="NtfsAccessTime" value="Timestamp" />
+    <element key="NtfsAccessTimeDescription" value="ОС Windows хранит доступ для каждого файла . Это приводит к ненужной перезаписи и тем самым сокращает срок службы SSD.Отключение этой функции рекомендуется.&#xD;&#xA;" />
+    <element key="Prefech" value="Prefech" />
+    <element key="PrefechDescription" value="Prefech поддерживает предварительную загрузку часто используемых приложений в оперативную память.Из-за быстрого  доступа от SSD, эта функция бесполезна и может быть отключена.&#xD;&#xA;" />
+    <element key="Bootdefrag" value="Дефрагментация загрузочных файлов" />
+    <element key="BootDefragDescription" value="Из-за способа хранения файлов на SSD,дефрагментация загрузочных файлов не имеет смысла и должна быть отключено так как это уменьшаетсрок службы SSD.&#xD;&#xA;" />
+    <element key="EventLogging" value="Windows, ведение журнала событий" />
+    <element key="EventLoggingDescription" value="ОС Windows постоянно записывает о системном изменении конфигурации, а также аварий и других событий из различных служб и программ. Это создает ненужный доступ для  записи и сокращает срок службы SSD. " />
+    <element key="SystemRestore" value="Система восстановления" />
+    <element key="SystemRestoreDescription" value="Windows, создает точки восстановления для установки программного обеспечения и серьезных изменений в системе Windows, которая может быть восстановлена ​​в случае, если происходит ошибка. Эта функция производит запись процессов и должны быть отключены, если вы используете средство резервного копирования и восстановления, если опция не требуется. " />
+    <element key="ShortNames" value="8,3 создание имен&#xD;&#xA;" />
+    <element key="ShortNamesDescription" value="Для совместимости со старыми 16-разрядными приложениями DOS, Windows создает короткие имена для папок и файлов, что приводит к дополнительному доступу записи на SSD. Текущим приложениям не нужны эти имена, и именно поэтому они могут быть отключены. " />
+    <element key="Optimize" value="Оптимизировать&#xD;&#xA;" />
+    <element key="Restore" value="Восстановить из резервной копии&#xD;&#xA;" />
+    <element key="Active" value="Активирован" />
+    <element key="Deactive" value="Деактивирован" />
+    <element key="Status" value="Статус&#xD;&#xA;" />
+    <element key="OptimizedSettings" value="Оптимизированные настройки" />
+    <element key="RestoreAll" value="Восстановление&#xD;&#xA;" />
+    <element key="OptimizeAll" value="Оптимизировать&#xD;&#xA;" />
+    <element key="RestoreAllInfo" value="Восстановить все резервные копии" />
+    <element key="OptimizeAllInfo" value="Оптимизация всех параметров&#xD;&#xA;" />
+    <element key="Update" value="Обновление&#xD;&#xA;" />
+    <element key="UpdateInfo" value="Проверка наличия новой версии" />
+    <element key="Support" value="Поддержка&#xD;&#xA;" />
+    <element key="SupportInfo" value="Вперед, к веб-сайту поддержки" />
+    <element key="UpdateExists" value="Доступно обновление" />
+    <element key="UpdateExistsInfo" value="Обновление доступно .Хотите скачать?&#xD;&#xA;" />
+    <element key="UpdateCheck" value="Проверка наличия новой версии при запуске?" />
+    <element key="TipText" value="SSD Fresh является бесплатным, но если вы используете его регулярно, то мы ожидаем, от вас небольших заметок о работе программы. &#xD;&#xA;&#xD;&#xA;Пожалуйста, помогите нам улучшить эту программу, После этого вы автоматически получите &quot;SSD Fresh Plus», версии без рекламы и этого диалога. " />
+    <element key="TipYesHeader" value="Да, я хотел бы дать небольшой совет&#xD;&#xA;" />
+    <element key="TipYesText" value="Только 10 заметок, с помощью которых вы можете помочь нам , поддерживая развитие нашего приложения , и вы получите &quot; SSD Fresh Plus&quot;&#xD;&#xA;" />
+    <element key="TipNo" value="Нет, я не хочу давать заметки" />
+    <element key="TipText2" value="SSD Fresh является бесплатным, но если вы используете его регулярно, то мы ожидаем, от вас небольших заметк по работе программы. &#xD;&#xA;&#xD;&#xA;Пожалуйста, помогите нам улучшить эту программу, в помощью ваших небольших заметок. После этого вы автоматически получите &quot;SSD Fresh Plus», версии без рекламы и этого диалога. " />
+    <element key="tooltipOptimized" value="Эта установка оптимизирована !&#xD;&#xA;" />
+    <element key="tooltipManual" value="Эта установка по-прежнему не оптимизирована.Пожалуйста, выберите вручную, если вам нужна эта функциональность" />
+    <element key="tooltipUnoptimized" value="Эта установка по-прежнему не оптимизирована и рекомендуется для изменения !&#xD;&#xA;" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Имя&#xD;&#xA;" />
+    <element key="SmartData.HeaderValue" value="Значение&#xD;&#xA;" />
+    <element key="SmartData.WorstHeader" value="Наихудший&#xD;&#xA;" />
+    <element key="SmartData.HeaderThreshold" value="Порог&#xD;&#xA;" />
+    <element key="SmartData.HeaderRow" value="Не обработанные данные&#xD;&#xA;" />
+    <element key="SmartData.Drive" value="Диск:&#xD;&#xA;" />
+    <element key="DriveInformation.UsedDiskSpace" value="Используемое дисковое пространства" />
+    <element key="DriveInformation.FreeDiskSpace" value="Свободное дисковое пространство" />
+    <element key="DriveInformation.Yes" value="Да" />
+    <element key="DriveInformation.No" value="Нет" />
+    <element key="DriveInformation.DriveName" value="Имя жесткого диска" />
+    <element key="DriveInformation.DriveType" value="Тип жесткого диска" />
+    <element key="DriveInformation.DriveSize" value="Размер жесткого диска" />
+    <element key="DriveInformation.SSD" value="Является ли этот дискSSD&#xD;&#xA;" />
+    <element key="DriveInformation.PartitionNumber" value="Количество разделов&#xD;&#xA;" />
+    <element key="DriveInformation.DiskName" value="Имя диска" />
+    <element key="DriveInformation.DiskSize" value="Размер диска" />
+    <element key="DriveInformation.FileSystem" value="Файловая система" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T.данные&#xD;&#xA;" />
+    <element key="DriveInformation.MemoryUsage" value="использование памяти&#xD;&#xA;" />
+    <element key="DriveInformation.DriveInformation" value="Информация о диске" />
+    <element key="Overview.WarningHeader" value="Предупреждение" />
+    <element key="Overview.WarningText" value="Нет SSD был не найден в вашей системе. Данная программа настраивает параметры системы к потребностям SSD дисков. Если вы используете программу без SSD, некоторые параметры будут отключены, что, как правило, включается на обычные жесткие диски. Если вы не используете SSD, мы советуем вам не использовать SSD Fresh в этой системе. " />
+    <element key="Overview.QuestionText" value="Если вы уверены, что используете SSD, пожалуйста, отправьте нам отчет об ошибке , чтобы мы могли улучшить наше приложение.&#xD;&#xA;" />
+    <element key="Overview.ButtonTitle" value="Да, я используюSSD" />
+    <element key="Overview.ButtonInfo" value="Отправить отчет и продолжить&#xD;&#xA;" />
+    <element key="SmartData.Back" value="Назад" />
+    <element key="DriveInformation.NotAvailable" value="Не доступно" />
+    <element key="Overview.Error" value="Нет данных диска" />
+    <element key="Overview.ErrorText" value="Не удается прочитать диск данных. Может быть необходимsq интерфейс отключен, недоступен или у вас недостаточно прав на эту систему. Кроме того, виртуальные машины не поддерживаюn этот интерфейс. &#xD;&#xA;Если вы уверены, что ваша система имеет SSD можно использовать оптимизацию! " />
+    <element key="trim" value="Trim функции для Windows" />
+    <element key="trimDescription" value="Для увеличения срока службы и производительности твердотельных накопителей (SSD) эта функция должна быть активирована. Будет ли эта функция использоваться зависит от того  поддерживает ли эту функцию ваш SSD. Ищите byajhvfwb. на сайте производителя SSD. " />
+    <element key="LanguageMissing" value="Ваш язык отсутствует или программа переведена не полностью ?&#xD;&#xA;" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="18.03.2011 12:27:23" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="ru" />
+    <element key="AbFlexTrans.SpecialInfo.Language.ID" value="v129449212437216506-452211" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Russian [ru]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

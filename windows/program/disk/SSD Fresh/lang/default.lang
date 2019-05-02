@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>106</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Overview" />
+    <element key="menuItem.Optimize" value="Optimization" />
+    <element key="menuItem.Settings" value="Settings &amp; Support" />
+    <element key="Version" value="Version:" />
+    <element key="Language" value="Language" />
+    <element key="defragsvc" value="Defragmentation" />
+    <element key="defragsvcDescription" value="Since SSDs have the same access time for all memory cells, there is no need to store them coherently. In addition this, the defragmentation process generates wirte hits, which reduce the lifetime of the SSD. Therefore, it is highly recommended to deactivate the defragmentation process." />
+    <element key="WSearch" value="Indexing" />
+    <element key="WSearchDescription" value="To speed up searching, Windows creates an index. But this causes write operations on the SSD, which minimizes the lifetime. If you are using the Windows search rarely or never, we advise to turn off this functionality." />
+    <element key="SysMain" value="Superfetch service" />
+    <element key="SysMainDescription" value="Prefetch supports preloading of frequently used applications into RAM. Because of the fast access times off the SSD this function is useless. Therefore, this service can be disabled together with the Prefech function." />
+    <element key="NtfsAccessTime" value="Timestamp" />
+    <element key="NtfsAccessTimeDescription" value="Windows stores the access time for each file access. This produces unnecessary write hits and thus will reduce the lifetime of your SSD. Disabling of this feature is highly recommended." />
+    <element key="Prefech" value="Prefetch" />
+    <element key="PrefechDescription" value="Prefetch supports preloading of frequently used applications into RAM. Because of the fast access times off SSDs, this function is useless and can be disabled." />
+    <element key="Bootdefrag" value="Defragmentation of boot files" />
+    <element key="BootDefragDescription" value="Because of the way that files are stored in SSDs, a defragmentation of boot files makes no sense and should be disabled as it reduces the lifetime of your SSD." />
+    <element key="EventLogging" value="Windows event logging" />
+    <element key="EventLoggingDescription" value="Windows permanently records system configuration changes, as well as crashes and other events from various services and programs. This creates unnecessary write accesses and reduces the lifetime of your SSD." />
+    <element key="SystemRestore" value="Systemrestore" />
+    <element key="SystemRestoreDescription" value="Windows creates restore points for software installations and major changes to the Windows system, which can be restored in case that an error occurs.  This function produces write processes and should be disabled if you are using a backup tool and if the recovery option is not required." />
+    <element key="ShortNames" value="8.3 name creation" />
+    <element key="ShortNamesDescription" value="For compatibility with old 16-bit DOS applications, Windows creates short names for folders and files, which results in additional write accesses to your SSD. Current applications do not need those names, which is why they can be disabled." />
+    <element key="AHCISetting" value="AHCI setting" />
+    <element key="AHCISettingDescription" value="Warning: This setting serves as an advice for possible optimization potential for experts only. Changes are not provided at this point.&#xD;&#xA;AHCI is an interface standard for SATA hard disks. SSD hard disks should be connected using AHCI to achieve full performance." />
+    <element key="AHCISetting.Tutorial.Back" value="Back" />
+    <element key="AHCISetting.Tutorial.BackInfo" value="Back to Optimization" />
+    <element key="AHCISetting.Tutorial.Title" value="AHCI Setting Tutorial" />
+    <element key="AHCISetting.Tutorial.Description" value="The following tutorial explains how to optimize the AHCI setting to gain a better SSD performance." />
+    <element key="AHCISetting.Tutorial.Warning" value="WARNING! This tutorial is dedicated to experts only. You can make your system unusable, so please make a backup. Follow this tutorial on your OWN risk." />
+    <element key="AHCISetting.Tutorial.Requirements" value="Requirements:" />
+    <element key="AHCISetting.Tutorial.RequirementsDesc" value="- Admin rights&#xD;&#xA;- Up to date Windows AHCI driver supported by your mainboard producer." />
+    <element key="AHCISetting.Tutorial.Steps" value="Steps:" />
+    <element key="AHCISetting.Tutorial.StepsDesc" value="1. Start Windows registry editor(regedit.exe).&#xD;&#xA;2. Open the registry key 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci'.&#xD;&#xA;3. Set the registry value 'Start' to '0' and, if existing, delete the registry value 'StartOverride'.&#xD;&#xA;4. Restart your PC and activate AHCI in the BIOS settings." />
+    <element key="AHCISetting.Tutorial.StepsDescWin8" value="1. Start Windows registry editor (regedit.exe).&#xD;&#xA;2. Open the registry key 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storahci'.&#xD;&#xA;3. Set the registry value 'Start' to '0' and, if existing, delete the registry value 'StartOverride'.&#xD;&#xA;4. Restart your PC and activate AHCI in the BIOS settings." />
+    <element key="AHCISetting.Tutorial.Tipps" value="Additional Information:" />
+    <element key="AHCISetting.Tutorial.TippsDesc" value="- Start order can change when switching to AHCI mode.&#xD;&#xA;- If your system does not boot, switch to the old BIOS settings and check your Windows settings." />
+    <element key="Optimize" value="Optimize" />
+    <element key="Restore" value="Restore from backup" />
+    <element key="ShowTutorial" value="Show Tutorial" />
+    <element key="Active" value="Activated" />
+    <element key="Deactive" value="Deactivated" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Optimized settings" />
+    <element key="RestoreAll" value="Restore" />
+    <element key="OptimizeAll" value="Optimize" />
+    <element key="RestoreAllInfo" value="Restore all backups" />
+    <element key="OptimizeAllInfo" value="Optimize all settings" />
+    <element key="Update" value="Update" />
+    <element key="UpdateInfo" value="Check for new version" />
+    <element key="Support" value="Support" />
+    <element key="SupportInfo" value="Forward to support website" />
+    <element key="UpdateExists" value="Update available" />
+    <element key="UpdateExistsInfo" value="An update is available. Do you want to download it?" />
+    <element key="UpdateCheck" value="Check for new version at startup?" />
+    <element key="TipText" value="SSD Fresh is free but if you use it regularly then we expect a small tip.&#xD;&#xA;&#xD;&#xA;Please help us to improve this software by giving us a small tip. Afterwards you will automatically receive &quot;SSD Fresh Plus&quot;, a version without advertising and this dialog.&#xD;&#xA;" />
+    <element key="TipYesHeader" value="Yes, I would like to give a small tip" />
+    <element key="TipYesText" value="With a small tip of only 10,-  you can help us by supporting the development of our applications and you will receive &quot;SSD Fresh Plus&quot;" />
+    <element key="TipNo" value="No, I don't want to give a tip" />
+    <element key="TipText2" value="SSD Fresh is free but if you use it regularly then we expect a small tip.&#xD;&#xA;&#xD;&#xA;Please help us to improve this software by giving us a small tip. Afterwards you will automatically receive &quot;SSD Fresh Plus&quot;, a version without advertising and this dialog.&#xD;&#xA;" />
+    <element key="tooltipOptimized" value="This setting is optimized!" />
+    <element key="tooltipManual" value="This setting is still not optimized. Please select manually, if you need this functionality." />
+    <element key="tooltipUnoptimized" value="This setting is still not optimized and a change is recommended!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Name" />
+    <element key="SmartData.HeaderValue" value="Value" />
+    <element key="SmartData.WorstHeader" value="Worst" />
+    <element key="SmartData.HeaderThreshold" value="Threshold" />
+    <element key="SmartData.HeaderRow" value="Raw data" />
+    <element key="SmartData.Drive" value="Drive:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Used diskspace" />
+    <element key="DriveInformation.FreeDiskSpace" value="Free diskspace" />
+    <element key="DriveInformation.Yes" value="yes" />
+    <element key="DriveInformation.No" value="no" />
+    <element key="DriveInformation.DriveName" value="Hard drive name" />
+    <element key="DriveInformation.DriveType" value="Hard drive type" />
+    <element key="DriveInformation.DriveSize" value="Hard drive size" />
+    <element key="DriveInformation.SSD" value="Is this drive an SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Number of partitions" />
+    <element key="DriveInformation.DiskName" value="Drive name" />
+    <element key="DriveInformation.DiskSize" value="Drive size" />
+    <element key="DriveInformation.FileSystem" value="Filesystem" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. data" />
+    <element key="DriveInformation.MemoryUsage" value="Diskspace use" />
+    <element key="DriveInformation.DriveInformation" value="Drive information" />
+    <element key="Overview.WarningHeader" value="Warning" />
+    <element key="Overview.WarningText" value="No SSD has been found on your system. This program adjusts your system settings to the needs of SSD drives. If you use the program without having an SSD, some settings will be disabled that should normally be activated for normal hard disks. Thereforem, if you do not use an SSD, we advise you to not use SSD Fresh on this system." />
+    <element key="Overview.QuestionText" value="If you are sure to use an SSD, please send us a error report so we can improve our application." />
+    <element key="Overview.ButtonTitle" value="Yes, i am using an SSD" />
+    <element key="Overview.ButtonInfo" value="Send report and continue" />
+    <element key="SmartData.Back" value="Back" />
+    <element key="DriveInformation.NotAvailable" value="Not Available" />
+    <element key="Overview.Error" value="No drive data found" />
+    <element key="Overview.ErrorText" value="Could not read the drive data. Maybe the needed interface is deactivated, not available or you have insufficient rights on this system. Also virtual machines do not support this interface.&#xD;&#xA;If you are sure that your system contain an SSD you can use the optimization!" />
+    <element key="trim" value="Windows Trim function" />
+    <element key="trimDescription" value="To increase the lifetime and performance of Solid State Disks (SSD), this function should be activated. Whether this function will be used depends on whether your SSD supports this function. Look for it on the manufacturer's website." />
+    <element key="LanguageMissing" value="Your language is missing or is incomplete?" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="08.08.2014 08:52:50" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="en" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="English [en]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

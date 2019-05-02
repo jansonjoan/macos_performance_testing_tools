@@ -1,0 +1,41 @@
+# OCCT Graph Theme File
+# Make sure you do NOT comment any color
+# colors are to be specified using a R,G,B,A format
+
+# Graph Background Color
+96,24,24,255
+
+# Graph Border Color
+0,0,0,255
+
+# Graph Grid Color
+255,255,255,255
+
+#Graph X and Y Axis Labels Font Color
+255,255,255,255
+
+#Graph Title Color
+255,255,255,196
+
+#Legend Background Color
+174,22,22,255
+
+#Legend Border Color
+0,0,0,255
+
+#Line Colors. First color will be used for the first sensor, and so on.
+#They are shared among graphs !
+#the line color will be used for the text displaying its current value
+#and well as the text color in the legend labels for this line 
+255,235,205,255
+173,216,230,255
+240,230,140,255
+255,192,203,255
+144,238,144,255
+255,255,0,255
+238,130,238,255
+154,205,50,255
+240,248,255,255
+178,34,34,255
+0,0,205,255
+244,164,96,255

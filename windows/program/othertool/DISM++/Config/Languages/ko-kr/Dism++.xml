@@ -1,0 +1,951 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+This is Dism++ Korean Resource
+
+There are 5 special symbols need special representation in XML.
+
+ Symbol     Description               Link
+   <        Less than                 &lt;
+   >        More than                 &gt;
+   &        And                       &amp;
+   ‘       Single quotation marks		&apos;
+   “       Double quotation marks		&quot;  
+
+Thanks: Wooram
+ -->
+<Data>
+  <CCleanLangSecRefMap>
+    <LangSecRef ID="3021">Applications</LangSecRef>
+    <LangSecRef ID="3022">Internet</LangSecRef>
+    <LangSecRef ID="3023">Multimedia</LangSecRef>
+    <LangSecRef ID="3024">Utilities</LangSecRef>
+    <LangSecRef ID="3025">System</LangSecRef>
+    <LangSecRef ID="3026">Browser</LangSecRef>
+    <LangSecRef ID="3027">Browser</LangSecRef>
+    <LangSecRef ID="3028">Browser</LangSecRef>
+    <LangSecRef ID="3029">Browser</LangSecRef>
+    <LangSecRef ID="3030">Applications</LangSecRef>
+    <LangSecRef ID="3031">Windows Store</LangSecRef>
+  </CCleanLangSecRefMap>
+  <CleanCollection>
+    <Item Name="업데이트 정리" Level="2">
+      <Discription>교체된 구성 요소 제거 및 각 구성 요소의 크기 줄이기.</Discription>
+      <Warning>Cleanup will not uninstall update, if you need uninstall update please not use this option.</Warning>
+      <Group>Expired files</Group>
+      <ScanCollection>
+        <!--在这里填写扫描规则，Dism++将自动匹配第一条命中的规则-->
+        <Scan Type="Custom">
+          <!--不编写条件表示总是命中,CustomCall表示执行指定函数   Module -->
+          <Custom ProcName="DismComponentCleanup"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="오래된 드라이버" Level="0">
+      <Discription>디스크에 저장된 사용하지 않는 드라이버 삭제.</Discription>
+      <Warning>The feature for some streamlining of systems or manual process-driven system driver signature problem may occur.</Warning>
+      <Group>Expired files</Group>
+      <ScanCollection>
+        <!--在这里填写扫描规则，Dism++将自动匹配第一条命中的规则-->
+        <Scan Type="Custom">
+          <!--不编写条件表示总是命中,CustomCall表示执行指定函数   Module -->
+          <Custom ProcName="DismDriverCleanup"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Hard link merge(Slower)" Level="0">
+      <Discription>Use NTFS hard link all the file contents merge feature the same file, this process is slow.</Discription>
+      <Warning>Some files are merged after a hard link may cause some features not work properly.</Warning>
+      <Group>System</Group>
+      <ScanCollection>
+        <Scan Type="Custom">
+          <Custom ProcName="DismHardLinkMerge"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+    <!--
+    <Item Name="Installer Cleanup" Level="2">
+      <Discription>Delete unused msi and msp files, and also connect with the installation source in order to save spaces.</Discription>
+      <Group>System</Group>
+      <ScanCollection>
+        在这里填写扫描规则，Dism++将自动匹配第一条命中的规则
+        <Scan Type="Custom">
+          不编写条件表示总是命中,CustomCall表示执行指定函数   Module
+          <Custom ProcName="DismInstallerCleanup"/>
+        </Scan>
+      </ScanCollection>
+    </Item>-->
+
+    <Item Name="CompactOs(Slower)" Level="0">
+      <Discription>Huffman compression files that are read only, without affecting the performance of cases, significantly reduce the volume of the system. Special thanks to the miners, as well as all the selfless support and assistance Compact team member.</Discription>
+      <Warning>Currently this function is intended for testing, may cause the system to fail to start after you use, if you cannot start the system after use, you can click the restore function in PE, select Never Compact.</Warning>
+      <Group>System</Group>
+      <ScanCollection>
+        <!--在这里填写扫描规则，Dism++将自动匹配第一条命中的规则-->
+
+        <Scan Type="Custom">
+          <Applicable>
+            <ImageFlags>2</ImageFlags>
+          </Applicable>
+          <!--不编写条件表示总是命中,CustomCall表示执行指定函数   Module -->
+          <Custom ProcName="DismCompactOs"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="오래된 매트로 앱" Level="0">
+      <Discription>메트로 앱을 업데이트할 때, 사용하지 않는 일반 버전은 남겨둡니다. 이 기능은 사용하지 않는 기존 버전을 제거합니다. (베타 기능으로, 매트로 앱의 사용 불가능성 있음.)</Discription>
+      <Warning>Application cannot be opened after a few users reported using Metro, Metro needs to be reinstalled.</Warning>
+      <Group>Expired files</Group>
+      <ScanCollection>
+        <Scan Type="Custom">
+          <Applicable>
+            <RegExist Key="HKEY_LOCAL_MACHINE" SubKey="SOFTWARE\Microsoft\Windows\CurrentVersion\Appx" Value="PackageRoot"/>
+          </Applicable>
+          <Custom ProcName="DismAppxsCleanup"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="WinSxS 임시 파일." Level="3">
+      <Discription>시스템을 업데이트하는 동안 생성된 WinSxS 임시 파일.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Windows\WinSxS\" Flags="File|Directory">
+            <Query>ManifestCache\*</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Windows 로그" Level="3">
+      <Discription>Windows 로그 파일.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Windows\" Flags="File">
+            <Query>*.log</Query>
+            <Query>*.bak</Query>
+            <Query>*log.txt</Query>
+            <Query>SchedLgU.txt</Query>
+          </General>
+          <General RootPath="%SystemDrive%\Users\*\AppData\" Flags="File">
+            <Query>Local\Microsoft\Windows\*.log</Query>
+            <Query>Local\MigWiz\*.log</Query>
+            <Query>Local\Microsoft\CLR_*\*.log</Query>
+            <Query>Local\Microsoft\CLR_*\*\*.log</Query>
+            <Query>Roaming\Microsoft\Windows\*.log</Query>
+          </General>
+          <General RootPath="%SystemDrive%\Windows\Logs\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+
+
+    <Item Name="Windows 업데이트 캐시" Level="2">
+      <Discription>업데이트 다운로드 및 메트로 앱을 업데이트할 때, Windows가 생성한 임시 설치 파일.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <ImageFlags>1</ImageFlags>
+          </Applicable>
+          <General RootPath="%SystemDrive%\Windows\SoftwareDistribution\Download\" Flags="File|Directory"/>
+        </Scan>
+
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Windows\SoftwareDistribution\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="임시 파일" Level="2">
+      <Discription>특정 사용자에 의해 생성된 임시 파일.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <ImageFlags>1</ImageFlags>
+          </Applicable>
+          <General RootPath="%SystemDrive%\Windows\Temp\" Flags="File|Directory"/>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Temp\" Flags="File|Directory"/>
+          <General RootPath="%Temp%" Flags="File|Directory"/>
+        </Scan>
+
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Temp\" Flags="File|Directory"/>
+          <General RootPath="%SystemDrive%\Windows\Temp\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+
+    <Item Name="Windows 오류 보고" Level="3">
+      <Discription>프로그램에 문제가 발생하면, 시스템은 여기에 안정성 보고서를 남겨둡니다. 정기적으로 정리 권장.</Discription>
+      <Group>System</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Windows\WER\" Flags="File|Directory"/>
+          <General RootPath="%SystemDrive%\ProgramData\Microsoft\Windows\WER\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="드라이버 임시 디렉터리." Level="3">
+      <Discription>Intel, AMD 및 Nvidia 드라이버 압축 추출 디렉터리.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <Or>
+              <FileExist FilePath="%SystemDrive%\AMD"/>
+              <FileExist FilePath="%SystemDrive%\Intel"/>
+              <FileExist FilePath="%SystemDrive%\NVIDIA"/>
+            </Or>
+          </Applicable>
+          <General RootPath="%SystemDrive%" Flags="Directory">
+            <Query>AMD</Query>
+            <Query>Intel</Query>
+            <Query>NVIDIA</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="터미널 서비스 클라이언트 캐시" Level="3">
+      <Discription>터미널 서버 클라이언트 실행하는 동안 생성된 일부 캐시 파일.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\Terminal Server Client\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="이전 Windows 설치" Level="2">
+      <Discription>시스템의 업그레이드 또는 복원 후에 시스템 백업 (Windows.old)을 남겨둡니다. 모든 중요 데이터를 저장한 경우, 안전하게 제거할 수 있습니다.</Discription>
+      <Group>Expired files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\Windows.old"/>
+          </Applicable>
+          <General RootPath="%SystemDrive%" Flags="Directory">
+            <Query>Windows.old*</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Windows 임시 설치 파일" Level="2">
+      <Discription>시스템은 업그레이드하거나 복원할 때, 일부 임시 파일을 남겨두며, 이것이 시스템 업그레이드 또는 복원이 아닌 경우, 안전하게 제거할 수 있습니다.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\$Windows.~BT"/>
+          </Applicable>
+          <General RootPath="%SystemDrive%" Flags="Directory">
+            <Query>$Windows.~BT</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Tencent QQ 임시 파일" Level="2">
+      <Discription>QQ는 QQ를 실행할 때, 일부 임시 파일 및 로그를 남겨두며, 이것은 QQ 메시지에 영향을 주지 않음. 정기적으로 삭제 권장.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <RegExist Key="HKEY_LOCAL_MACHINE" SubKey="SOFTWARE\Tencent" Wow64Key="True"/>
+          </Applicable>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Roaming\Tencent\" Flags="Directory">
+            <Query>Logs</Query>
+            <Query>QQ</Query>
+            <Query>TXSSO</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="YY 임시 파일" Level="2">
+      <Discription>YY는 YY를 실행할 때, 일부 임시 파일 및 로그를 남겨둡니다. 정기적으로 삭제 권장.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <General RootPath="%SystemDrive%\Users\*\AppData\Roaming\duowan\yy\" Flags="File|Directory">
+            <Query>log</Query>
+            <Query>Cache</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Installer cache" Level="0">
+      <Discription>Use the cache Setup Installer technology.</Discription>
+      <Warning>May cause uninstall Office, VM applications you need to install the package.</Warning>
+      <Group>System</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\Windows\Installer\$PatchCache$" />
+            <Not>
+              <FileExist FilePath="%SystemDrive%\Program Files\Common Files\Apple" />
+            </Not>
+          </Applicable>
+          <General RootPath="%SystemDrive%\Windows\Installer\$PatchCache$\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Visual Studio installation source" Level="0">
+      <Discription>The installation source after you install Visual Studio, if you do not need to uninstall VS consider deletion.</Discription>
+      <Warning>After cleaning can only be installed upgrading cannot be uninstalled or removed by force.</Warning>
+      <Group>Application</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\ProgramData\Package Cache" />
+          </Applicable>
+          <General RootPath="%SystemDrive%\ProgramData\Package Cache\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Office installation source" Level="0">
+      <Discription>The installation source after Office is installed, if you do not need to uninstall Office can consider deleting, delete properly after installing Office updates.</Discription>
+      <Warning>After cleaning can only be installed upgrading cannot be uninstalled or removed by force, Office 2007 version (included) remove effect after installing the update.</Warning>
+      <Group>Application</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\MSOCache" />
+          </Applicable>
+          <General RootPath="%SystemDrive%\" Flags="Directory">
+            <Query>MSOCache</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Tencent related software download directory" Level="3">
+      <Discription>Tencent related software updates will leave residue.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\ProgramData\temp" />
+          </Applicable>
+          <General RootPath="%SystemDrive%\ProgramData\" Flags="Directory">
+            <Query>temp</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="XDE cache files" Level="2">
+      <Discription>일부 Windows Phone 에뮬레이터 캐시 파일, 제거할 수 있음.</Discription>
+      <Group>Cache files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\ProgramData\Microsoft\XDE" />
+          </Applicable>
+          <General RootPath="%SystemDrive%\ProgramData\Microsoft\XDE" Flags="Directory"/>
+          <General RootPath="%SystemDrive%\Users\*\AppData\Local\Microsoft\XDE" Flags="Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Boot backup file" Level="3">
+      <Discription>After you modify the startup information system creates a backup, easy to roll back. If you are sure you don't need to restore you can delete.</Discription>
+      <Group>Backup files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%SystemDrive%\Windows\pss" />
+          </Applicable>
+          <General RootPath="%SystemDrive%\Windows\" Flags="Directory">
+            <Query>pss</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="PDB Cache files" Level="2">
+      <Discription>Created when the debugger symbol cache, if you don't need these caches can be deleted.</Discription>
+      <Group>Cache files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%LOCALAPPDATA%\DBG"/>
+          </Applicable>
+          <General RootPath="%LOCALAPPDATA%\" Flags="Directory">
+            <Query>DBG</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Microsoft pinyin installed files" Level="3">
+      <Discription>Upgrade legacy Microsoft pinyin installed files.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <RegExist Key="HKEY_LOCAL_MACHINE" SubKey="SOFTWARE\Microsoft\KunlunInput"/>
+          </Applicable>
+          <General RootPath="%SystemDrive%\Users\*\AppData\LocalLow\" Flags="Directory">
+            <Query>KunlunInput</Query>
+          </General>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Baidu Web log" Level="3">
+      <Discription>Baidu's Web site log files generated at run time.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <Or>
+              <FileExist FilePath="%APPDATA%\BaiduYunKernel\Data"/>
+              <FileExist FilePath="%APPDATA%\BaiduYunGuanjia\logs"/>
+            </Or>
+          </Applicable>
+          <General RootPath="%APPDATA%\BaiduYunKernel\Data\" Flags="File|Directory"/>
+          <General RootPath="%APPDATA%\BaiduYunGuanjia\logs\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+
+    <Item Name="Fei Xing log" Level="3">
+      <Discription>Letter of log files generated at run time.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <FileExist FilePath="%APPDATA%\FetionV5"/>
+          </Applicable>
+          <General RootPath="%APPDATA%\FetionV5\" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+    <Item Name="Recycle Bin" Level="3">
+      <Discription>To store the user manually deleted files.</Discription>
+      <Group>Temporary files</Group>
+      <ScanCollection>
+        <Scan Type="General">
+          <Applicable>
+            <ImageFlags>1</ImageFlags>
+          </Applicable>
+          <General RootPath="*\$Recycle.Bin" Flags="File|Directory"/>
+        </Scan>
+      </ScanCollection>
+    </Item>
+  </CleanCollection>
+
+<StringMaps>
+	<String Target="文件(&amp;F)" Link="파일(&amp;F)"/>
+		<String Target="添加映像" Link="이미지 추가"/>
+      <String Target="释放映像" Link="이미지 적용"/>
+      <String Target="从现有路径添加" Link="기존 경로에서 추가"/>
+		<String Target="卸载映像	Delete" Link="이미지 마운트 해제	Del"/>
+		<String Target="保存映像	Ctrl+S" Link="이미지 저장	Ctrl+S"/>
+		<String Target="另存为映像" Link="이미지로 저장"/>
+		<String Target="打开映像文件...	Ctrl+O" Link="이미지 파일 열기...	Ctrl+O"/>
+    <String Target="重新载入" Link="Reload"/>
+		<String Target="格式转换" Link="형식 변환"/>
+			<String Target="ESD解密" Link="ESD 암호 해독"/>
+	
+	<String Target="恢复功能(&amp;R)" Link="복구(&amp;R)"/>		
+		<String Target="系统修复" Link="시스템 복구"/>
+    <String Target="健康扫描" Link="상태 확인"/>
+      <String Target="验证受损" Link="Scan Health"/>
+      <String Target="修复受损" Link="Restore Health"/>
+    <String Target="引导修复" Link="부팅 복구"/>
+    <String Target="系统备份" Link="시스템 백업"/>
+    <String Target="系统还原" Link="시스템 복원"/>
+		<String Target="在RE中运行Dism++" Link="RE에서 Dism++ 실행"/>
+    <String Target="仅启动RE" Link="RE만 실행"/>
+    <String Target="撤销Compact" Link="Never Compact"/>
+	
+  <String Target="设置(&amp;T)" Link="옵션(&amp;T)"/>
+		<String Target="插件管理" Link="플러그인 관리"/>
+    <String Target="新手模式*" Link="초보자 모드*"/>
+    <String Target="详细设置" Link="More settings"/>
+    <String Target="操作完成后" Link="After operation completed"/>
+      <String Target="未定义" Link="None"/>
+      <String Target="关机" Link="Shutdown"/>
+      <String Target="重启" Link="Restart"/>
+ 
+  <String Target="实用工具" Link="Utilities"/>
+    <String Target="无视权限文件浏览" Link="File browser(ignoring permissions)"/>
+	
+	<String Target="帮助&amp;&amp;支持(&amp;H)" Link="도움말 및 지원(&amp;H)"/>	
+		<String Target="官方网站" Link="공식 웹사이트"/>
+		<String Target="BUG反馈" Link="버그 보고"/>
+		<String Target="改进意见" Link="제안"/>
+		<String Target="帮助文档" Link="도움말"/>
+		
+	<String Target="从 WIM 文件挂载或者释放一个映像" Link="WIM 파일에서 탑재 또는 이미지 확장"/>	
+	<String Target="卸载安装的 WIM 映像" Link="탑재된 WIM 이미지 마운트 해제"/>
+	<String Target="保存对安装的 WIM 映像的更改" Link="탑재된 WIM 이미지에 변경 내용 저장"/>
+	<String Target="保存更改到另一个WIM文件中" Link="다른 WIM 이미지에 변경 내용 저장"/>
+	<String Target="打开并编辑现有的WIM文件" Link="기존 WIM 파일 열기 및 편집"/>
+	<String Target="ESD、WIM格式互转" Link="ESD, WIM 변환"/>
+	<String Target="将ESD文件（支持加密）转换为ISO" Link="ESD를 ISO로 변환 (암화된 ESD 지원 포함)"/>
+	<String Target="解密微软在线提供ESD文件" Link="Microsoft 공식 ESD 파일 암호 해제"/>
+	<String Target="重启进入RE并为我启动Dism++" Link="Windows RE로 다시 시작하고 Dism++ 실행"/>
+	<String Target="启动RE环境" Link="Windows RE 시작"/>
+	<String Target="添加删除Dism插件" Link="Dism++ 플러그인 추가/삭제"/>
+	<String Target="在官方网站可以获取帮助文档，并提出你的宝贵意见" Link="공식 웹사이트에서 도움말 문서 가져오기 및 의견 제안"/>
+  <String Target="为映像重新添加引导。" Link="부팅 이미지를 다시 추가합니다."/>
+	<String Target="只添加指定文件夹路径到映像列表。" Link="이미지 목록에만 지정한 경로를 추가합니다."/>
+  <String Target="重新扫描系统" Link="Rescan all system"/>
+  <String Target="取消所有Compact压缩的文件（存在兼容性问题时使用）" Link="Cancel all Compact compress files (use when there is a compatibility issue)"/>
+  <String Target="将现有的系统备份为WIM或者ESD（如果文件存在则自动增量到原有文件）。" Link="Back up the system save as WIM or ESD (if the file exists the AutoIncrement to the original file)."/>
+  <String Target="扫描映像是否存在组件存储损坏" Link="Scan Image"/>
+  <String Target="修复映像中存在的组件存储损坏" Link="Repair Image"/>
+  <String Target="从现有映像文件（WIM、ESD）恢复系统" Link="Restore OS from an exist image file(WIM,ESD)"/>
+  <!--右键菜单-->
+  <String Target="Xpress4k（推荐）" Link="Xpress4k(recommend)"/>
+  <String Target="LZX（体积最小）" Link="LZX(smallest)"/>
+  
+	<!-- 主框架  -->
+	<String Target="正在删除" Link="삭제"/>
+	<String Target="错误提示" Link="오류"/>
+	<String Target="正在保存" Link="저장"/>
+	<String Target="保存映像" Link="이미지 저장"/>
+	<String Target="正在准备" Link="준비"/>
+	
+	<String Target="你需要增量保存还是直接保存？" Link="직접 저장 또는 증분 저장이 필요하십니까?"/>
+	<String Target="温馨提示：保存映像后空间不会减少，如果需要减少空间请重新编译目标文件。" Link="주의: 공간은 이미지를 저장한 후에 줄어들지 않으므로, 대상 파일을 위한 공간을 줄이려면 대상 파일을 다시 컴파일하십시오."/>
+	<String Target="增量保存（推荐）&#x000A;创建一个新的映像，不会覆盖原有数据。" Link="증분 저장 (권장)&#x000A;새 이미지 만들기, 원래 데이터는 덮어쓰지 않습니다."/>
+	
+	<String Target="直接保存&#x000A;将覆盖当前映像的数据。" Link="직접 저장&#x000A;현재 이미지 데이터를 덮어씁니다."/>
+	
+	
+	<String Target="此位置的系统已经存在当前系统已经存在，需要使用系统还原么？" Link="System of this position already exists, You need to use system restore?"/>
+  <String Target="此位置的系统已经存在当前系统已经存在。" Link="이 위치의 시스템은 이미 존재하므로."/>
+  
+	<String Target="温馨提示" Link="알림"/>
+	
+	<String Target="正在挂载" Link="탑재"/>
+	
+	<String Target="正在释放" Link="확장"/>
+	<String Target="正在还原" Link="복원"/>
+	<String Target="%s 位置的映像正在进行其他事情，请稍后再试。" Link="%s 위치의 이미지가 다른 것에서 작동중입니다. 나중에 다시 시도하십시오."/>
+	
+	<String Target="正在配置WinRE" Link="Windows RE 구성"/>
+	<String Target="正在进行第 %d 阶段（共 %d ）" Link="%d / %d 단계 처리 중, 잠시 기다려 주십시오..."/>
+	<String Target="格式转换向导" Link="형식 변환 마법사"/>
+	<String Target="此功能可以将微软发布的ESD转换为ISO，还支持加密的ESD哦。" Link="이 기능은 ESD를 ISO로 변환하며, 또한 암호화된 ESD를 지원합니다."/>
+	<String Target="ESD映像文件" Link="ESD 파일"/>
+	<String Target="ISO映像文件" Link="ISO 파일"/>
+  <String Target="ISO映像文件-高压版" Link="ISO File-Ultra"/>
+	<String Target="WIM映像文件" Link="WIM 파일"/>
+  <String Target="WIM拆分映像" Link="SWM File"/>
+  
+	<String Target="正在转换格式" Link="변환 중"/>
+	<String Target="正在从%s,转换到%s" Link="%s을(를) %s(으)로 변환 중"/>
+	
+	<String Target="映像文件" Link="이미지 파일"/>
+	<String Target="无法获取RE信息，错误代码：%d" Link="Windows RE 정보를 가져올 수 없음, 오류 코드: %d"/>
+	<String Target="重启后，系统自动将启动RE，你确定要重启么？" Link="시스템을 Windows RE로 다시 시작합니다. 지금 다시 시작하시겠습니까?"/>
+	<String Target="此功能可以将ESD、WIM格式相互转换。" Link="이 기능은 ESD -> WIM 또는 WIM -> ESD로 변환합니다."/>
+	<String Target="Dism++将会在RE中启动，你现在需要重启电脑么？" Link="Dism++을 Windows RE에서 다시 시작합니다. 지금 다시 시작하시겠습니까?"/>
+	<String Target="%s 位置的映像正繁忙，请稍后再试。" Link="%s 이미지가 사용 중입니다. 나중에 다시 시도하십시오."/>
+	<String Target="正在检查" Link="검사"/>
+	<String Target="正在修复" Link="수정"/>
+	
+	<String Target="正在清理临时数据" Link="임시 데이터 정리"/>
+	<String Target="Sorry,无法配置环境，请在PE中使用此功能。" Link="죄송합니다. 환경을 구성할 수 없습니다. 이 기능은 Windows PE에서 사용하십시오."/>
+	<String Target="Sorry,无法清理临时文件！" Link="죄송합니다. 임시 데이터를 정리할 수 없습니다."/>
+	<String Target="当前硬盘可用空间不足，你需要重启并进入RE进行恢复么？" Link="현재 하드 디스크에 충분한 여유 공간이 없습니다. Windows RE로 복원하시겟습니까?"/>
+	<String Target="在还原前你需要格式化分区：%s ?" Link="복원하기 전에 파티션 %s를 포맷하시겟습니까?"/>
+	
+	<String Target="温馨提示：格式化分区该分区所有数据将丢失！" Link="경고! 포맷하면 데이터가 손실될 것입니다."/>
+	<String Target="格式化分区（推荐）&#x000A;有助于系统分区整洁，消除文件残留。" Link="포맷 (권장)&#x000A;잔여 문서 제거, 시스템 파티션 정리에 도움이됩니다."/>
+
+	<String Target="%s 映像已经还原成功。" Link="%s 이미지 복원에 성공했습니다."/>
+	<String Target="你需要重启并立即生效么？" Link="즉시 효과 적용을 위해 다시 시작하시겠습니까?"/>
+	
+	<String Target="准备就绪" Link="준비"/>
+	<String Target="不支持" Link="지원되지 않음"/>
+	<String Target="不存在" Link="존재하지 않음"/>
+	<String Target="已经失效" Link="이미 만료됨"/>
+	<String Target="请稍等" Link="잠시 기다려 주십시오"/>
+	
+	
+	<String Target="本地硬盘" Link="로컬 디스크"/>
+	<String Target="挂载映像" Link="이미지 탑재"/>
+	
+	<String Target="不压缩" Link="압축 안 함"/>
+	<String Target="WIMBoot压缩" Link="WIMBoot"/>
+	<String Target="快速压缩" Link="빠른 압축"/>
+	<String Target="最大压缩" Link="최대 압축"/>
+	<String Target="极限压缩" Link="제한 압축"/>
+	
+	<String Target="映像名称" Link="이미지 이름"/>
+	<String Target="映像说明" Link="이미지 설명"/>
+	<String Target="显示名称" Link="이름 표시"/>
+	<String Target="显示说明" Link="설명 표시"/>
+	<String Target="映像标志" Link="이미지 서명"/>
+	
+	<String Target="系统体系" Link="아키텍터"/>
+	<String Target="创建日期" Link="만든 날짜"/>
+	<String Target="展开空间" Link="확장된 공간"/>
+	<String Target="系统版本" Link="버전"/>
+	
+	<String Target="不压缩映像" Link="압축 안 함"/>
+	<String Target="WIMBoot压缩映像" Link="WIMBoot"/>
+	<String Target="快速压缩映像" Link="빠른 압축"/>
+	<String Target="最大压缩映像" Link="최대 압축"/>
+	<String Target="极限压缩映像" Link="제한 압축"/>
+	<String Target="全选" Link="모두 선택"/>
+	<String Target="反选" Link="선택 반전"/>
+	<String Target="自定义规则" Link="사용자 지정"/>
+	<String Target="扫描" Link="검사"/>
+	<String Target="清理" Link="정리"/>
+	
+	
+	<String Target="存在风险" Link="위험"/>
+	<String Target="建议保留" Link="유지 제안"/>
+	<String Target="可以删除" Link="삭제 가능"/>
+	<String Target="建议删除" Link="삭제 제안"/>
+	<String Target="自定义" Link="사용자 지정"/>
+
+  <String Target="正在载入清理规则" Link="Are clear rules that are loaded"/>
+  <String Target="正在撤销Compact" Link="Undo Compact"/>
+  <String Target="名称" Link="Name"/>
+  <String Target="保存" Link="Save"/>
+  <String Target="取消" Link="Cancel"/>
+  <String Target="详细信息" Link="Details"/>
+  <String Target="其他" Link="Others"/>
+  <String Target="正在初始化" Link="Initializing"/>
+  <String Target="类别" Link="Category"/>
+  <String Target="大小" Link="Size"/>
+  <String Target="正在关闭会话" Link="Closing Session"/>
+  <String Target="值" Link="Value"/>
+  <String Target="控制面板" Link="Control Panel"/>
+  <String Target="删除" Link="Remove"/>
+	<!--添加映像-->
+  <String Target="请输入映像存放目录" Link="Please enter the image storage directory"/>
+	<String Target="请在此输入映像路径" Link="여기에 이미지 경로 입력"/>
+	<String Target="请输入所在路径" Link="이미지 경로 입력"/>
+	<String Target="镜像文件" Link="이미지 파일"/>
+	<String Target="即将完成操作，请选择其中一个映像。" Link="거의 완료, 하나의 이미지를 선택하십시오."/>
+	<String Target="只读模式" Link="읽기 전용"/>
+	<String Target="快速挂载" Link="빠른 탑재"/>
+	<String Target="（可启动）" Link="(부팅 가능)"/>
+	<String Target="添加映像向导" Link="이미지 추가 마법사"/>
+	<String Target="此功能可以将其他文件（WIM、ESD、VHD、VHDX）或者文件夹的包含的映像添加至映像列表。"
+	Link="이 기능을 사용하면 이미지의 목록에 다른 파일 (WIM, ESD, VHD, VHDX) 또는 이미지를 포함하는 폴더를 추가할 수 있습니다."/>
+	
+	<String Target="挂载映像文件（WIM、VHD、VHDX）中的映像到指定目录" Link="지정한 디렉터리에 이미지 파일 (WIM, VHD, VHDX) 탑재"/>
+	<String Target="释放映像文件（WIM、ESD）中的映像到指定目录" Link="지정한 디렉터리에 이미지 파일 (WIM, ESD) 확장"/>
+	<String Target="谢谢，我只需要添加指定文件夹路径到映像列表" Link="감사합니다. 이미지의 목록에 지정된 경로를 추가해야 합니다"/>
+	<String Target="浏览" Link="찾아보기"/>
+	<String Target="目标映像：" Link="대상 이미지:"/>
+  <String Target="请选择其中一个映像" Link="하나의 이미지를 선택하십시오"/>
+  <String Target="请在此输入映像文件路径,比如 D:\Backup.wim" Link="Please enter the path to the image file, such as D:\Backup.wim"/>
+  <String Target="添加引导" Link="Add Boot"/>
+  <String Target="格式化" Link="Format"/>
+	<!--另存为映像 -->
+	<String Target="你可以在此处修改映像文件信息（支持双击修改）" Link="여기에서 이미지 파일 정보를 편집할 수 있습니다 (편집하려면 두 번 클릭)"/>
+	<String Target="在此处设置捕获映像的文件豁免列表加快捕获速度，每个条目用回车分割。" Link="여기에서 캡처 이미지에 대한 제외 목록 설정, Enter 키로 각 항목 분할."/>
+	<String Target="如何配置豁免列表" Link="제외 목록 구성 방법"/>
+	<String Target="另存为映像向导" Link="이미지 마법사로 저장"/>
+	
+	<!-- 系统修复-->
+	<String Target="映像十分健康不需要修复。" Link="이미지의 상태가 양호하여 복구가 필요하지 않습니다."/>
+	<String Target="映像已经受损，但是可以修复。" Link="이미지가 손상되었으며, 복구할 수 있습니다."/>
+	<String Target="映像已经受到致命问题，已经无法修复，请修复安装。" Link="이미지에 치명적인 문제가 있습니다. 복구할 수 없습니다. 재설치하여 복구하십시오."/>
+	<String Target="系统修复向导" Link="시스템 복구 마법사"/>
+  <String Target="恭喜映像已经修复成功！" Link="Image has been repaired successfully!"/>
+  <String Target="致命错误，会话无应答。" Link="Fatal error, the session is no answer."/>
+  
+	<!--本地源-->
+	<String Target="本地源可以大幅度加速功能打开以及系统修复。" Link="로컬 소스 가속 기능 활성화 및 시스템 복구."/>
+	<String Target="什么是本地源" Link="로컬 소스란?"/>
+	<String Target="本地源" Link="로컬 소스"/>
+	
+	<!-- 格式转换-->
+	<String Target="请在此输入源文件路径" Link="여기에 소스 파일 경로 입력"/>
+	<String Target="请在此输入目标文件路径" Link="여기에 대상 파일 경로 입력"/>
+	
+	<!--ESD解密-->
+	<String Target="温馨提示：此功能将直接解密目标文件，原版控请自行备份。" Link="주의: 이 기능은 대상 파일의 암호를 직접 해독합니다. 원본 파일을 백업하십시오."/>
+	<String Target="解密口令已自动匹配" Link="암호해독 비밀번호 자동 일치"/>
+	<String Target="请在输入框输入解密口令" Link="입력 상자에 암호해독 비밀번호 입력"/>
+	<String Target="请正确输入Key，错误信息：%s" Link="바른 키를 입력하십시오, 오류 메시지: %s"/>
+	<String Target="成功解密：%s" Link="암호해독 성공: %s"/>
+	<String Target="ESD解密向导" Link="ESD 암호해독 마법사"/>
+  <String Target="该文件似乎不是一个有效的WIM、ESD文件。" Link="This does not appear to be a valid WIM, ESD files."/>
+  <String Target="该文件没有被加密，无需解密。" Link="The file is not encrypted, do not need to decrypt."/>
+  
+	<!--映像编辑-->
+	<String Target="温馨提示：双击可修改映像信息对应的值。" Link="알림: 이미지 정보 해당 값을 편집하려면 두 번 클릭합니다."/>
+	<String Target="可启动" Link="부팅 가능"/>
+	<String Target="编辑映像向导" Link="이미지 내보내기 마법사"/>
+	<String Target="导出" Link="내보내기"/>
+	<String Target="保存更改" Link="변경 저장"/>
+	<String Target="导出映像" Link="이미지 내보내기"/>
+	<String Target="正在导出第%d个映像（共 %d ）" Link="%d / %d 이미지 내보내는 중, 잠시 기다려 주십시오..."/>
+  <String Target="正在添加映像，请耐心等待……" Link="Are adding an image, please wait ......"/>
+  <String Target="操作成功！" Link="작업 성공!"/>
+  <String Target="删除映像" Link="Remove Image"/>
+  <String Target="编辑映像" Link="Edit Image"/>
+
+  <!--引导修复-->
+  <String Target="此映像并不在分区根目录，所以无法执行修复操作。" Link="This image is not at the root partition, it is impossible to perform the repair operation."/>
+  <String Target="当前映像正在运行，所以无法执行修复操作。" Link="Image is currently running, it is impossible to perform the repair operation."/>
+  <String Target="正在修复引导" Link="Fixing Boot"/>
+  <String Target="恭喜已经成功修复引导。" Link="Congratulations have successfully repair Boot."/>
+  <String Target="启动修复失败，错误代码：%d" Link="Startup Repair failed, error code:%d"/>
+  
+  <!--引导修复-启动分区选择-->
+  <String Target="位置" Link="Location"/>
+  <String Target="基本" Link="Basic"/>
+  <String Target="更多" Link="More"/>
+  <String Target="启动分区：" Link="Boot Partition:"/>
+  <String Target="你必须点击更多进行手动指定！" Link="You have to click more to specify it manually!"/>
+  <String Target="硬盘%d 分区%d（%s）" Link="Disk%d Partition%d(%s)"/>
+  <String Target="硬盘%d 分区%d" Link="Disk%d Partition%d"/>
+  <String Target="即将把启动信息写入启动分区- %s" Link="Is written to the boot partition boot information-%s"/>
+  <String Target="没有异议或者看不懂的请点击 %s 。" Link="Please click the %s that no objection or don't know."/>
+  <String Target="无法获取该分区的详细信息。" Link="Can't get detailed information about the partition."/>
+  <String Target="目标系统需要以UEFI方式启动，请选择一个GPT分区。" Link="Target system needs to UEFI boot mode, select a GPT partition."/>
+  <String Target="UEFI启动需要FAT16/FAT32分区。" Link="Target system needs to UEFI boot mode, select a GPT partition."/>
+  <String Target="目标系统需要以BIOS方式启动，请选择一个MBR分区。" Link="Target system needs to boot the BIOS, please select an MBR partition."/>
+  <String Target="BIOS启动分区必须是个主分区。" Link="BIOS boot partition must be a primary partition."/>
+  
+  <!--详细设置-->
+  <String Target="体验" Link="Experience"/>
+  <String Target="设置" Link="Options"/>
+  <String Target="确定" Link="OK"/>
+  <String Target="加速启用Windows功能速度" Link="Accelerate the rate of Windows feature is enabled"/>
+  <String Target="整合右键菜单" Link="Integrated context menu"/>
+  <String Target="排除列表" Link="Exclusion list"/>
+  <String Target="减少映像文件（WIM、ESD）保存时间" Link="Reduce image file (WIM, and ESD) saves time"/>
+  <String Target="CompactOS压缩率" Link="CompactOS compression rate"/>
+  <String Target="压缩率越小性能越好（仅影响选中系统）" Link="Compression ratio, the smaller the better the performance (affects the selected system only)"/>
+  <String Target="大约压缩33%（更佳性能）" Link="Compression 33%(better performance)"/>
+  <String Target="大约压缩36%" Link="Compression 36%"/>
+  <String Target="大约压缩38%" Link="Compression 38%"/>
+  <String Target="大约压缩44%（更小体积）" Link="Compression 44%(smaller size)"/>
+  
+	<!--Tab-->
+	
+	<String Target="Dism++正在执行其他任务，你可以稍后打开会话。" Link="Dism++은 다른 작업 중입니다. 나중에 세션을 열 수 있습니다."/>
+	<String Target="为了优化性能，你需要手动打开会话。" Link="성능을 최적화하기 위해, 수동으로 세션을 열어야 합니다."/>
+	<String Target="打开会话" Link="세션 열기"/>
+	<String Target="正在打开会话" Link="세션을 여는 중"/>
+	<String Target="正在打开会话，请等待……" Link="세션 로딩, 잠시 기다려 주십시오..."/>
+	<String Target="会话打开失败，错误代码0x%.8X，你可以重新尝试。" Link="세션을 열 수 없음, 오류 코드: 0x%.8X, 나중에 다시 시도하십시오."/>
+  <String Target="打开此会话需要 Dism++x86.exe 请下载完整的Dism++在继续。" Link="Open this session requires Dism ++ x86.exe please download the complete Dism ++ continues."/>
+  <String Target="Dism++无法识别该系统的CPU体系，你可以通过邮箱反馈此问题。" Link="Dism++ does not recognize the CPU architecture of the system, you can feedback this issue through the mail."/>
+  <String Target="Dism++未充分适配该系统，可能是非主流系统或者是未知新系统。更新清理、驱动管理等功能可能无法在正常使用，甚至造成系统受损！你确定要继续么？"
+          Link="Dism++ is not adapted to the system, can be non-mainstream system or a new system is unknown. Update cleaning, driver management and other may not in normal use, and even cause damage to the system! Are you sure you want to continue?"/>
+  <String Target="Dism++意外崩溃，你可以反馈此问题或者再来一次。" Link="Dism ++ crashes unexpectedly, or you can feedback this issue again."/>
+  
+  <String Target="常用工具" Link="Utilities"/>
+	  <String Target="空间回收" Link="정리"/>
+    <String Target="小工具" Link="Gadgets"/>
+    <String Target="Appx管理" Link="Appx Management"/>
+  
+	<String Target="驱动管理" Link="드라이버 관리"/>
+	<String Target="Windows服务" Link="서비스 관리"/>
+	<String Target="Windows功能" Link="기능 관리"/>
+	<String Target="添加删除更新" Link="업데이트 추가/제거"/>
+	<String Target="可选功能" Link="Capability"/>
+	
+	<!--空间回收-->
+	<String Target="推荐操作" Link="권장"/>
+	<String Target="需要扫描" Link="검사 필요"/>
+	<String Target="正在扫描：" Link="검사 중: "/>
+	<String Target="出错" Link="오류"/>
+	<String Target="正在清理：" Link="정리 중: "/>
+	<String Target="本次共释放了%s 的空间。" Link="%s 공간 확보."/>
+
+  <String Target="IT交流群：200783396（敲门砖：临安初雨 一夜落红）&#x000D;&#x000A;欢迎提交你的意见到网站（www.chuyu.me）或者邮箱（mingkuang@live.com）"
+        Link="웹사이트 (www.chuyu.me) 또는 이메일 (mingkuang@live.com)로 의견을 보내주십시오&#x000D;&#x000A;번역가에 감사: Wooram"/>
+
+  <String Target="该规则来自CCleaner解析引擎，因此不能提供说明。" Link="The rules from the CCleaner parsing engine, and therefore can't provide description."/>
+  <String Target="默认" Link="Default"/>
+  <String Target="关于 %s 的详细处理信息" Link="Detailed information about the %s"/>
+  <String Target="以下文件即将被处理，你可以点击 清理 处理他们" Link="The following files will be processed, and you can click Clean Up to delete them"/>
+  <String Target="关于 %s 的警告：&#x000D;&#x000A;&#x000D;&#x000A;%s&#x000D;&#x000A;&#x000D;&#x000A;您确定要清理么？" Link="About %s warning:&#x000D;&#x000A;&#x000D;&#x000A;%s&#x000D;&#x000A;&#x000D;&#x000A;Are you sure you want to continue?"/>
+
+  <!--驱动管理-->
+	<String Target="温馨提示：删除关键驱动可能导致计算机无法启动" Link="알림: 중요 드라이버를 삭제하면 컴퓨터를 시작하지 못할 수 있습니다"/>
+	<String Target="关键驱动：" Link="중요 드라이버: "/>
+	<String Target="类别标识：" Link="클래스: "/>
+	<String Target="驱动版本：" Link="버전: "/>
+	<String Target="发布日期：" Link="출시 날짜: "/>
+	<String Target="文件路径：" Link="경로: "/>
+	<String Target="驱动大小：" Link="크기: "/>
+  <String Target="OEM名称：" Link="OEM Name:"/>
+	
+	<String Target="导出驱动" Link="드라이버 내보내기"/>
+	<String Target="删除驱动" Link="드라이버 삭제"/>
+	<String Target="添加驱动" Link="드라이버 추가"/>
+	
+	<String Target="是" Link="예"/>
+	<String Target="否" Link="아니요"/>
+	
+	<String Target="正在加载驱动" Link="드라이버 로드"/>
+	<String Target="请选择驱动保存路径" Link="드라이버 위치를 선택하십시오."/>
+	<String Target="正在导出驱动" Link="드라이버 내보내기"/>
+	
+	<String Target="%Y年%m月%d日" Link="%년-%월-%일"/>
+	<String Target="正在删除驱动" Link="드라이버 삭제"/>
+	<String Target="一个或者多个驱动删除失败，错误代码：0x%.8X" Link="하나 이상의 드라이버 삭제 실패, 오류 코드: 0x%.8X"/>
+	
+	<String Target="请选择驱动所在文件夹" Link="드라이버 폴더를 선택하십시오"/>
+	<String Target="正在安装驱动" Link="드라이버 설치"/>
+	<String Target="一个或者多个驱动添加失败，错误代码：0x%.8X" Link="하나 이상의 드라이버 추가 실패, 오류 코드: 0x%.8X"/>
+  <String Target="显示内置驱动" Link="Display in-box driver"/>
+	
+	<!--服务-->
+	<String Target="禁止" Link="사용 안 함"/>
+	<String Target="手动" Link="수동"/>
+	<String Target="自动" Link="자동"/>
+	<String Target="自动延迟" Link="자동 (지연)"/>
+	
+	<String Target="描述" Link="설명"/>
+	<String Target="启动类型" Link="시작 유형"/>
+	
+	<String Target="正在加载服务" Link="서비스 로드"/>
+	
+	<!--功能-->
+	<String Target="指定本地源" Link="로컬 소스 지정"/>
+	<String Target="应用" Link="적용"/>
+	<String Target="正在加载Windows功能" Link="Windows 기능 로드"/>
+	<String Target="正在应用功能" Link="기능 적용 중"/>
+	<String Target="…&gt; _ &lt;… 一个或者多个功能应用失败，%s" Link="…&gt; _ &lt;… 하나 이상의 기능 적용에 실패, %s"/>
+	
+	
+	<!--添加删除更新-->
+	<String Target="未知" Link="알 수 없음"/>
+	<String Target="不适用" Link="적용되지 않음"/>
+	<String Target="卸载挂起" Link="제거 보류"/>
+	<String Target="已暂存" Link="단계"/>
+	<String Target="正在暂存" Link="준비"/>
+	<String Target="已安装" Link="설치"/>
+	<String Target="安装挂起" Link="설치 보류"/>
+	<String Target="被取代" Link="대체"/>
+	<String Target="部分安装" Link="부분 설치"/>
+	<String Target="已删除" Link="삭제"/>
+	<String Target="已固化" Link="고정"/>
+	
+	<String Target="更新描述" Link="설명"/>
+	<String Target="产品名称" Link="제품 이름"/>
+	<String Target="产品版本" Link="제품 버전"/>
+	<String Target="发行类型" Link="출시 유형"/>
+	<String Target="状态" Link="상태"/>
+	<String Target="正在获取更新信息" Link="업데이트 정보 가져오기"/>
+	<String Target="正在删除更新" Link="업데이트 삭제"/>
+	<String Target="正在删除第 %d 个更新（共 %d ）" Link="%d / %d 업데이트 삭제 중"/>
+	<String Target="补丁包" Link="업데이트 팩"/>
+	<String Target="正在安装更新" Link="업데이트 설치"/>
+	<String Target="正在安装第 %d 个更新（共 %d ）" Link="%d / %d 업데이트 설치"/>
+	<String Target="刷新" Link="새로 고침"/>
+	<String Target="添加" Link="추가"/>
+  <String Target="语言" Link="Language"/>
+  
+	<!--可选功能-->
+  <String Target="正在删除可选功能" Link="삭제 가능"/>
+	<String Target="正在删除第 %d 个可选功能（共 %d ）" Link="%d / %d 삭제 가능"/>
+	<String Target="正在加载可选功能" Link="로드 가능"/>
+
+  <!--Appx管理-->
+  <String Target="疑似损坏" Link="Maybe damage"/>
+  <String Target="正在删除应用" Link="Removing application"/>
+  <String Target="删除Windows Store可能导致你未来无法下载或更新Appx，你确定要继续么？" Link="Delete the Windows Store may result in your application cannot be downloaded or updated Appx, are you sure you want to continue?"/>
+  <String Target="%s 等待超时，请尝试使用空间回收 - 过期Appx清理。" Link="%s timeout, try using Clean up - to clean up Outdated Appx application."/>
+  <String Target="无法初始化Appx管理接口。" Link="Can't initialize Appx management interface."/>
+  <String Target="%s 无法获取Appx关联的账号信息，错误代码：0x%.8X" Link="%s not get Appx account information associated with error code: 0x%.8X"/>
+  <String Target="%s 无法获取账号SID，错误代码：0x%.8X" Link="%s Unable to get the account SID, error code: 0x%.8X"/>
+  <String Target="%s 所关联的用户（%s）无法删除，错误代码：0x%.8X" Link="%s associated with the user (%s) can not be deleted, error code: 0x%.8X"/>
+  <String Target="%s 未关联任何用户。" Link="%s is not associated with any user."/>
+  
+  <!--Windows Update-->
+  <String Target="安装" Link="Install"/>
+  <String Target="正在检查数据库" Link="Checking for database"/>
+  <String Target="正在下载数据库" Link="Downloading Database"/>
+  <String Target="正在扫描更新" Link="Scanning Update"/>
+  <String Target="等待安装" Link="Wait for install"/>
+  <String Target="等待下载" Link="Need download"/>
+  <String Target="下载失败" Link="download failed"/>
+  <String Target="安装失败" Link="Failed"/>
+  <String Target="部分成功" Link="Partially successful"/>
+  <String Target="安装成功" Link="Successful"/>
+  <String Target="一个或者多个更新安装失败，错误代码：0x%.8X" Link="One or more update installation failed with error code: 0x%.8X."/>
+  <String Target="正在下载" Link="Downloading"/>
+  <String Target="正在安装" Link="Installing"/>
+  
+  
+  <!--首次启动模式咨询-->
+  <String Target="模式选择" Link="Mode Selection"/>
+  <String Target="你需要使用新手模式还是专家模式？" Link="You need to use novice mode or expert mode?"/>
+  <String Target="温馨提示：可以在菜单中点击设置，随时取消新手模式。" Link="Tips: You can click on Settings in the menu at any time to cancel the novice mode."/>
+  <String Target="新手模式（推荐）&#x000A;仅显示垃圾清理以及实用小工具。" Link="Novice mode(Recommend)&#x000A;Show only cleanup tool and gadgets."/>
+  <String Target="专家模式&#x000A;支持驱动管理，服务管理等……天朝专家慎用。" Link="Expert mode&#x000A;Support driver,service management...Novices do not choose."/>
+  
+  <!--Dism++更新程序-->
+  <String Target="发现新版本，需要更新 %d 个文件，约%s。&#x000D;&#x000A;&#x000D;&#x000A;更新日志：&#x000D;&#x000A;&#x000D;&#x000A;%s&#x000D;&#x000A;确定要升级吗？"
+          Link="Discover the new version, we need to update %d files, approximately %s.&#x000D;&#x000A;&#x000D;&#x000A;Update log:&#x000D;&#x000A;&#x000D;&#x000A;%s&#x000D;&#x000A;&#x000D;&#x000A;You sure you want to upgrade?"/>
+  <String Target="Dism更新程序" Link="Dism Update"/>
+  <String Target="准备启动下载模块……&#x000D;&#x000A;" Link="Start download the module ......&#x000D;&#x000A;"/>
+  <String Target="正在下载%s - %d/%d&#x000D;&#x000A;" Link="downloading %s - %d/%d&#x000D;&#x000A;"/>
+  <String Target="更新文件过程中遇到错误，Orz……" Link="Errors encountered during the update file, Orz......"/>
+  
+  <!--命令行-->
+  <String Target="退出" Link="Exit"/>
+  <String Target="%s 解压失败，错误代码：%d" Link="%s decompression failed with error code:%d"/>
+  <String Target="%s 解压成功" Link="%s decompression success"/>
+  <String Target="%s 压缩失败，错误代码：%d" Link="%s compression failed with error code:%d"/>
+  <String Target="%s 跳过" Link="%s skipped"/>
+  <String Target="%s 压缩成功" Link="%s compression success"/>
+  <String Target="Dism++初始化成功，开始执行命令：%s" Link="Dism ++ successful initialization, executes the command:%s"/>
+  <String Target="无法识别参数：%s" Link="Unrecognized parameters:%s"/>
+  <String Target="至少输入一个路径" Link="Enter at least one path"/>
+  <String Target="%s 路径无效" Link="%s Invalid path"/>
+  <String Target="未正确识别到命令，以下是程序支持的所有命令：" Link="Not identified correctly to a command, and is supported by all of the following commands:"/>
+  <String Target="将一个文件夹或者文件进行Compact压缩：&#x000D;&#x000A;/C  { /exe [ xpress4k（默认、更佳性能） | xpress8k | xpress16k | lzx（更小体积） ] } Path"
+            Link="Compact compress a folder or file:&#x000D;&#x000A;/C  { /exe [ xpress4k(default,Faster) | xpress8k | xpress16k | lzx(Smaller) ] } Path"/>
+  <String Target="将一个文件夹或者文件进行Compact解压缩&#x000D;&#x000A;/U Path"
+            Link="Decompress Compact a folder or file&#x000D;&#x000A;/U Path"/>
+  <String Target="将esd文件转换为iso映像&#x000D;&#x000A;/ESD2ISO ESDFilePath" Link="Converts the ESD files to ISO image&#x000D;&#x000A;/ESD2ISO ESDFilePath"/>
+  <String Target="将esd文件转换为wim文件&#x000D;&#x000A;/ESD2WIM ESDFilePath" Link="Converts the ESD files to WIM files&#x000D;&#x000A;/ESD2WIM ESDFilePath"/>
+  <String Target="将wim文件转换为esd文件&#x000D;&#x000A;/WIM2ESD WIMFilePath" Link="Converts the WIM files to ESD files&#x000D;&#x000A;/WIM2ESD WIMFilePath"/>
+  <String Target="解密微软发布的esd文件&#x000D;&#x000A;/DecryptESD ESDFilePath" Link="Decrypt Microsoft released ESD files&#x000D;&#x000A;/DecryptESD ESDFilePath"/>
+  
+  <!--崩溃处理-->
+  <String Target="雅蠛蝶" Link="OMG"/>
+  <String Target="(ˉ▽ˉ；)...程序运行时不小心崩溃了，您可以通过邮箱（mingkuang@live.com）报告此问题。" Link="(ˉ▽ˉ；)...Program has crashed, you can report the problem by mail (mingkuang@live.com)."/>
+  
+  <!--系统还原-->
+  <String Target="当前模式不支持引导修复以及格式化分区，你需要重启并进入RE进行恢复么？" Link="Current mode does not support boot repair, and format partition, you need to restart and recovery into the RE?"/>
+  <String Target="正在格式化" Link="Formating"/>
+  <String Target="格式化分区 %s 失败，错误代码：%d。" Link="Format the partition%s failed, error code:%d."/>
+  <String Target="正在刷新" Link="Refreshing"/>
+
+  <!--重新载入-->
+  <String Target="当前其他任务正在进行，请稍等……" Link="Other tasks currently in progress, please wait ......"/>
+
+  <!--文件拆分设置-->
+  <String Target="文件拆分" Link="File Split"/>
+  <String Target="分卷大小（MB）" Link="Volume Size(MB)"/>
+</StringMaps>
+<MessageTable>
+  <Message hr="0x800F0806">One or more updates are pending, please restart and then continue.</Message>
+</MessageTable>
+</Data>

@@ -1,0 +1,392 @@
+v0.01
+
+ADD: Initial Alpha
+
+v0.02
+
+ADD: Use dummy BIOS for ISA and Pubkey mods
+ADD: Ability to correct all checksums
+ADD: Various bugfixes from SLICTool
+
+FIX: GUI bugs
+FIX: MSB/LSB checksum was not correctly being detected
+
+v0.03
+
+ADD: Option to use CBROM32
+
+FIX: Problem when no manufacturer ID'd
+
+v0.04
+
+ADD: SSV3 method
+
+v0.05
+
+ADD: SLP insertion for SSV3
+
+FIX: Use FF for module checksum if used in original BIOS
+FIX: Use offset 10000h in main module for padding
+FIX: Not alter existing dummy SLIC
+
+v0.06
+
+ADD: Dynamic SSV3 method
+ADD: Allow insertion of ISA/Pubkey before UTS64K.BIN module
+
+FIX: Deal with different ACPI table formats
+FIX: Original BIOS could sometimes be deleted with SSV3
+FIX: Pubkey/marker now does not use CBROM
+FIX: Sometimes module checksum was not correctly forced to be FF
+
+v0.07
+
+ADD: OEM 0+2 method
+
+FIX: Use CBROM to compress modules by default (LHA is an option)
+FIX: Starting directory
+FIX: Dell SLP automatically corrected and inserted
+
+v0.08
+
+ADD: OEM7 method
+
+FIX: SLIC offset for 0+2 was wrong in some cases
+
+BUG: Crash in LHA on detect existing 0+2
+BUG: Will detect BIOS with existing valid SLIC as already modded by dynamic method (and not allow alteration)
+
+v0.09
+
+ADD: Allow dynamic 0+2 mod
+
+FIX: Crash in LHA on detect existing 0+2
+FIX: Will detect BIOS with existing valid SLIC and allow alteration
+
+v0.10
+
+FIX: Better way of adding no-compress modules (as used in CBROM32 not CBROM1.82)
+FIX: Change order of strings zeroed to shrink main module in 0+2 method
+
+v0.11
+
+ADD: Better way of handling dynamic mods
+
+FIX: Sometimes Dell SLP could not be inserted
+
+v0.12
+
+ADD: SLP insertion with ISA, Pubkey and OEM7 mods
+ADD: Dynamic mod using OEM7 module
+
+v0.13
+
+FIX: Parsing some ASUS BIOSes
+FIX: Unable to enlarge main module successfully in SSV3
+FIX: Manual SLIC address fail if address space in Award copyright area
+
+v0.14
+
+ADD: Ability to overcome ASUS lock for dynamic mod
+
+v0.15
+
+FIX: Pubkey/marker now behaves like CBROM32 and not CBROM
+FIX: Module checksum error not triggered for expected FFh
+
+v0.16
+
+FIX: Offset for SLIC with 0+2 sometimes wrong
+FIX: Improve main module shrink code
+
+v0.17
+
+FIX: Failure if DUMMY.ROM not in BIOS directory
+FIX: Further improvements to main module size adjustment code
+
+v0.18
+
+FIX: Really fix DUMMY.ROM problem! (Was now deleting from the program directory)
+
+v0.19
+
+ADD: Option to correct DSDT checksum
+
+v0.20
+
+ADD: Alternative methods (ACPITBL at end, Black EPA) for OEM7
+
+FIX: XSDT table not handled correctly
+
+v0.21
+
+ADD: Tooltips for options
+ADD: Parse ROM Holes and CPU microcode updates
+ADD: Option to remove first microcode update to make space (eg. for ISA or 0+2 mod)
+
+FIX: Rewrite module size adjust code. Fixes unable to shrink some modules for SSV3 and less likely to blank excess strings
+
+v0.22
+
+ADD: Option to preserve a particular CPUID microcode
+ADD: Displays CPUID of processor in PC
+ADD: Ability to add a SLP string to BIOS with a SLIC already
+
+FIX: Bug in module shrinking code that caused fail in some circumstances
+FIX: *BS1 block also needs updating if microcode removed
+
+v0.23
+
+ADD: Decode different type of microcode
+
+FIX: Only alter RSDT/XSDT option now does not alter FACP
+FIX: Dell SLP1.0 string insertion failed on some BIOSes
+
+v1.00
+
+FIX: Log disabled for SLP addition to a BIOS with an existing SLIC table
+
+v1.01
+
+ADD: Include selected options and version number in log
+
+FIX: Original BIOS sometimes deleted in error if main module size changed
+FIX: Automatically open SLIC and SLP folders when appropriate
+FIX: ACPI parsing code failed in some cases
+
+v1.02
+
+FIX: Only allow ASUS Pubkey method when there is a dummy SLIC present
+
+v1.03
+
+ADD: EVGA compatibility (preserving whole BIOS checksum)
+
+v1.04
+
+ADD: Option to allow added modules to overwrite dummy code
+
+FIX: Overflow in checksum code
+
+v1.05
+
+ADD: Identify OEM Activation version of SLIC (2.0 or 2.1) inserted and in already SLIC'd BIOSes
+ADD: OEM Activation v2.1 SLICs found in SLIC21 directory
+
+FIX: Update HP SLP string
+
+v1.06
+
+ADD: Ability to do SSV3 with EPA module at end
+
+FIX: In rare cases the last byte of a module might be damaged
+FIX: Sometimes OEM7 is not possible but loops infinitely
+
+v1.07
+
+ADD: Ability to recognise and process Dell Award BIOSes
+
+FIX: SSV3 SLP only mod still shrank EPA module
+
+v1.08
+
+FIX: Extract code not handle directory in module path
+
+v1.09
+
+FIX: Damage first two bytes in Onda BIOSes
+
+v1.10
+
+ADD: Dynamic method with ACPITBL at end, enlarging SSV3
+
+FIX: Attempt to recognise the two different EVGA BIOS variants
+
+v1.11
+
+FIX: Rarely first byte of *ALIN16* block damaged
+
+v1.12
+
+FIX: Checksum error for core 6.0 BIOSes
+
+v1.13
+
+ADD: Ability to alter existing pubkey/marker
+
+v1.14
+
+FIX: Alter way modules with FF padding instead of checksum are dealt with
+FIX: Dynamic OEM7 still put a SLIC in the OEM7 module
+
+v1.15
+
+FIX: Rarely unable to find RSDT table
+
+v1.16
+
+FIX: Fail to parse some old core v6.0 BIOSes
+
+v1.17
+
+ADD: Allow an image with a dynamic SLIC to be modded normally (select Cancel when asked)
+
+v1.18
+
+ADD: More manufacturers listed and identified
+
+FIX: Dynamic SLIC not properly identified
+
+v1.19
+
+ADD: Verify certificate code from phoenix tool (verifies any existing SLIC and the given new SLIC file)
+
+FIX: Remember last directory for file open dialogs
+
+v1.20
+
+ADD: Option to blank EPA to make space for ISA mod
+
+FIX: Failure to insert checksum after modules in some v6.0 BIOSes
+
+v1.21
+
+FIX: Sometimes module checksum not corrected properly
+
+v1.22
+
+FIX: Module parsing bug
+
+v1.23
+
+FIX: Improve handling of Dell Award BIOSes
+FIX: Now allows SSV3 and 0+2 mods when first module is not main module
+
+v1.24
+
+FIX: Error correcting module checksums for core v6.0 BIOSes
+
+v1.25
+
+ADD: SSV3 (Black EPA) when ACPI and EPA are not adjacent
+
+v1.26
+
+ADD: Experimental support for DSDT modification - insert SLI certificate
+ADD: Experimental support for DSDT modification - remove CPU Aliases (for Mac OSX)
+
+v1.27
+
+FIX: Improve DSDT prompts (now warns if ISA/Pubkey selected that DSDT is NOT modified)
+FIX: Options display in log incorporates new options
+
+v1.28
+
+FIX: EPA not being correctly moved in Normal OEM7 mod
+
+v1.29
+
+ADD: Ability to dynamically modify a BIOS with a SLP2 pubkey/marker module
+
+v1.30
+
+ADD: Option to allow manual modification for new DSDT table
+
+v1.31
+
+ADD: Verify SLIC digital certificate
+ADD: Intel compatibility (-oa) DSDT option
+
+FIX: Not save file open dialog directory
+
+v1.32
+
+ADD: Allow pause to manually modify BIOS prior to checksum correction
+
+FIX: Verify SLIC certificate crashed on systems without .NET 3.5 SP1 (now just logs unable to verify)
+
+v1.33
+
+ADD: SSV1 method
+
+v1.34
+
+ADD: Allow manual modification of ACPI module
+ADD: Allow manual modification of Main module
+ADD: Display SLIC IDs
+
+v1.35
+
+FIX: Fail when detecting dynamic SLIC
+
+v1.36
+
+ADD: Option to NOT extract modules on verify
+
+v1.37
+
+ADD: Failed to parse SLIC OEM/Table/Creator IDs for modded BIOSes
+
+v1.40
+
+ADD: FACS method
+
+v1.41
+
+FIX: Fix in FACS method
+
+v1.42
+
+ADD: ACPI FACS method
+FIX: Various fixes in FACS method (esp in BIOSes with XSDT)
+
+v1.43
+
+FIX: Handle module with invalid filename
+
+v1.44
+
+FIX: Bug in FACS padding
+
+v1.45
+
+Not released
+
+v1.46
+
+ADD: SSV3 with ACPITBL at end
+
+v1.47
+
+ADD: Internal update
+
+v1.48
+
+ADD: Ability to select OEMx module (0-7) wherever OEM7 is used by default
+ADD: FACS now default for Gigabyte
+
+v1.49
+
+FIX: Error messages for OEMx methods now refer to correct OEMx module
+FIX: If automatically select SSV3 method once BIOS loaded, will use ACPITBL at end if no EPA module
+FIX: Will now scan OEM0-7 modules for existing SLIC at start
+
+v1.50
+
+FIX: Possible GUI bug
+FIX: Make SSV3 default for Gigabyte
+
+v1.51
+
+FIX: Handle new Gigabyte BIOSes that have 512K padding at start
+
+v1.52
+
+ADD: Will now auto-select OEMx module if OEM7 is already used
+FIX: Bug handling checksum in specific BIOS
+
+v1.53
+
+ADD: Recognise OA 2.2 SLIC
+
+FIX: Bug in checksum code

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>107</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Översikt" />
+    <element key="menuItem.Optimize" value="Optimering" />
+    <element key="menuItem.Settings" value="Inställning &amp; Support" />
+    <element key="Version" value="Version:" />
+    <element key="Language" value="Språk" />
+    <element key="defragsvc" value="Defragmentering" />
+    <element key="defragsvcDescription" value="Eftersom en SSD har samma åtkomst till alla minnesceller, finns inget behov att sortera dem. Dessutom genererar defragmentering skrivningar, vilket förkortar livslängden på SSD. Därför rekommenderas starkt att deaktivera defragmentering." />
+    <element key="WSearch" value="Indexering" />
+    <element key="WSearchDescription" value="För att snabba upp sökningar skapar Windows ett index. Detta skapar skrivningar på SSD, vilket förkortar livlängden. Om du sällan  eller aldrig använder Windows Sök, rekommenderas att du stänger av den." />
+    <element key="SysMain" value="Superfetch-tjänsten" />
+    <element key="SysMainDescription" value="Prefetch stöder förladdning av ofta använda program i RAM. Pga den snabba åtkomsten på en SSD, är denna funktion onödig. Därför kan denna tjänst stängas av tillsammans med Prefetch-funktionen." />
+    <element key="NtfsAccessTime" value="Tidsmarkering" />
+    <element key="NtfsAccessTimeDescription" value="Windows lagrar tidpunkten för varje filåtkomst. Denna process skapar nödiga skrivningar och därför reducera livlängden på SSD. Rekommenderas starkt att denna funktion stängs av." />
+    <element key="Prefech" value="Prefetch" />
+    <element key="PrefechDescription" value="Prefetch stöder förladdning av ofta använda program i RAM. Pga den snabba åtkomsten på en SSD, är denna funktion onödig och kan stängas av." />
+    <element key="Bootdefrag" value="Defragmentering att uppstartsfiler" />
+    <element key="BootDefragDescription" value="Pga sättet filer lagras på en SSD, spelar en defragmentering av uppstartsfilerna ingen roll, och kan därför stängas av eftersom det förkortar livslängden på SSD." />
+    <element key="EventLogging" value="Windows händelselogg" />
+    <element key="EventLoggingDescription" value="Windows lagrar ständigt ändringar av systemkonfigureringen. och krascher, och även andra händelser från olika tjänster och program. Detta skapar onödiga skrivningar och förkortar livslängden på SSD." />
+    <element key="SystemRestore" value="Systemåterställning" />
+    <element key="SystemRestoreDescription" value="Windows skapar återställningspunkter vid programinstallationer och större ändringar av systemet, som kan återställas vid behov. Detta skapar skrivningar och kan stängas av, om du tar backup och återställngsfunktionen inte behövs." />
+    <element key="ShortNames" value="Skapa 8.3 filnamn" />
+    <element key="ShortNamesDescription" value="För bakåtkompabilitet med äldre 16-bitars DOS-program, skapa Windows korta namn på filer och mappar, vilket skapar skrivningar på SSD. Aktuella program använder inte dessa namn, så funktionen kan stängas av." />
+    <element key="AHCISetting" value="AHCI-inställning" />
+    <element key="AHCISettingDescription" value="Varning: Denna inställning fungerar som råd till eventuell optimeringsmöjlighet, endast för experter. Inga ändringa kan göras här. AHCI är en gränssnitttsstandard för SATA-diskar. SSD-diskar bör anslutas genom AHCI för att uppnå full prestanda." />
+    <element key="AHCISetting.Tutorial.Back" value="Tillbaka" />
+    <element key="AHCISetting.Tutorial.BackInfo" value="Tillbaka till Optimering" />
+    <element key="AHCISetting.Tutorial.Title" value="AHCI-inställningar, handledning" />
+    <element key="AHCISetting.Tutorial.Description" value="Följande handledning förklarar hur man optimerar AHCI-inställningarna för att få bättre SSD-prestanda." />
+    <element key="AHCISetting.Tutorial.Warning" value="VARNING! Denna handlednig är endast till för experter. Systemet kan bli oanvändbart, så gör backup. Följ handledningen på EGEN risk." />
+    <element key="AHCISetting.Tutorial.Requirements" value="Krav:" />
+    <element key="AHCISetting.Tutorial.RequirementsDesc" value="- Adminrättigheter&#xD;&#xA;- Uppdaterad Windows AHCI-drivrutin, stödd av moderkortets tillverkare." />
+    <element key="AHCISetting.Tutorial.Steps" value="Steg:" />
+    <element key="AHCISetting.Tutorial.StepsDesc" value="1. Starta Windows register editor (regedit.exe)&#xD;&#xA;2. Öppna register 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci'&#xD;&#xA;3. Ställ in värdet 'Start' to '0' och, om det existerar, ta bort värdet 'StartOveride'.&#xD;&#xA;4. Starta om..." />
+    <element key="AHCISetting.Tutorial.StepsDescWin8" value="1. Starta Windows register editor (regedit.exe)&#xD;&#xA;2. Öppna register 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Storahci'&#xD;&#xA;3. Ställ in värdet 'Start' to '0' och, om det existerar, ta bort värdet 'StartOveride'.&#xD;&#xA;4. Starta om..." />
+    <element key="AHCISetting.Tutorial.Tipps" value="Ytterligare information:" />
+    <element key="AHCISetting.Tutorial.TippsDesc" value="- Startföljden kan ändras när man växlat till AHCI mode.&#xD;&#xA;- Om systemet inte startar, byt till de gamla BIOS inställningarna och kolla Windows-inställningarna." />
+    <element key="Optimize" value="Optimera" />
+    <element key="Restore" value="Återställ från backup" />
+    <element key="ShowTutorial" value="Visa handledning" />
+    <element key="Active" value="Aktiverad" />
+    <element key="Deactive" value="Avaktiverad" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Optimerade inställningar" />
+    <element key="RestoreAll" value="Återställ" />
+    <element key="OptimizeAll" value="Optimera" />
+    <element key="RestoreAllInfo" value="Återställ alla backuper" />
+    <element key="OptimizeAllInfo" value="Optimera alla inställningar" />
+    <element key="Update" value="Uppdatera" />
+    <element key="UpdateInfo" value="Kolla efter ny version" />
+    <element key="Support" value="Support" />
+    <element key="SupportInfo" value="Vidare till supportsidan" />
+    <element key="UpdateExists" value="Uppdatering finns" />
+    <element key="UpdateExistsInfo" value="En uppdatering finns. Vill du ladda ner den?" />
+    <element key="UpdateCheck" value="Kolla efter ny version vid start?" />
+    <element key="TipText" value="SSD Fresh är gratis, men om du använder den ofta, förväntar vi oss ett bidrag.&#xD;&#xA;&#xD;&#xA;Hjälp oss förbättra programmet genom att ge bidrag. Då får ni automatskt &quot;SSD Fresh Plus&quot;, en version utan reklam och denna dialog.&#xD;&#xA;" />
+    <element key="TipYesHeader" value="Ja, jag ger gärna ett bidrag." />
+    <element key="TipYesText" value="Med ett litet bidrag på 10,-  kan ni hjälpa oss i utvecklingen av programmen och du får &quot;SSD Fresh Plus&quot;" />
+    <element key="TipNo" value="Nej, jag vill inte ge ett bidrag" />
+    <element key="TipText2" value="SSD Fresh är gratis, men om du använder den ofta, förväntar vi oss ett bidrag.&#xD;&#xA;&#xD;&#xA;Hjälp oss förbättra programmet genom att tipsa oss. Då får ni automatskt &quot;SSD Fresh Plus&quot;, en version utan reklam och denna dialog.&#xD;&#xA;" />
+    <element key="tooltipOptimized" value="Inställningarna är optimerade!" />
+    <element key="tooltipManual" value="Denna inställning är inte ännu optimerad. Välj manuellt om du behöver den." />
+    <element key="tooltipUnoptimized" value="Denna inställning är ännu inte optimerad, och ändringen är rekommenderad!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Namn" />
+    <element key="SmartData.HeaderValue" value="Värde" />
+    <element key="SmartData.WorstHeader" value="Sämst" />
+    <element key="SmartData.HeaderThreshold" value="Tröskel" />
+    <element key="SmartData.HeaderRow" value="Rådata" />
+    <element key="SmartData.Drive" value="Enhet:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Använt utrymme" />
+    <element key="DriveInformation.FreeDiskSpace" value="Ledigt utrymme" />
+    <element key="DriveInformation.Yes" value="ja" />
+    <element key="DriveInformation.No" value="nej" />
+    <element key="DriveInformation.DriveName" value="Hårddisknamn" />
+    <element key="DriveInformation.DriveType" value="Hårddisktyp" />
+    <element key="DriveInformation.DriveSize" value="Hårddiskstorlek" />
+    <element key="DriveInformation.SSD" value="Är detta en SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Antal partitioner" />
+    <element key="DriveInformation.DiskName" value="Enhetens namn" />
+    <element key="DriveInformation.DiskSize" value="Enhetens storlek" />
+    <element key="DriveInformation.FileSystem" value="Filsystem" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. data" />
+    <element key="DriveInformation.MemoryUsage" value="Diskanvändning" />
+    <element key="DriveInformation.DriveInformation" value="Enhetsinformation" />
+    <element key="Overview.WarningHeader" value="Varning" />
+    <element key="Overview.WarningText" value="Ingen SSD funnen i systemet. Programmet ändrar systeminställningar för SSD-enheters behov. Om du använder programmet utan SSD, kommer några inställningar stängas av, som normalt ska vara aktiverade för vanliga hårddiskar. Därför, om du inte har någon SSD,  rekommenderar vi dig att inte använda SSD Fresh på detta system." />
+    <element key="Overview.QuestionText" value="Om du är säker på att använda SSD, sänd oss en felrapport så vi kan förbättra vårt program." />
+    <element key="Overview.ButtonTitle" value="Ja, jag använder en SSD" />
+    <element key="Overview.ButtonInfo" value="Sänd rapport och fortsätt" />
+    <element key="SmartData.Back" value="Tillbaka" />
+    <element key="DriveInformation.NotAvailable" value="Inte tillgänglig" />
+    <element key="Overview.Error" value="Inga enhetsdata funna" />
+    <element key="Overview.ErrorText" value="Kunde inte läsa enhetsdata. Kanske är interfacet avaktiverat, inte tillgängligt eller så har du otillräckliga rättigheter i systemet. Dessutom stöder inte virtuella maskiner detta interface. Om du är säker på att att ditt system har en SSD, kan du använda optimeringen!" />
+    <element key="trim" value="Windows Trim-funktion" />
+    <element key="trimDescription" value="För att öka livslängden och prestandan på Solid State Disks (SSD), ska denna funktion vara aktiverad. Om denna funktion används beror på om din SSD stöder denna funktion. Titta på tillverkarens hemsida." />
+    <element key="LanguageMissing" value="Saknas ditt språk eller är ofullständigt?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Borje Gustavsson" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="2014-08-05 10:54:24" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="sv" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Swedish - Sweden [sv-SE]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="SE" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="2014.01" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

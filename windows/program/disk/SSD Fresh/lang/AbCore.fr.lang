@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>143</count>
+    <element key="AbCore.AbUpdater.MessageConnect" value="Connection" />
+    <element key="AbCore.AbUpdater.MessageDownload" value="Téléchargement" />
+    <element key="AbCore.AbUpdater.MessageUpdate" value="Mise à jour" />
+    <element key="AbCore.AbUpdater.MessageReady" value="Terminé" />
+    <element key="AbCore.AbUpdater.MessageCancel" value="Annuler le procéssus" />
+    <element key="AbCore.AbUpdater.MessageContinue" value="Fermer" />
+    <element key="AbCore.AbUpdater.MessageSuccessNoUpdate" value="Aucune mise à jour n'est nécéssaire,vous utilisez déja la dernière version" />
+    <element key="AbCore.AbUpdater.MessageSuccessSettingUpdate" value="Une mise à jour de sécurité a été téléchargé.           S'il vous plaît cliquer sur 'Fermer' pour redémarrer le programme." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdate" value="Une nouvelle mise à jour importante a été téléchargé.                                                                S'il vous plaît cliquer sur 'Fermer' pour lancer l'installation." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdateWebsite" value="Une nouvelle mise à jour importante est disponible au téléchargement.                                                   S'il vous plaît cliquer sur 'Fermer' pour visiter la page de téléchargement." />
+    <element key="AbCore.AbUpdater.MessageFailure" value="Impossible d'effectuer la vérification de mise à jour. S'il vous plaît veiller à ce que votre PC soit connecté à Internet et s'il vous plaît réessayer de démarrer la mise à jour vous pouvez réessayer dans quelques heures." />
+    <element key="AbCore.AbSurvey.Ask" value="Nous sommes désolés que vous souhaitez désinstaller le logiciel.&#xD;&#xA;S'il vous plaît nous aider à améliorer les futures versions, et nous dire la raison pour laquelle vous souhaitez désinstaller le logiciel.&#xD;&#xA;&#xD;&#xA;Souhaitez-vous nous aider en remplissant un court questionnaire?&#xD;&#xA;&#xD;&#xA;Cela ne vous prendra qu'environ deux minutes de votre temps. (Une connexion Internet est nécessaire)" />
+    <element key="AbCore.AbSurvey.Url" value="http://www.abelssoft.net/survey/index.php?sid=3" />
+    <element key="AbCore.AbNewsletterAbo.Url" value="https://abelssoft.de/k/newsletterSubscribeEn.do?email=%1&amp;amp;groupid=2&amp;amp;sectorid=3&amp;amp;mail=true" />
+    <element key="AbCore.AbNewsbox.NeverShow" value="Ne plus afficher cette fenêtre à l'avenir" />
+    <element key="AbCore.AbNewsbox.Close" value="Fermer la fenêtre&gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.MainText" value="Restez à jour: Abonnez-vous à notre newsletter et nous allons vous informer automatiquement sur ​​les nouvelles versions et mises à jour." />
+    <element key="AbCore.AbNewsletterAbo.EmailText" value="Votre adresse Email:" />
+    <element key="AbCore.AbNewsletterAbo.Button" value="Inscrivez-vous maintenant &gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.Success" value="Merci beaucoup. Nous avons réussi à vous ajouter à notre bulletin d'information. Vous recevrez votre  bon de réduction dans les minutes qui suivent via email." />
+    <element key="AbCore.AbNewsletterAbo.Offline" value="Malheureusement, vous semblez être déconnecté actuellement. S'il vous plaît réessayer plus tard." />
+    <element key="AbCore.AbNewsletterAbo.InvalidEmail" value="Vous devez déverrouiller ce logiciel avant de l'utiliser. Il s'agit d'une version d'essai" />
+    <element key="AbCore.AbLiteRegistrationGUI.Window.Title" value="Inscription gratuite" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro" value="Vous devez déverrouiller ce logiciel avant de l'utiliser. Il s'agit d'une version d'essai,non libre." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading1" value="Vous devez déverrouiller ce logiciel. S'il vous plaît remplissez ce formulaire:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.FirstName" value="Votre nom:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.LastName" value="Votre prénom:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Register" value="Récupérer le courrier de déverrouillage gratuitement dès maintenant &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Or" value="ou" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading2" value="Avez-vous déjà reçu votre code de déverrouillage? - Dans ce cas, s'il vous plaît entrez-le ici:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Code" value="Code de déverrouillage:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.RegisterUsingKey" value="Déverrouiller &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Invalid" value="Ce code de déverrouillage n'est pas valide. S'il vous plaît revérifiez. N'hésitez pas à nous contacter si vous avez des problèmes:                     contact@abelssoft.net " />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Valid" value="Merci beaucoup. Vous pouvez maintenant utiliser le logiciel." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid" value="Nous venons de vous envoyer par courriel votre code de déverrouillage personnelle. S'il vous plaît vérifiez vos email et cliquez sur le lien de déverrouillage. S'il vous plaît vérifiez si votre adresse électronique a été entré correctement dans le cas où vous ne recevez pas d'email de notre part dans les 5 prochaines minutes, et consulter vos dossiers mails. S'il vous plaît contacter nous à contact@abelssoft.net pour toutes questions." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestInvalid" value="Comme nous n'avons pas pu vérifier votre activation, s'il vous plaît envoyez un email à notre support pour obtenir un code d'activation." />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskClose" value="Si vous fermez cette fenêtre avant de vous êtes enregistré, le logiciel ne sers pas démarré.                Voullez-vous quitter le programme? " />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskCloseTitle" value="Quitter le programme?" />
+    <element key="AbCore.AbLiteRegistrationGUI.ManualURL" value="https://www.abelssoft.de/k/regLite.do?a=%1&amp;amp;l=%2&amp;amp;af=%3" />
+    <element key="AbCore.AbLiteRegistrationGUI.EmailRequestURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=true&amp;amp;a=%1&amp;amp;l=%2&amp;amp;af=%3&amp;amp;cm=%4&amp;amp;cf=%5&amp;amp;cl=%6" />
+    <element key="AbCore.AbLiteRegistrationGUI.InstantRegistrationURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=false&amp;amp;a=%1&amp;amp;l=%2&amp;amp;af=%3&amp;amp;cm=%4&amp;amp;cf=%5&amp;amp;cl=%6" />
+    <element key="AbCore.AbBugReporter.title" value="Il y a un problème" />
+    <element key="AbCore.AbBugReporter.maintext" value="S'il vous plaît aidez nous à analyser ce problème en cliquant sur &quot;Envoyer&quot; pour nous envoyer une copie du message d'erreur." />
+    <element key="AbCore.AbBugReporter.cancel" value="Ne pas envoyer" />
+    <element key="AbCore.AbBugReporter.send" value="Envoyer" />
+    <element key="AbCore.AbBugReporter.connecting" value="Status: Connection au serveur..." />
+    <element key="AbCore.AbBugReporter.sending" value="Status:Envoi du rapport..." />
+    <element key="AbCore.AbBugReporter.success" value="Nous avons bien reçu le rapport d'erreur. Merci beaucoup." />
+    <element key="AbCore.AbBugReporter.failure" value="Impossible d'envoyer le rapport. S'il vous plaît assurer vous que vous disposez d'une connexion Internet active." />
+    <element key="AbCore.AbScheduler.NoTaskInfo" value="Le Planificateur n'est pas activé actuellement." />
+    <element key="AbCore.AbScheduler.NotPlanned" value="Non planifié" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitializedTitle" value="Planifié" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitialized" value="Impossible de créer la tâche." />
+    <element key="AbCore.AbScheduler.lblWelcome" value="Bienvennue dans l'assistant de planification" />
+    <element key="AbCore.AbScheduler.lblNextRunTime" value="Prochaine tâche planifiée:" />
+    <element key="AbCore.AbScheduler.btnRemoveSchedule" value="Supprimer une tâche" />
+    <element key="AbCore.AbScheduler.btnCreateSchedule" value="Créer un tâche" />
+    <element key="AbCore.AbScheduler.BackButton" value="Retour" />
+    <element key="AbCore.AbScheduler.NextButton" value="Suivant" />
+    <element key="AbCore.AbScheduler.FirstDescription" value="SVP,sélectionnez une méthode " />
+    <element key="AbCore.AbScheduler.SecondDescription" value="SVP,sélectionnez la fréquence" />
+    <element key="AbCore.AbScheduler.ThirdDescription" value="S'il vous plaît sélectionnez le moment et la récurrence" />
+    <element key="AbCore.AbScheduler.FinishedDescription" value="Terminé. S'il vous plaît cliquer sur le bouton ci-dessous pour planifier la tâche." />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan0" value="Journalière" />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan1" value="Hebdomadaire" />
+    <element key="AbCore.AbScheduler.radioGroupEvents0" value="Panification personalisée" />
+    <element key="AbCore.AbScheduler.radioGroupEvents1" value="A chaque démarrage" />
+    <element key="AbCore.AbScheduler.lblTime" value="A:" />
+    <element key="AbCore.AbScheduler.checkStartOnBatteries" value="Ne pas lancer, ci l'ordinateur est sur batterie. " />
+    <element key="AbCore.AbScheduler.lblPriority" value="Prioritée:" />
+    <element key="AbCore.AbScheduler.Priorities.Idle" value="Très basse" />
+    <element key="AbCore.AbScheduler.Priorities.BelowNormal" value="Basse" />
+    <element key="AbCore.AbScheduler.Priorities.Normal" value="Normale" />
+    <element key="AbCore.AbScheduler.Priorities.AboveNormal" value="Elevée" />
+    <element key="AbCore.AbScheduler.Priorities.High" value="Très élevée" />
+    <element key="AbCore.AbBugReporter.CheckBoxEmail" value="Envoie de l'adresse email:" />
+    <element key="AbCore.AbBugReporter.TextEmail" value="S'il vous plaît aidez nous à améliorer notre logiciel. Vous pouvez nous faire parvenir une adresse e-mail pour d'éventuelles questions. Cette information est facultative." />
+    <element key="AbCore.AbBugReporter.SendAndUpdate" value="Envoie de rapports et recherche de mises à jour" />
+    <element key="AbCore.AbFontInstaller.Installing" value="Installation..." />
+    <element key="AbCore.AbFontInstaller.Download" value="Téléchargement..." />
+    <element key="AbCore.AbFontInstaller.Success" value="Inxtallation réussi" />
+    <element key="AbCore.AbFontInstaller.Title" value="Installation de polices" />
+    <element key="AbCore.AbFontInstaller.Headline" value="Téléchargement de polices..." />
+    <element key="AbCore.AbBugReporter.DownloadAndInstallFont" value="Polices installées" />
+    <element key="AbCore.AbBugReporter.ProblemOccured1" value="Une erreur a été trouvé dans votre système." />
+    <element key="AbCore.AbBugReporter.ProblemOccured2" value="Une police ne c'est pas installée corectement:" />
+    <element key="AbCore.AbBugReporter.InstallDescription" value="Vous pouvez télécharger et installer la police appropriée maintenant." />
+    <element key="AbCore.AbBugReporter.DownloadInstall" value="Télécharger et installer la police" />
+    <element key="AbCore.AbInfoForms.Controls.TitleControl.Undertitle" value="Acheter la version complète pour %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lblTitle" value="Aciver la version complète pour %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lbl30DaysText" value="Il s'agit d'une version entièrement fonctionnelle de %1. Elle peut être utilisée pendant %2 jours. Vous pouvez obtenir votre code de déverrouillage en cliquant sur le bouton ci-dessous." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Text" value="Acheter la version complète pour %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Description" value="Full Power: Version complète sans aucune restriction. Acheter en ligne maintenant." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Text" value="Activer la version complète pour %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Description" value="Tester %1 librement pendant %2 jours.Cliquez ici pour obtenir une licence de %2 jours." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnClose" value="Quitter" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.Title" value="Cette fonction est uniquement disponible dans la version complète" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesDescription" value="Obtenir des information sur les avantages de la version complète" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesText" value="Informations supplémentaire" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoText" value="Retour" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoDescription" value="Continuer avec %1" />
+    <element key="AbCore.AbInfoForms.Controls.Benefits.BenefitListControl.lblHeaderBenefit" value="Les avantages en un coup d'oeil" />
+    <element key="AbCore.AbInfoForms.Controls.Links.SmallLink.LinkText" value="Acheter en ligne" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Text" value="Acheter en ligne" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Description" value="Cliquez ici pour obtenir la version complète de (%1 imédiatement)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus1" value="Votre version d'essai de %1 jours a éxpirées" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus2" value="La version d'essai de %1 jours est encore utilisable pendant %2 jour(s)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestStarts" value="0 jours" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestEnds" value="%1 jours" />
+    <element key="AbCore.AbInfoForms.Controls.UpgradeControl.lblBuyHead" value="Acheter la version complète pour seulement %1" />
+    <element key="AbCore.AbInfoForms.Forms.UpgradeForm.btnClose" value="Je ne souhaite pas l'acheter" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.UseProgramWithoutCode" value="Utiliser le programme sans code de déverrouillage cette fois" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.ReRequestCode" value="Redemande de code" />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid.Notify" value="Nous vous avons envoyé un lien d'activation pour le logiciel. Si vous n'obtenez pas de courriel dans les 3 minutes, s'il vous plaît vérifier vos dossiers de spam et si vous avez entré l'adresse e-mail correcte. S'il vous plaît nous contacter à contact@abelssoft.net pour toutes questions." />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFound" value="Nous avons trouvé une nouvelle mise à jour pour %1. Voulez-vous l'installer?" />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFoundTitle" value="Nouvelle mise à jour " />
+    <element key="AbSecurePassword.Paste" value="Coller" />
+    <element key="AbSecurePassword.DeleteError" value="Il y a eu une erreur lors de l'activation,Svp essayez de retapez le mot de passe." />
+    <element key="AbSecurePassword.DeleteErrorTitle" value="Erreur" />
+    <element key="AbCore.AbFontInstaller.DownloadError" value="Le fichier de police ne peut être téléchargée" />
+    <element key="AbCore.AbFontInstaller.DownloadSuccess" value="Téléchargement réussi" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.WaitingUntilOpenMailClick" value="S'il vous plaît consulter votre messagerie (également votre courrier indésirable) et cliquez sur le lien que vous avez reçu." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingText" value="Déverouillage du logiciel...Patentez SVP..." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.ThanksForActivating" value="Le logiciel a été activé..." />
+    <element key="AbCore.AbNewsletterAbo.SpamEmail" value="Nous ne pouvons pas envoyer à cette adresse email. S'il vous plaît essayez en une autre." />
+    <element key="AbCore.AbNewsletterAbo.EmptyEmail" value="SVP,entrez votre adresse Email." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro.CheckingForAutomaticInternetActivation" value="Vérification de l'activation du comptes clients Internet ..." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingTextRequestSupport" value="S'il vous plaît contacter notre support à contact@abelssoft.net pour obtenir une clé." />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Cancel" value="Annuler" />
+    <element key="AbCore.AbLiteRegistrationGUI.Link.NoInternetConnection" value="Vous n'avez pas de connection internet?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.KnownCustomer" value="Cette application est maintenant activé. Merci pour votre intérêt à nos produits!" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.AlreadyRegisteredForProduct" value="Vous avez déjà activé ce produit. Merci beaucoup!" />
+    <element key="AbCore.AbNewsletterAbo.ShouldntStartWithWww" value="L'adresse email que vous avez saisie commence par &quot;www.&quot;, En général elle ne comence pas comme ça." />
+    <element key="AbCore.AbNewsletterAbo.NeedInternetAccessToRegister" value="Vous devez avoir une connexion Internet active pour vous inscrire. Et vous devez aussi l'autoriser dans votre pare-feu." />
+    <element key="AbCore.AbLiteRegistrationGUI.SupportEmail" value="contact@abelssoft.net" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Kloster Yvan" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="02/12/2012 06:56:50" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="fr" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="French - France [fr-FR]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="FR" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="StartupStar" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="2.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="2" />
+  </data>
+</LanguageInfo>

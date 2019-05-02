@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<glsl_hacker>
+	
+  <window name="win3d01" title="OpenGL Phong Lighting" 
+          width="800" height="400" resizable="1" menubar="0"  
+          separate_render_thread="1"
+          renderer_type="OpenGL" vsync="0" />
+  
+  
+	<script name="init_scene" run_mode="INIT" >
+		<raw_data><![CDATA[	
+    
+winW, winH = gh_window.getsize(0)
+
+
+
+-- Perspective camera.
+--
+local aspect = winW / winH
+camera_params = { fov=60, znear=0.1, zfar=100.0 }
+camera = gh_camera.create_persp(camera_params.fov, aspect, camera_params.znear, camera_params.zfar)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+gh_camera.set_position(camera, 0, 5, 10)
+gh_camera.set_lookat(camera, 0, 0, 0, 1)
+gh_camera.set_upvec(camera, 0, 1, 0, 0)
+
+
+
+local demo_dir = gh_utils.get_demo_dir() 		
+
+gpu_prog = gh_node.getid("gpu_prog")
+gh_gpu_program.uniform1i(gpu_prog, "tex0", 0)
+gh_gpu_program.uniform4f(gpu_prog, "uv_tiling", 2.0, 2.0, 0.0, 0.0)
+
+
+
+
+--[[
+local use_std_vertex_attribs = 1 -- standard vertex attribs like gxl3d_Position.
+local num_user_vertex_attribs = 0 -- no custom vertex attrib arrays.
+local separate_vertex_arrays = 0 -- Separate or interleaved vertex attribs.
+local vertex_alignment = 0
+local alloc_vertex_particles = 0
+gh_mesh.set_vertex_alloc_params(use_std_vertex_attribs, num_user_vertex_attribs, separate_vertex_arrays, vertex_alignment, alloc_vertex_particles)
+--]]
+
+
+--mesh = gh_mesh.create_torus(6.0, 2.0, 10) -- 200f / 121v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 20) -- 800f / 441v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 40) -- 3200f / 1681v
+--mesh = gh_mesh.create_torus(7.0, 2.0, 50) -- 5000f / 2601v
+mesh = gh_mesh.create_torus(6.0, 2.0, 100) -- 20'000f / 10'201v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 200) -- 80'000f / 40'401v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 400) -- 320'000f / 160'801v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 500) -- 500'000f / 251'001v
+--mesh = gh_mesh.create_torus(6.0, 2.0, 1000) -- 2'000'000f / 1'002'001v
+print(string.format("Faces: %d - vertices: %d", gh_object.get_num_faces(mesh), gh_object.get_num_vertices(mesh)))
+gh_mesh.set_vertices_color(mesh, 1.0, 1.0, 0.0, 1.0)
+
+
+local PF_U8_RGBA = 3
+tex0 = gh_texture.create_from_file_v5(demo_dir .. "../data/textures/t08.jpg", PF_U8_RGBA)
+
+
+gh_renderer.set_vsync(0)
+gh_renderer.set_depth_test_state(1)
+
+
+		]]></raw_data>
+	</script> 
+	
+	
+
+	
+	<script name="terminate_scene" run_mode="TERMINATE" >
+		<raw_data><![CDATA[	
+
+
+		]]></raw_data>
+	</script> 
+	
+	
+	
+  
+	<script name="update_scene" run_mode="FRAME" >
+		<raw_data><![CDATA[	
+
+
+local elapsed_time = gh_utils.get_elapsed_time()
+
+gh_camera.bind(camera)
+
+gh_renderer.clear_color_depth_buffers(0.2, 0.25, 0.30, 1.0, 1.0)
+
+gh_texture.bind(tex0, 0)
+gh_gpu_program.bind(gpu_prog)
+
+gh_object.set_euler_angles(mesh, elapsed_time * 3.0, elapsed_time * 7.0, elapsed_time * 11.0)
+gh_object.render(mesh)
+
+
+		]]></raw_data>
+	</script> 
+	
+
+	<script name="resize_scene" run_mode="SIZE" >
+		<raw_data><![CDATA[	
+winW, winH = gh_window.getsize(0)
+-- print("resize_scene - W=" .. winW .. " - H=" .. winH)
+
+local aspect = winW / winH
+gh_camera.update_persp(camera, camera_params.fov, aspect, camera_params.znear, camera_params.zfar)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+
+
+		]]></raw_data>
+	</script> 
+  
+  
+  <gpu_program name="gpu_prog" >
+    <raw_data_vs><![CDATA[	 
+#version 150
+in vec4 gxl3d_Position;
+in vec4 gxl3d_Normal; 
+in vec4 gxl3d_TexCoord0;
+out vec4 Vertex_UV;
+out vec4 Vertex_Normal;
+out vec4 Vertex_LightDir;
+out vec4 Vertex_EyeVec;
+uniform mat4 gxl3d_ModelViewProjectionMatrix; // Automatically passed by GLSL Hacker
+uniform mat4 gxl3d_ModelViewMatrix; // Automatically passed by GLSL Hacker
+uniform mat4 gxl3d_ViewMatrix; // Automatically passed by GLSL Hacker
+//uniform vec4 light_position;
+uniform vec4 uv_tiling;
+void main()
+{
+  vec4 light_position = vec4(0.0, 50.0, 50.0, 1.0);
+  gl_Position = gxl3d_ModelViewProjectionMatrix * gxl3d_Position;
+  Vertex_Normal = gxl3d_ModelViewMatrix  * vec4(gxl3d_Normal.xyz, 0);
+  vec4 view_vertex = gxl3d_ModelViewMatrix * gxl3d_Position;
+  vec4 LP = gxl3d_ViewMatrix * light_position;
+  Vertex_LightDir = LP - view_vertex;
+  Vertex_EyeVec = -view_vertex;
+  Vertex_UV = gxl3d_TexCoord0 * uv_tiling;
+}
+  ]]></raw_data_vs>
+    <raw_data_ps><![CDATA[	 
+#version 150
+in vec4 Vertex_UV;
+in vec4 Vertex_Normal;
+in vec4 Vertex_LightDir;
+in vec4 Vertex_EyeVec;
+uniform sampler2D tex0;
+out vec4 FragColor;
+void main()
+{
+  vec2 uv = Vertex_UV.xy;
+  vec4 c0 = texture(tex0,uv);
+
+  vec4 N = normalize(Vertex_Normal);
+  vec4 L = normalize(Vertex_LightDir);
+
+  vec4 la0 = vec4(0.2, 0.2, 0.2, 1);
+  vec4 ld0 = vec4(0.9, 0.85, 0.8, 1);
+  vec4 ls0 = vec4(0.9, 0.9, 0.9, 1);
+  vec4 mA = vec4(0.8, 0.8, 0.8, 1);
+  vec4 mD = vec4(0.9, 0.9, 0.9, 1);
+  vec4 mS = vec4(0.9, 0.9, 0.9, 1);
+  float mSpecExp = 60.0;
+  
+  vec3 fc = vec3(0.0, 0.0, 0.0);
+  
+  fc += (la0.rgb * mA.rgb) * c0.rgb;
+  float lambert = dot(N,L);
+  if (lambert > 0)
+  {
+    fc += ld0.rgb * mD.rgb * lambert * c0.rgb;
+    
+    vec4 E = normalize(Vertex_EyeVec);
+    vec4 R = reflect(-L, N);
+    float specular = pow( max(dot(R, E), 0.0), mSpecExp);
+    fc += ls0.rgb * mS.rgb * specular;	
+    
+  }
+  FragColor = vec4(fc, 1.0);
+}
+    ]]></raw_data_ps>
+  </gpu_program>
+  
+  
+  
+  
+</glsl_hacker>

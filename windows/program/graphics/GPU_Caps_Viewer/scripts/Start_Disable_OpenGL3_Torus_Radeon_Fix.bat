@@ -1,0 +1,1 @@
+start ../GPU_Caps_Viewer.exe /disable_gl3_torus_radeon_fix

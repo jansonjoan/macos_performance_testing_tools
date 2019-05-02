@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Přehled" />
+    <element key="menuItem.Optimize" value="Doporučení" />
+    <element key="menuItem.Settings" value="Nastavení a podpora" />
+    <element key="Version" value="Verze" />
+    <element key="Language" value="Jazyk" />
+    <element key="defragsvc" value="Defragmentace" />
+    <element key="defragsvcDescription" value="Přístupová doba ke všem paměťovým buňkám SSD disku je stejná a tudíž není nutné nějak měnit pozici souborů na disku. Navíc defragmentace způsobuje nadbytečné zápisy na disk a tím snižuje jeho životnost. Proto by měla být defragmentace disku vypnuta." />
+    <element key="WSearch" value="Indexování" />
+    <element key="WSearchDescription" value="Pro urychlení vyhledávání souborů si Windows vytváří jejich seznam. Tím dochází k nadbytečným zápisům na disk, které snižují jeho životnost. Pokud vyhledávání nepoužíváte příliš často, můžete indexování vypnout." />
+    <element key="SysMain" value="Služba urychleného spouštění" />
+    <element key="SysMainDescription" value="Tato služba načítá nejčastěji používané programy do paměti RAM a urychluje tak jejich spuštění. Vzhledem k tomu. že přístupová doba na SSD disk je mnohem menší než u klasických disků, nemá tato služba příliš velkou účinnost a proto může být vypnuta (stejně jako služba Zrychlení spouštění)." />
+    <element key="NtfsAccessTime" value="Časová razítka" />
+    <element key="NtfsAccessTimeDescription" value="Windows ukládají u každého souboru datum a čas posledního přístupu. To znamená, že při každém přečtení souboru dojde k zápisu na disk, čímž se snižuje jeho životnost. Vypnutí této funkce výrazně zvýší životnost disku." />
+    <element key="Prefech" value="Zrychlení spouštění" />
+    <element key="PrefechDescription" value="Tato služba načítá nejčastěji používané programy do paměti RAM a urychluje tak jejich spuštění. Vzhledem k tomu. že přístupová doba na SSD disk je mnohem menší než u klasických disků, nemá tato služba příliš velkou účinnost a proto může být vypnuta." />
+    <element key="Bootdefrag" value="Defragmentace souborů pro start systému" />
+    <element key="BootDefragDescription" value="Jelikož přístupová doba u SSD disku je stejná pro všechny části, není potřeba přesouvat spouštěcí soubory na začátek disku. Tím by docházelo ke snížení životnosti disku a proto by měla být tato služba vypnuta." />
+    <element key="EventLogging" value="Zápis událostí do LOG souborů" />
+    <element key="EventLoggingDescription" value="Windows průběžne zapisují nejrůznější události (změna konfigurace, chyby, apod.) do souborů na disku a tím snižují jeho životnost. Pro zvýšení životnosti disku by měl být zápis do LOG souborů vypnut." />
+    <element key="SystemRestore" value="Body obnovení" />
+    <element key="SystemRestoreDescription" value="Windows vytváření zálohu konfigurace při každé instalaci programu nebo změně registrů a tuto zálohu zapisují na systémový disk. Tím dochází ke snížení jeho životnosti. Pokud používáte jiný způsob zálohování (na externí nebo síťový disk), můžete tuto funkci vypnout. Po vypnutí již nebude možno používat spuštění do &quot;Poslední známé funkční konfigurace&quot;!" />
+    <element key="ShortNames" value="Krátká jména 8.3" />
+    <element key="ShortNamesDescription" value="Pro kompatibilitu se starými (16-bitovými) systémy (např. DOS) vytvářejí Windows pro každý soubor či složku speciální krátká jména. Tím dochází ke zbytečným zápisům na disk a snížení jeho životnosti. Moderní systémy a aplikace již krátká jména nepoužívají a proto může být tato služba vypnuta." />
+    <element key="Optimize" value="Provést" />
+    <element key="Restore" value="Obnovit do původního stavu" />
+    <element key="Active" value="Zapnuto" />
+    <element key="Deactive" value="Vypnuto" />
+    <element key="Status" value="Stav" />
+    <element key="OptimizedSettings" value="Doporučená nastavení" />
+    <element key="RestoreAll" value="Obnovit vše" />
+    <element key="OptimizeAll" value="Provést vše" />
+    <element key="RestoreAllInfo" value="Vrátí všechna nastavení do původního stavu" />
+    <element key="OptimizeAllInfo" value="Provede všechna doporučená nastavení" />
+    <element key="Update" value="Aktualizovat" />
+    <element key="UpdateInfo" value="Zkontroluje dostupnost nové verze programu" />
+    <element key="Support" value="Podpora" />
+    <element key="SupportInfo" value="Otevře stránku podpory tohoto programu" />
+    <element key="UpdateExists" value="Je dostupná aktualizace" />
+    <element key="UpdateExistsInfo" value="Chcete provést aktualizaci na nejnovější verzi?" />
+    <element key="UpdateCheck" value="Zkontrolovat aktualizace při startu?" />
+    <element key="TipText" value="SSD Fresh je zdarma, ale pokud ho používáte často, měl(a) byste darovat nějaké peníze jeho autorům. Pomůžete tak při jeho vývoji a vylešování. Zároveň tím získáte aktualizaci na &quot;SSD Fresh Plus&quot;, který je bez reklam." />
+    <element key="TipYesHeader" value="Ano, chci přispět na vývoj programu" />
+    <element key="TipYesText" value="Částkou 10€ (cca 250Kč) přispějete na vývoj programu a získáte aktualizaci na &quot;SSD Fresh Plus&quot;." />
+    <element key="TipNo" value="Ne, nechci přispět" />
+    <element key="TipText2" value="SSD Fresh je zdarma, ale pokud ho používáte často, měl(a) byste darovat nějaké peníze jeho autorům. Pomůžete tak při jeho vývoji a vylešování. Zároveň tím získáte aktualizaci na &quot;SSD Fresh Plus&quot;, který je bez reklam." />
+    <element key="tooltipOptimized" value="Všechna nastavení jsou v pořádku!" />
+    <element key="tooltipManual" value="Toto nastavení není v pořádku. Zvažte provedení doporučených kroků." />
+    <element key="tooltipUnoptimized" value="Toto nastavení není v pořádku a mělo by být změněno!" />
+    <element key="SmartData.IDHeader" value="ID" />
+    <element key="SmartData.HeaderHexId" value="Hexa" />
+    <element key="SmartData.NameHeader" value="Jméno" />
+    <element key="SmartData.HeaderValue" value="Hodnota" />
+    <element key="SmartData.WorstHeader" value="Nejhorší hodnota" />
+    <element key="SmartData.HeaderThreshold" value="Nebezpečná hodnota" />
+    <element key="SmartData.HeaderRow" value="Surová data" />
+    <element key="SmartData.Drive" value="Disk:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Využité místo" />
+    <element key="DriveInformation.FreeDiskSpace" value="Volné místo" />
+    <element key="DriveInformation.Yes" value="Ano" />
+    <element key="DriveInformation.No" value="Ne" />
+    <element key="DriveInformation.DriveName" value="Jméno disku" />
+    <element key="DriveInformation.DriveType" value="Typ disku" />
+    <element key="DriveInformation.DriveSize" value="Velikost disku" />
+    <element key="DriveInformation.SSD" value="Je typu SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Počet oddílů" />
+    <element key="DriveInformation.DiskName" value="Jméno oddílu" />
+    <element key="DriveInformation.DiskSize" value="Velikost oddílu" />
+    <element key="DriveInformation.FileSystem" value="Systém souborů" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. informace" />
+    <element key="DriveInformation.MemoryUsage" value="Využití místa na disku" />
+    <element key="DriveInformation.DriveInformation" value="Informace o disku" />
+    <element key="Overview.WarningHeader" value="Varování" />
+    <element key="Overview.WarningText" value="Nebyl nalezen žádný SSD disk. Tento program je určen výhradně pro systémy běžící na SSD disku. Pokud používáte klasické pevné disky, doporučujeme tento program ukočit a nepoužívat." />
+    <element key="Overview.QuestionText" value="Pokud jste si jisti, že Váš systém běží na SSD disku, kontaktujte prosím podporu pro zajištění zlepšení jeho detekce." />
+    <element key="Overview.ButtonTitle" value="Ano, používám SSD disk" />
+    <element key="Overview.ButtonInfo" value="Odeslat hlášení o chybě a pokračovat" />
+    <element key="SmartData.Back" value="Zpět" />
+    <element key="DriveInformation.NotAvailable" value="Není k dispozici" />
+    <element key="Overview.Error" value="Nenalezena informace o disku" />
+    <element key="Overview.ErrorText" value="Nelze přečíst informace o disku. Buď je disk vypnutý, není připojen a nebo nemáte dostatečná oprávnění přistupovat k němu. Virtuální počítače taktéž neumožnují čtení informací o discích. Pokud jste si jisti, že používáte SSD disk, můžete pokračovat." />
+    <element key="trim" value="Funkce TRIM" />
+    <element key="trimDescription" value="Pro zvýšení životnosti SSD disku je možno v systému Windows zapnout funkci TRIM. Disk tuto funkci musí podporovat (podívejte se na specifikaci výrobce)." />
+    <element key="LanguageMissing" value="Váš jazyk chybí nebo jsou v něm chyby?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Nothrem Sinsky" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="2. 11. 2012 11:04:33" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="cs" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Czech [cs]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSD Fresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="1.5.0.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

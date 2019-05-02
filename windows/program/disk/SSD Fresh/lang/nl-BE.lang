@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>91</count>
+    <element key="AppName" value="SSD Fesh" />
+    <element key="menuItem.Overview" value="Overzicht" />
+    <element key="menuItem.Optimize" value="Optimalisatie" />
+    <element key="menuItem.Settings" value="Instellingen &amp; Ondersteuning" />
+    <element key="Version" value="Versie:" />
+    <element key="Language" value="Taal" />
+    <element key="defragsvc" value="Defragmentatie" />
+    <element key="defragsvcDescription" value="Gezien SSD's dezelfde toegangstijd hebbben voor alle geheugencellen, is er geen behoefte om deze coherent op te slaan. Bovendien genereert het defragmentatie-proces schrijf acties, welke de levensduur van de SSD inkorten. Daarom is het sterk aanbevolen om het defragmentatie-proces uit te schakelen." />
+    <element key="WSearch" value="Indexering" />
+    <element key="WSearchDescription" value="Om het zoeken te versnellen, kan Windows een index creeren. Dit veroorzaakt echter schrijfacties op de SSd die de levensduur verkort. Indien u de Windows zoekfunctie sporadisch of niet gebruikt, adviseren we u om deze functie uit te schakelen." />
+    <element key="SysMain" value="Superfetch Service" />
+    <element key="SysMainDescription" value="Prefetch ondersteunt het voorladen van vaak gebruikte gegevens in het RAM geheugen. Omwille van de snelle toegangstijden van een SSD, is deze functie nutteloos. Daarom kan deze service uitgeschakeld worden samen met de Prefetch functie." />
+    <element key="NtfsAccessTime" value="Tijdsmarkering" />
+    <element key="NtfsAccessTimeDescription" value="Windows bewaart de toegangstijd van iedere bestandstoegang. Dit veroorzaakt onnodige schrijfacties die de levensduur van uw SSD verkorten. Het uitschakelen van eigenschap is sterk aanbevolen." />
+    <element key="Prefech" value="Prefetch" />
+    <element key="PrefechDescription" value="Prefetch ondersteunt het voorladen van vaak gebruikte gegevens in het RAM geheugen. Omwille van de snelle toegangstijden van een SSD, is deze functie nutteloos en kan ze uitgeschakeld worden." />
+    <element key="Bootdefrag" value="Defragmentatie van de opstart bestanden." />
+    <element key="BootDefragDescription" value="Omwille van de manier waarop bestanden opgeslagen worden op een SSD, heeft het defragmenteren van de opstart bestanden geen zin en moet dit uitgeschakeld worden omdat het de levensduur van uw SSD inkort." />
+    <element key="EventLogging" value="Windows gebeurtenis verslag" />
+    <element key="EventLoggingDescription" value="Windows slaat constant de verandering op die gebeuren op uw systeem, alsook haperingen en andere gebeurtenissen van programmas. Dit genereert onnodige schrijf acties, welke de levensduur van de SSD inkorten" />
+    <element key="SystemRestore" value="Systeem herstel" />
+    <element key="SystemRestoreDescription" value="Windows maakt systeemherstelpunten aan bij software installaties en belangrijke veranderingen voor Windows. Deze kunnen gebruikt worden om uw systeem te herstellen wanneer er fouten optreden. Deze functie genereert schrijf acties en zou dus uitgeschakeld moeten worden indien u een backup programma gebruikt of als de herstel optie niet nodig is." />
+    <element key="ShortNames" value="8.3 naam gebruik" />
+    <element key="ShortNamesDescription" value="Omwille van de comptabiliteit met oude 16-bit DOS applicaties, creërt windows korte namen voor folders en bestanden, waardoor er extra schrijfacties gebeuren op de SSD. Huidige programmas hebben geen behoeft aan deze benaming en dus kan deze functie uitgeschakeld worden." />
+    <element key="Optimize" value="Optimaliseer" />
+    <element key="Restore" value="Herstel van backup" />
+    <element key="Active" value="Geactiveerd" />
+    <element key="Deactive" value="Uitgeschakeld" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Geoptimaliseerde instellingen" />
+    <element key="RestoreAll" value="Herstel" />
+    <element key="OptimizeAll" value="Optimaliseer" />
+    <element key="RestoreAllInfo" value="Herstel van ale backups" />
+    <element key="OptimizeAllInfo" value="Optimaliseer alle instellingen" />
+    <element key="Update" value="Actualiseer" />
+    <element key="UpdateInfo" value="Kijk voor nieuwe versie" />
+    <element key="Support" value="Ondersteuning" />
+    <element key="SupportInfo" value="Stuur naar de ondersteunings website" />
+    <element key="UpdateExists" value="Update beschikbaar" />
+    <element key="UpdateExistsInfo" value="Er is een update beschikbaar. Wenst u hem te downloaden." />
+    <element key="UpdateCheck" value="Controleer voor een nieuwe versie bij het opstarten?" />
+    <element key="TipText" value="SSD Fresh is gratis, maar indien u het regelmatig gebruikt verwachten we een kleine bijdrage. Help ons aub om deze software te verbeteren door een kleine bijdrage te geven. Nadien ontvangt u automatisch &quot;SSD Fresh plus&quot;, een versie zonder reclame en deze boodschap." />
+    <element key="TipYesHeader" value="Ja, ik wil graag een kleine bijdrage geven." />
+    <element key="TipYesText" value="Door een kleine gift van 10 Euro kan u ons helpen bij de ondersteuning van de ontwikkeling van onze programmas en zal u &quot;SSD Fresh plus&quot; ontvangen" />
+    <element key="TipNo" value="Nee, ik wens geen bijdrage te geven." />
+    <element key="TipText2" value="SSD Fresh is gratis, maar  maar indien u het regelmatig gebruikt verwachten we een kleine bijdrage. Help ons aub om deze software te verbeteren door een kleine bijdrage te geven. Nadien ontvangt u automatisch &quot;SSD Fresh plus&quot;, een versie zonder reclame en deze boodschap." />
+    <element key="tooltipOptimized" value="Deze instelling is geoptimaliseerd" />
+    <element key="tooltipManual" value="Deze instelling is niet geoptimaliseerd. Gelieve manueel in te stellen, indien u deze functie nodig hebt." />
+    <element key="tooltipUnoptimized" value="Deze instelling is nog altijd niet geoptimaliseerd en een wijziging is aanbevolen." />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Naam" />
+    <element key="SmartData.HeaderValue" value="Waarde" />
+    <element key="SmartData.WorstHeader" value="Ergst" />
+    <element key="SmartData.HeaderThreshold" value="Drempel" />
+    <element key="SmartData.HeaderRow" value="Raw Data" />
+    <element key="SmartData.Drive" value="Schijf:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Gebruikte Schijfruimte" />
+    <element key="DriveInformation.FreeDiskSpace" value="Vrije Schijfruimte" />
+    <element key="DriveInformation.Yes" value="Ja" />
+    <element key="DriveInformation.No" value="Nee" />
+    <element key="DriveInformation.DriveName" value="Naam harde schijf" />
+    <element key="DriveInformation.DriveType" value="Harde schijf type" />
+    <element key="DriveInformation.DriveSize" value="Ruimte harde schijf" />
+    <element key="DriveInformation.SSD" value="Is dit een SSD schijf?" />
+    <element key="DriveInformation.PartitionNumber" value="Aantal partities" />
+    <element key="DriveInformation.DiskName" value="Schijf naam" />
+    <element key="DriveInformation.DiskSize" value="Schijf ruimte" />
+    <element key="DriveInformation.FileSystem" value="Bestandssysteem" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. gegevens" />
+    <element key="DriveInformation.MemoryUsage" value="Geheugen gebruik" />
+    <element key="DriveInformation.DriveInformation" value="Schijf informatie" />
+    <element key="Overview.WarningHeader" value="Waarschuwing" />
+    <element key="Overview.WarningText" value="Er is geen SSD gevonden in uw systeem. Dit programma past uw systeem instellingen aan voor het gebruik van SSDs. Indien u dit programma gebruikt zonder dat u een SSD heeft, dan zullen er bepaalde instellingen gedeactiveerd worden die normaal gezien nodig zijn voor het gebruik van een normale harde schijf. Indien u dus geen SSD gebruikt, adviseren we u om SSD fresh niet te gebruiken op dit systeem." />
+    <element key="Overview.QuestionText" value="Indien u er zeker van bent dat u een SSD gebruikt, gelieve ons een sout rapport op te sturen zodat we ons programma kunnen verbeteren." />
+    <element key="Overview.ButtonTitle" value="Ja, ik gebruik een SSD." />
+    <element key="Overview.ButtonInfo" value="Verstuur rapport en ga door." />
+    <element key="SmartData.Back" value="Terug" />
+    <element key="DriveInformation.NotAvailable" value="Niet beschikbaar" />
+    <element key="Overview.Error" value="Geen schijf gegevens gevonden" />
+    <element key="Overview.ErrorText" value="Kan de schijfgegevens niet lezen. Mischien is de gebruikte interface uitgeschakeld, niet beschikbaar of heeft u niet genoeg rechten op dit systeem. Ook virtuele machines ondersteunen deze interface niet. Indien u zeker bent dat dit systeem een SSD gebruikt, dan kan u optimaliseren." />
+    <element key="trim" value="Windows Trim functie" />
+    <element key="trimDescription" value="Om de levensduur en de prestaties te verhogen van een Solid State Disk(SSD), moet deze functie ingeschakeld worden. Of deze functie gebruikt zal worden hangt af van het feit of uw SSD deze functie ondersteunt. Kijk hiervoor op de website van de frabrikant." />
+    <element key="LanguageMissing" value="Uw taal is niet beschikbaar of onvolledig." />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="11/08/2012 14:07:42" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="nl" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Dutch - Belgium [nl-BE]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="BE" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

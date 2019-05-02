@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>91</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Átterkintés" />
+    <element key="menuItem.Optimize" value="Optimalizálás" />
+    <element key="menuItem.Settings" value="Beállitások és Támogatás" />
+    <element key="Version" value="Verzió" />
+    <element key="Language" value="Nyelv" />
+    <element key="defragsvc" value="Töredezettségmentesités" />
+    <element key="defragsvcDescription" value="Az SSD-k minden memóriacellához azonos hozzáférési idővel rendelkeznek, igy nincsen szükség töredezettségmentesitésre. A töredezettségmentesités hibákat generál, röviditi az SSD élettartamát. Nagyon ajánlott kikapcsolni a töredezettségmentesitési folyamatot." />
+    <element key="WSearch" value="Indexelés" />
+    <element key="WSearchDescription" value="A keresés gyorsitása érdekében a Windows indexeket generál. Ez irási folyamatot jelent az SSD-n, ami csökkenti az élettartamát. Amennyiben Ön soha, vagy csak ritkán használja a Windows keresés funkcióját ajánlott kikapcsolni ezt a funkciót." />
+    <element key="SysMain" value="Superfech szolgáltatás" />
+    <element key="SysMainDescription" value="Prefech támogatás előre betölti a gyakran használt alkalmazásokat a RAMM-ba. A rövid hozzáfárási idő miatt az SSD-knél nincsen szükség erre. Ez a funkció letiltható a prefech funkcióval együtt." />
+    <element key="NtfsAccessTime" value="Időbélyegző" />
+    <element key="NtfsAccessTimeDescription" value="A Windows eltárolja minden file hozzáférési idejét. Ez a folyamat a felesleges irási műveletek miatt csökkenti az SSD élettartamát." />
+    <element key="Prefech" value="Prefech" />
+    <element key="PrefechDescription" value="A Prefech ámogatja a gyakran használt alkalmazásoknak a memóriába való betöltését. Az SSD rövid hozzáfárási ideje miatt ez szüségtelen, igy letiltható." />
+    <element key="Bootdefrag" value="Boot fájlok töredezettségmentesitése." />
+    <element key="BootDefragDescription" value="Az SSD adattárolási módszerének köszönhetően, a töredezettségmentesítésnek az indító fájlokat illetően nincs értelme, és ezért le kell tiltani, mivel csökkenti az SSD élettartamát." />
+    <element key="EventLogging" value="Windows eseménynaplózás" />
+    <element key="EventLoggingDescription" value="&#xD;&#xA;A Windowsállandóan rögzíti rendszer konfigurációs változásokat, valamint az összeomlásokat és egyéb eseményeket a különböző szolgáltatások és programok tekintetében. Ez szükségtelen írási hozzáféréseket jelent és csökkenti az SSD élettartamát." />
+    <element key="SystemRestore" value="Rendszervisszaállitás" />
+    <element key="SystemRestoreDescription" value="A Windows visszaállítási pontokat hoz létre szoftver telepítés folyamán és jelentősebb változtatások esetén mely a Windows rendszert érinti, amelyeket vissza lehet állítani az esetben, ha valamilyen hiba történt. Ez a funkció írási eljárásokat termel és ezért le kell tiltani ,mert nem szükségesek." />
+    <element key="ShortNames" value="8,3 név létrehozás" />
+    <element key="ShortNamesDescription" value="A régi 16-bites rendszerekkel, ill. DOS alkalmazásokkal való kompatibilitás érdekében, a Windows rövid neveket hoz létre a mappák és fájlok számára, ami további írási hozzáféréseketjelent az SSD számára. A jelenlegi alkalmazások nemigénylik ezeket a neveket, ezért azokat le lehet tiltani." />
+    <element key="Optimize" value="Optimalizál" />
+    <element key="Restore" value="Visszaállitás mentésből" />
+    <element key="Active" value="Aktiválva" />
+    <element key="Deactive" value="Letiltva" />
+    <element key="Status" value="Állapot" />
+    <element key="OptimizedSettings" value="Optimalizált beállitások" />
+    <element key="RestoreAll" value="Visszaállitás" />
+    <element key="OptimizeAll" value="Optimalizál" />
+    <element key="RestoreAllInfo" value="Állitson vissza minden mentést" />
+    <element key="OptimizeAllInfo" value="Optimalitáljon minden beállitást" />
+    <element key="Update" value="Frissités" />
+    <element key="UpdateInfo" value="Keressen új verziót." />
+    <element key="Support" value="Támogatás" />
+    <element key="SupportInfo" value="Nézzen frissités után a weboldalon" />
+    <element key="UpdateExists" value="Frissités elérhető." />
+    <element key="UpdateExistsInfo" value="Frissités elérhető. Le akarja tölteni?" />
+    <element key="UpdateCheck" value="Keressen új verziót induláskor?" />
+    <element key="TipText" value="SSD Fresh ingyenes, de ha rendszeresen  használja, akkor várunk egy kis támogatást.&#xD;&#xA;&#xD;&#xA;Kérem, segítsen bennünket, a szoftver fejlesztésében, ami nekünk egy kis anyagi támogatást jelentt. Ezt követően automatikusan megkapja &quot;SSD Fresh Plus&quot; változatot, reklám nélkül." />
+    <element key="TipYesHeader" value="Igen, én szeretnék rövid tippeket kapni" />
+    <element key="TipYesText" value="Gyorstippel, ami csak 10.- segitheted az alkalmazás fejlesztéssét és megkepod az &quot;SSD Fresh Plus&quot; programot" />
+    <element key="TipNo" value="Nem én nem szeretnék gyorstippeket kapni" />
+    <element key="TipText2" value="SSD Fresh ingyenes, de ha rendszeresen használja, akkor várunk egy kistámogatást.&#xD;&#xA;&#xD;&#xA;Kérem, segítsen bennünket, a szoftver fejlesztésében némi anyagi támogatással. Ezt követően automatikusan megkapja &quot;SSD Fresh Plus&quot;-t,reklámok és e- nélkül a párbeszédablak nélkül." />
+    <element key="tooltipOptimized" value="Ez a beállitás optimalizálva lett!" />
+    <element key="tooltipManual" value="Eza a beállitás nem lett optimalizálva. Kérem válassza ki kézzel, amennyiben szükséges a működése." />
+    <element key="tooltipUnoptimized" value="Eza beállitás nem lettt optimalizálva, de a megváltoztatása ajánlott." />
+    <element key="SmartData.IDHeader" value="Azonositó" />
+    <element key="SmartData.HeaderHexId" value="Hex-id" />
+    <element key="SmartData.NameHeader" value="Név" />
+    <element key="SmartData.HeaderValue" value="Érték" />
+    <element key="SmartData.WorstHeader" value="Hibás" />
+    <element key="SmartData.HeaderThreshold" value="Küszöb" />
+    <element key="SmartData.HeaderRow" value="Nyers adatok" />
+    <element key="SmartData.Drive" value="Meghajtó:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Használt lemezkapacitás" />
+    <element key="DriveInformation.FreeDiskSpace" value="Szabad lemezterület" />
+    <element key="DriveInformation.Yes" value="igen" />
+    <element key="DriveInformation.No" value="nem " />
+    <element key="DriveInformation.DriveName" value="Merevlemez neve" />
+    <element key="DriveInformation.DriveType" value="Merevlemez tipusa" />
+    <element key="DriveInformation.DriveSize" value="Merevlemez mérete" />
+    <element key="DriveInformation.SSD" value="Ez a meghajtó egy SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Particiók száma" />
+    <element key="DriveInformation.DiskName" value="Meghajtó neve" />
+    <element key="DriveInformation.DiskSize" value="Meghajtó mérete" />
+    <element key="DriveInformation.FileSystem" value="Fájlrendszer" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. adat" />
+    <element key="DriveInformation.MemoryUsage" value="Memóriahasznbálat" />
+    <element key="DriveInformation.DriveInformation" value="Meghajtó-információ" />
+    <element key="Overview.WarningHeader" value="Figyelmeztetés" />
+    <element key="Overview.WarningText" value="Nem található SSD a rendszerben.Ez a program az SSD meghajtók szükségleteihez állitja be a rendszert. Amennyiben SSD nélküli rendszer esetén használja a program beállitásait, a hagyományos lemezek működését ellehetetlenitheti. Amennyiben nem rendelkezik SSD meghajtóval, nem javasoljuk az SSD Fresh program használatát." />
+    <element key="Overview.QuestionText" value="Ha biztos benne, hogy hasznái SSD-t, kérjük, küldjön egy hibajelentést, így tudunk javítani az alkalmazáson." />
+    <element key="Overview.ButtonTitle" value="Igen, én SSD-t használok." />
+    <element key="Overview.ButtonInfo" value="Jelentés elküldéseés folytatás" />
+    <element key="SmartData.Back" value="Vissza" />
+    <element key="DriveInformation.NotAvailable" value="Nem hozzáférhető" />
+    <element key="Overview.Error" value="Nem  található meghajtó adat" />
+    <element key="Overview.ErrorText" value="Nem sikerült beolvasni a meghajtó adatokat. Lehet, hogy a szükséges felület ki van kapcsolva, nem elérhető, vagy nincs elegendő jogosultsággal a rendszerben. A virtuális gépek nem támogatják ezt a felületet.&#xD;&#xA;Ha biztos benne, hogy a rendszer tartalmaz egy SSD-t, akkor használja az optimalizálást!" />
+    <element key="trim" value="Windows trim funkció" />
+    <element key="trimDescription" value="A Solid State Disks (SSD) élettartamának növelése érdekében, ezt a funkciót aktiválni kell. Hogy ezt a funkciót fogja használni attól függ, hogy az SSD támogatja ezt a funkciót. Keresse meg a gyártó honlapján." />
+    <element key="LanguageMissing" value="Az Ön nyelve hiányzik, vagy nem teljes?" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="2012.08.22. 15:36:12" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="hu" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Hungarian [hu]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

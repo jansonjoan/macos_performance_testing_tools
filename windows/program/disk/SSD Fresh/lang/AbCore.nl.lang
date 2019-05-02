@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>139</count>
+    <element key="AbCore.AbUpdater.MessageConnect" value="Verbinden" />
+    <element key="AbCore.AbUpdater.MessageDownload" value="Download" />
+    <element key="AbCore.AbUpdater.MessageUpdate" value="Update" />
+    <element key="AbCore.AbUpdater.MessageReady" value="Voltooien" />
+    <element key="AbCore.AbUpdater.MessageCancel" value="Process Afbreken" />
+    <element key="AbCore.AbUpdater.MessageContinue" value="Sluiten" />
+    <element key="AbCore.AbUpdater.MessageSuccessNoUpdate" value="Er is geen update nodig. U gebruikt al de laatste versie." />
+    <element key="AbCore.AbUpdater.MessageSuccessSettingUpdate" value="Een veiligheids update is gedownlaod. Klik op &quot;sluiten&quot; om het programma opnieuw op te starten." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdate" value="Een nieuwe balangrijke update is gedownload. Klik op &quot;sluiten&quot; om de setup te verwerken." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdateWebsite" value="Een nieuwe bangrijke update is beschikbaar voor download. Klik op &quot;sluiten&quot; om de download pagina te bezoeken." />
+    <element key="AbCore.AbUpdater.MessageFailure" value="We zijn niet in staat een update-check uit te voeren. Verzeker u ervan dat de PC met internet is verbonden. Probeer de update-check over een paar uur opnieuw te starten." />
+    <element key="AbCore.AbSurvey.Ask" value="Wij vinden het jammer dat u de software wilt de-installeren. Help ons toekomstige versies te verbeteren en geef ons de rede waarom u deze software wilt de-installeren.&#xD;&#xA;Zou u ons willen helpen door een korte enquette in te invullen?&#xD;&#xA;&#xD;&#xA;Dit vraagt ongeveer 2 minuten van uw tijd.&#xD;&#xA;Er is een internet verbinding nodig." />
+    <element key="AbCore.AbSurvey.Url" value="https://www.abelssoft.net/survey/index.php?sid=3" />
+    <element key="AbCore.AbNewsletterAbo.Url" value="https://abelssoft.de/k/newsletterSubscribeEn.do?email=%1&amp;groupid=2&amp;sectorid=3&amp;mail=true" />
+    <element key="AbCore.AbNewsbox.NeverShow" value="Laat deze nieuwsbox voortaan niet meer zien" />
+    <element key="AbCore.AbNewsbox.Close" value="Sluit de nieuwsbox&gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.MainText" value="Blijf up to date: schrijf u in voor onze nieuwsbrief en wij houden u automatisch op de hoogte van nieuwe releases en updates.&#xD;&#xA;U ontvangt een kortings-coupon van 2,50 € / $3 USD voor uw volgende bestelling als u zich nu inschrijft. " />
+    <element key="AbCore.AbNewsletterAbo.EmailText" value="Uw e-mail adres:" />
+    <element key="AbCore.AbNewsletterAbo.Button" value="Schrijf u nu in en ontvang een kortingsbon&gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.Success" value="Hartelijk dank. Wij hebben u met succes toegevoegd aan onze nieuwsbrief. U ontvangt uw kortingsbon binnen enige minuten via e-mail." />
+    <element key="AbCore.AbNewsletterAbo.Offline" value="Helaas u schijnt offline te zijn op dit moment. Probeer het later nog eens." />
+    <element key="AbCore.AbNewsletterAbo.InvalidEmail" value="Dit e-mail adres is ongeldig. Vul alstublieft een geldig e-mail adres in of sluit dit venster." />
+    <element key="AbCore.AbLiteRegistrationGUI.Window.Title" value="Gratis Registratie" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro" value="U dient deze software te ontsluiten voordat u het kunt gebruiken. Dat is een eenmalige en gratis stap." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading1" value="U dient deze software te ontsluiten voordat u het kunt gebruiken. Vult u aub dit formulier in:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.FirstName" value="Uw voornaam:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.LastName" value="Uw achternaam:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Register" value="Verkrijg nu gratis ontsluit mail &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Or" value="of" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading2" value="Heeft u uw ontsluitings-code al ontvangen? In dat geval, vul het hier in:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Code" value="Ontsluitings-code" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.RegisterUsingKey" value="Ontsluit&gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Invalid" value="Deze ontsluitings-code is niet geldig. Controleer nog eens goed. Neem gerust contact op met ons als er enig probleem is: contact@abelssoft.net" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Valid" value="Hartelijk dank. U kunt de sotware nu gebruiken." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid" value="Wij hebben zojuist aan u uw persoonlijke ontsluiting-code gemaild. Controleer uw e-mail en klik op de ontsluitings-code.&#xD;&#xA;Kijk alstublieft na of uw e-mail adres juist is ingevuld indien u binnen 5 minuten van ons geen e-mail ontvangt. Kijk dan ook uw spam-map na. &#xD;&#xA;Voor alle vragen neem contact op met contact@abelssoft.net." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestInvalid" value="Dank u wel. Open nu uw webbrowser en bezoek de volgende website om uw ontsluiting-code te ontvangen:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskClose" value="Als dit venster sluit zonder registratie dan zal de software niet starten. Wilt u dit programma sluiten?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskCloseTitle" value="Sluit het programma?" />
+    <element key="AbCore.AbLiteRegistrationGUI.ManualURL" value="https://www.abelssoft.de/k/regLite.do?a=%1&amp;l=%2&amp;af=%3" />
+    <element key="AbCore.AbLiteRegistrationGUI.EmailRequestURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=true&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbLiteRegistrationGUI.InstantRegistrationURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=false&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbBugReporter.title" value="Er is een probleem opgetreden" />
+    <element key="AbCore.AbBugReporter.maintext" value="Help ons altsublieft dit probleem te analyseren en klik op &quot;send&quot; om ons een kopie van het foutbericht te zenden." />
+    <element key="AbCore.AbBugReporter.cancel" value="Niet verzenden" />
+    <element key="AbCore.AbBugReporter.send" value="Verzend het rapport" />
+    <element key="AbCore.AbBugReporter.connecting" value="Status: verbinden met de server.........." />
+    <element key="AbCore.AbBugReporter.sending" value="Status: rapport verzenden" />
+    <element key="AbCore.AbBugReporter.success" value="Dank u wel. Wij hebben het fout-rapport goed ontvangen." />
+    <element key="AbCore.AbBugReporter.failure" value="Het is niet mogelijk het rapport te verzenden. Vergewis u ervan dat u werkende internet-verbinding heeft." />
+    <element key="AbCore.AbScheduler.NoTaskInfo" value="Planner niet aktief op dit moment." />
+    <element key="AbCore.AbScheduler.NotPlanned" value="Niet gepland" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitializedTitle" value="Planner" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitialized" value="Er kan geen taak gemaakt worden." />
+    <element key="AbCore.AbScheduler.lblWelcome" value="Welkom op de taakplanner wizard" />
+    <element key="AbCore.AbScheduler.lblNextRunTime" value="Volgende geplande run:" />
+    <element key="AbCore.AbScheduler.btnRemoveSchedule" value="Verwijder geplande taak" />
+    <element key="AbCore.AbScheduler.btnCreateSchedule" value="Maak een geplande taak" />
+    <element key="AbCore.AbScheduler.BackButton" value="Terug" />
+    <element key="AbCore.AbScheduler.NextButton" value="Volgende" />
+    <element key="AbCore.AbScheduler.FirstDescription" value="Kies een toepassing" />
+    <element key="AbCore.AbScheduler.SecondDescription" value="Kies de interval" />
+    <element key="AbCore.AbScheduler.ThirdDescription" value="Kies de tijd herhaling" />
+    <element key="AbCore.AbScheduler.FinishedDescription" value="Beëindigd. Klik op de toets hieronder om de taak te plannen. " />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan0" value="Dagelijkse intervallen" />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan1" value="Weekelijkse intervallen" />
+    <element key="AbCore.AbScheduler.radioGroupEvents0" value="Planning van de tijd" />
+    <element key="AbCore.AbScheduler.radioGroupEvents1" value="Start bij elke aanmelding" />
+    <element key="AbCore.AbScheduler.lblTime" value="Tijd:" />
+    <element key="AbCore.AbScheduler.checkStartOnBatteries" value="Niet starten als de computer op accu draait." />
+    <element key="AbCore.AbScheduler.lblPriority" value="Prioriteit:" />
+    <element key="AbCore.AbScheduler.Priorities.Idle" value="Laagste" />
+    <element key="AbCore.AbScheduler.Priorities.BelowNormal" value="Laag" />
+    <element key="AbCore.AbScheduler.Priorities.Normal" value="Normaal" />
+    <element key="AbCore.AbScheduler.Priorities.AboveNormal" value="Hoog" />
+    <element key="AbCore.AbScheduler.Priorities.High" value="Hoogste" />
+    <element key="AbCore.AbBugReporter.CheckBoxEmail" value="Stuur e-mail adres:" />
+    <element key="AbCore.AbBugReporter.TextEmail" value="Help ons om onze software te verbeteren. U kunt ons een e-mail adres zenden voor mogelijke vragen bij u. Deze informatie is optineel." />
+    <element key="AbCore.AbBugReporter.SendAndUpdate" value="Verstuur rapporten en controleer op updates" />
+    <element key="AbCore.AbFontInstaller.Installing" value="aan het instaleren...." />
+    <element key="AbCore.AbFontInstaller.Download" value="aan het downloaden...." />
+    <element key="AbCore.AbFontInstaller.Success" value="Installatie geslaagd" />
+    <element key="AbCore.AbFontInstaller.Title" value="Font aan het installeren" />
+    <element key="AbCore.AbFontInstaller.Headline" value="Font aan het downloaden..." />
+    <element key="AbCore.AbBugReporter.DownloadAndInstallFont" value="Font installeren" />
+    <element key="AbCore.AbBugReporter.ProblemOccured1" value="Een fout op uw systeeem gevonden." />
+    <element key="AbCore.AbBugReporter.ProblemOccured2" value="Het font is niet goed geinstalleerd:" />
+    <element key="AbCore.AbBugReporter.InstallDescription" value="U kunt nu het juiste font downloaden en installeren." />
+    <element key="AbCore.AbBugReporter.DownloadInstall" value="Download en installeer het font" />
+    <element key="AbCore.AbInfoForms.Controls.TitleControl.Undertitle" value="Koop de volledige versie voor %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lblTitle" value="%1 dag volledige versie toegestaan" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lbl30DaysText" value="Dit is een volledig functionerende versie van %1. Deze mag gebruikt worden gedurende %2 dagen. U kunt uw ontsluitings-code krijgen door op de toets hieronder te klikken." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Text" value="Koop de volledige versie voor: %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Description" value="Full Power: maak de volledige versie kompleet zonder enige beperking. Koop nu online." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Text" value="Volledige versie %1 toegestaan" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Description" value="Test %1%2  volledig vrij. Klik hier om een %2 dagen licentie te krijgen." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnClose" value="Exit" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.Title" value="Deze functie is alleen beschikbaar in de volledige versie." />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesDescription" value="&#xD;&#xA;&#xD;&#xA;Verkrijg informatie over de voordelen van de volledige versie" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesText" value="Meer informatie" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoText" value="Terug" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoDescription" value="Blijven werken met %1" />
+    <element key="AbCore.AbInfoForms.Controls.Benefits.BenefitListControl.lblHeaderBenefit" value="Voordelen in een oogopslag" />
+    <element key="AbCore.AbInfoForms.Controls.Links.SmallLink.LinkText" value="Koop nu online" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Text" value="Koop nu online" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Description" value="Klik hier voor de volledige versie (%1, onmiddelijke levering)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus1" value="%1 dagen test versie zijn verlopen" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus2" value="%1 dagen test versie is nog te gebruiken gedurende %2 dag(en)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestStarts" value="0 dagen" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestEnds" value="%1 dagen" />
+    <element key="AbCore.AbInfoForms.Controls.UpgradeControl.lblBuyHead" value="Koop de volledige versie voor slechts %1" />
+    <element key="AbCore.AbInfoForms.Forms.UpgradeForm.btnClose" value="Ik wil niet kopen" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.UseProgramWithoutCode" value="Gebruik het programma deze keer zonder ontsluitings-code" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.ReRequestCode" value="Code herhalings verzoek" />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid.Notify" value="Wij hebben u een activatie link voor de software gestuurd. Als u niet binnen 3 minuten een e-mail krijgt, controleer dan uw spam map en kijk ook of uw e-mail adres juist is ingevoerd. Neem voor alle vragen contact met ons op via contact@abelssoft.net." />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFound" value="Er is een nieuwe update voor %1. Wilt u nu updaten?" />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFoundTitle" value="Een nieuwe update gevonden" />
+    <element key="AbSecurePassword.Paste" value="Plakken" />
+    <element key="AbSecurePassword.DeleteError" value="Oeps, tijdens het verwijderen van delen van het wachtwoord schijnt er iets mis te gaan. Type het wachtwoord alsublieft opnieuw." />
+    <element key="AbSecurePassword.DeleteErrorTitle" value="Fout" />
+    <element key="AbCore.AbFontInstaller.DownloadError" value="Het font-bestand kon niet worden gedownload" />
+    <element key="AbCore.AbFontInstaller.DownloadSuccess" value="Downloaden geslaagd" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.WaitingUntilOpenMailClick" value="Kontroleer uw e-mail  (ook de junk-mail) en klik op de link die we gezonden hebben." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingText" value="Ontsluiten van de software....graag even wachten...." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.ThanksForActivating" value="De software is geactiveerd.........." />
+    <element key="AbCore.AbNewsletterAbo.SpamEmail" value="We kunnen niet naar dit e-mail adres verzenden. Probeer een ander." />
+    <element key="AbCore.AbNewsletterAbo.EmptyEmail" value="Vul uw e-mail adres in. " />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro.CheckingForAutomaticInternetActivation" value="Controle op internet klant-activering....." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingTextRequestSupport" value="Neem kontakt op met onze support via contact@abelssoft.net om een sleutel te krijgen." />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Cancel" value="Laten vervallen" />
+    <element key="AbCore.AbLiteRegistrationGUI.Link.NoInternetConnection" value="Geen internet verbinding?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.KnownCustomer" value="Deze toepassing is geactiveerd. Dank u voor de interesse in onze produkten!" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.AlreadyRegisteredForProduct" value="U heeft dit produkt al geactiveerd.  Hartelijk dank." />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="28-10-2013 12:19:24" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="nl" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Dutch [nl]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="AbCore" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="2.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

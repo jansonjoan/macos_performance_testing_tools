@@ -1,0 +1,1 @@
+gpuinfo.exe /cfake

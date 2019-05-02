@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>93</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Yleisnäkymä" />
+    <element key="menuItem.Optimize" value="Optimointi" />
+    <element key="menuItem.Settings" value="Asetukset &amp; tuki" />
+    <element key="Version" value="Versio:" />
+    <element key="Language" value="Kieli" />
+    <element key="defragsvc" value="Eheytys" />
+    <element key="defragsvcDescription" value="Koska SSD-levyn lukunopeus on sama kautta koko levyn, ei tietojen tarvitse olla levyllä samassa kohtaa. Lisäksi eheyttäminen lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Tästä johtuen toiminto kannattaa ottaa kokonaan pois käytöstä." />
+    <element key="WSearch" value="Indeksointi" />
+    <element key="WSearchDescription" value="Nopeuttaakseen hakutoimintoja Windows luo indeksin. Indeksin luonti lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Jollet käytä useasti Windowsin hakuja, olisi syytä ottaa indeksointi kokonaan pois käytöstä." />
+    <element key="SysMain" value="Superfetch-palvelu" />
+    <element key="SysMainDescription" value="Superfetch tallentaa useasti käytettyjen sovellusten esilatausta RAM-muistiin. Koska SSD-levy on itsessään nopea, voi tämän toiminnallisuuden ottaa pois käytöstä hyödyttömänä." />
+    <element key="NtfsAccessTime" value="Aikaleima" />
+    <element key="NtfsAccessTimeDescription" value="Windows tallentaa aikaleimat jokaiselle käytetylle tiedostolle. Tämä lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Tästä johtuen toiminto kannattaa ottaa kokonaan pois käytöstä." />
+    <element key="Prefech" value="Prefetch" />
+    <element key="PrefechDescription" value="Prefetch tukee useasti käytettyjen sovellusten esilatausta. Koska SSD-levy on itsessään nopea, voi tämän toiminnallisuuden ottaa pois käytöstä hyödyttömänä." />
+    <element key="Bootdefrag" value="Käynnistystiedostojen eheytys" />
+    <element key="BootDefragDescription" value="Koska SSD-levyn lukunopeus on sama kautta koko levyn, ei tietojen tarvitse olla levyllä samassa kohtaa. Lisäksi eheyttäminen lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Tästä johtuen toiminto kannattaa ottaa kokonaan pois käytöstä." />
+    <element key="EventLogging" value="Windowsin tapahtumaloki" />
+    <element key="EventLoggingDescription" value="Windows tallentaa pysyvästi järjestelmätietojen muutoksista, kaatumisista ja muista palvelu- ja sovellustapahtumista. Tämä lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää." />
+    <element key="SystemRestore" value="Järjestelmän palautus" />
+    <element key="SystemRestoreDescription" value="Windows luo palautuspisteitä sovellusasennusten ja suurempien järjestelmämuutosten yhteydessä, joiden avulla voidaan suorittaa järjestelmän palautus virhetilanteessa. Tämä lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Tämä prosessi olisi hyvä ottaa pois käytöstä jos käytössäsi on joku toinen varmuuskopiointitapa ja jollei järjestelmän palautusta tarvita." />
+    <element key="ShortNames" value="8.3 -nimeäminen" />
+    <element key="ShortNamesDescription" value="Vanhempien 16-bittisten DOS-sovellusten yhteensopivuuden takaamiseksi Windows luo kansiolle ja tiedostoille lyhennetyt nimet. Tämä lisää levytoimintojen määrää ja lyhentää näin SSD-levyn käyttöikää. Nykyajan sovellukset eivät tarvitse tätä toimintoa ja tästä johtuen toiminto kannattaa ottaa kokonaan pois käytöstä." />
+    <element key="Optimize" value="Optimoi" />
+    <element key="Restore" value="Palauta varmuuskopiosta" />
+    <element key="Active" value="Aktivoitu" />
+    <element key="Deactive" value="Deaktivoitu" />
+    <element key="Status" value="Tila" />
+    <element key="OptimizedSettings" value="Optimoidut asetukset" />
+    <element key="RestoreAll" value="Palauta" />
+    <element key="OptimizeAll" value="Optimoi" />
+    <element key="RestoreAllInfo" value="Palauta kaikki varmuuskopiot" />
+    <element key="OptimizeAllInfo" value="Optimoi kaikki asetukset" />
+    <element key="Update" value="Päivitä" />
+    <element key="UpdateInfo" value="Tarkista päivityksen saatavuus" />
+    <element key="Support" value="Tuki" />
+    <element key="SupportInfo" value="Välitä tukisivustolle" />
+    <element key="UpdateExists" value="Päivitys saatavilla" />
+    <element key="UpdateExistsInfo" value="Päivitys on saatavilla. Haluatko ladata sen nyt?" />
+    <element key="UpdateCheck" value="Tarkista päivitykset ohjelman käynnistyessä?" />
+    <element key="TipText" value="SSD Fresh on ilmainen, mutta jos käytät sitä säännöllisesti, voisit muistaa meitä pienellä tipillä.&#xD;&#xA;&#xD;&#xA;Autathan meitä kehittämään tätä sovellusta antamalla meille pienen tipin. Tipin antamisen jälkeen tulet saamaan SSD Fres Plus -sovelluksen käyttöoikeuden, jossa tätä ikkunaa ei enää näytetä." />
+    <element key="TipYesHeader" value="Kyllä, haluaisin antaa pienen tipin" />
+    <element key="TipYesText" value="Pienellä 10 ,- tipillä voit auttaa meitä kehittämään sovellustamme ja saat SSD Fres Plus -sovelluksen käyttöoikeuden" />
+    <element key="TipNo" value="Ei, en halua antaa tippiä" />
+    <element key="TipText2" value="SSD Fresh on ilmainen, mutta jos käytät sitä säännöllisesti, voisit muistaa meitä pienellä tipillä.&#xD;&#xA;&#xD;&#xA;Autathan meitä kehittämään tätä sovellusta antamalla meille pienen tipin. Tipin antamisen jälkeen tulet saamaan SSD Fres Plus -sovelluksen käyttöoikeuden, jossa tätä ikkunaa ei enää näytetä." />
+    <element key="tooltipOptimized" value="Tämä asetus on optimoitu" />
+    <element key="tooltipManual" value="Tätä asetusta ei ole vielä optimoitu. Valitse manuaalisesti, jos tarvitset tätä toiminnallisuutta." />
+    <element key="tooltipUnoptimized" value="Tätä asetusta ei ole vielä optimoitu ja muutosta suositellaan!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-id" />
+    <element key="SmartData.NameHeader" value="Nimi" />
+    <element key="SmartData.HeaderValue" value="Arvo" />
+    <element key="SmartData.WorstHeader" value="Huonoin" />
+    <element key="SmartData.HeaderThreshold" value="Kynnys" />
+    <element key="SmartData.HeaderRow" value="Raakadata" />
+    <element key="SmartData.Drive" value="Asema:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Käytetty levytila" />
+    <element key="DriveInformation.FreeDiskSpace" value="Vapaa levytila" />
+    <element key="DriveInformation.Yes" value="kyllä" />
+    <element key="DriveInformation.No" value="ei" />
+    <element key="DriveInformation.DriveName" value="Kiintolevyn nimi" />
+    <element key="DriveInformation.DriveType" value="Kiintolevyn tyyppi" />
+    <element key="DriveInformation.DriveSize" value="Kiintolevyn koko" />
+    <element key="DriveInformation.SSD" value="Onko tämä levy SSD-levy" />
+    <element key="DriveInformation.PartitionNumber" value="Osioiden määrä" />
+    <element key="DriveInformation.DiskName" value="Aseman nimi" />
+    <element key="DriveInformation.DiskSize" value="Aseman koko" />
+    <element key="DriveInformation.FileSystem" value="Tiedostojärjestelmä" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. -tiedot" />
+    <element key="DriveInformation.MemoryUsage" value="Levytilan käyttö" />
+    <element key="DriveInformation.DriveInformation" value="Kiintolevyn tiedot" />
+    <element key="Overview.WarningHeader" value="Varoitus" />
+    <element key="Overview.WarningText" value="SSD-levyä ei löydetty.Tämä sovellus on tehty ainoastaan SSD-levyjen optimointiin. Jos käytät sovellusta ilman SSD-levyä, voit ottaa käytöstä normaalin kiintolevyn tarvitsemia palveluita. Tästä syystä suosittelemme olemaan käyttämättä tätä sovellusta järjestelmässäsi." />
+    <element key="Overview.QuestionText" value="Jos olet varma, että käytössäso on SSD-levy, lähetä meille virheraportti, jotta voimme parantaa sovellusta." />
+    <element key="Overview.ButtonTitle" value="Kyllä, käytössäni on SSD" />
+    <element key="Overview.ButtonInfo" value="Lähetä raportti ja jatka" />
+    <element key="SmartData.Back" value="Takaisin" />
+    <element key="DriveInformation.NotAvailable" value="Ei saatavilla" />
+    <element key="Overview.Error" value="Kiintolevyn tietoja ei löydy" />
+    <element key="Overview.ErrorText" value="Kiintolevyn tietoja ei voitu lukea. Tarvittu liittymä on ehkä pois käytöstä, ei saatavilla tai sinulla ei ole riittäviä oikeuksia tähän järjestelmään. Virtuaalikoneet eivät myöskään tue tätä liittymää. Jos olet varma, että käytössäsi on SSD-levy, voit jatkaa optimoinnin käyttöä." />
+    <element key="trim" value="Windowsin trim-toiminto" />
+    <element key="trimDescription" value="Pidentääksesi SSD-levyn käyttöikää ja parantaaksesi sen suorituskykyä, tämä toiminto pitäisi ottaa käyttöön. Jos järjestelmäsi tukee tätä toimintoa, sitä käytetään. Tarkista asia valmistajan kotisivuilta." />
+    <element key="LanguageMissing" value="Puuttuuko kielesi tai onko se osittain kääntämättä?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="6sto" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="01.06.2012 13:40:00" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="fi" />
+    <element key="AbFlexTrans.SpecialInfo.Language.ID" value="v129449212437216506-235789" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Finnish [fi]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

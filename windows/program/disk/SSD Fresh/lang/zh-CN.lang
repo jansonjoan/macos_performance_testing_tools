@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD优化工具" />
+    <element key="menuItem.Overview" value="总览" />
+    <element key="menuItem.Optimize" value="优化" />
+    <element key="menuItem.Settings" value="设置 &amp; 支持" />
+    <element key="Version" value="版本：" />
+    <element key="Language" value="语言" />
+    <element key="defragsvc" value="碎片整理" />
+    <element key="defragsvcDescription" value="因为SSD对所有存储区域有着相同的访问速度，所以文件没有必要连续存储。碎片整理只会造成额外的写入操作，从而减少SSD的寿命。因此，我们强烈建议您禁用磁盘碎片整理。" />
+    <element key="WSearch" value="磁盘索引" />
+    <element key="WSearchDescription" value="虽然Windows文件索引可以让搜索更快，但是索引过程会产生写入操作。如果您不需要或者很少使用搜索功能，我们建议您关闭索引。" />
+    <element key="SysMain" value="超级预读取 (Superfecth)" />
+    <element key="SysMainDescription" value="该功能能将经常使用的程序存入内存,这样能提高这些程序的启动速度。但是对于SSD来说，这项功能是没有必要的。" />
+    <element key="NtfsAccessTime" value="文件访问时间" />
+    <element key="NtfsAccessTimeDescription" value="每当系统去读写硬盘中的文件时，都会记录下读取的时间，这是非必要的，省略这个操作可以减少很多硬盘操作。" />
+    <element key="Prefech" value="预读取" />
+    <element key="PrefechDescription" value="和超级预读取类似，该功能能将经常使用的程序存入内存,这样能提高这些程序的启动速度。但是对于SSD来说，这项功能是没有必要的。" />
+    <element key="Bootdefrag" value="整理启动文件碎片" />
+    <element key="BootDefragDescription" value="和碎片整理类似，该功能对于SSD没有意义，禁用该功能能增加磁盘寿命。" />
+    <element key="EventLogging" value="Windows 事件记录器" />
+    <element key="EventLoggingDescription" value="如果您不需要查看甚至不知道什么是Windows事件，那么请禁用此功能。" />
+    <element key="SystemRestore" value="系统还原" />
+    <element key="SystemRestoreDescription" value="Windows 会时常创建一些用于在出现错误时恢复系统的还原点。如果您已经使用了第三方备份工具或者您不需要此功能，请将其禁用。" />
+    <element key="ShortNames" value="8.3 命名法支持" />
+    <element key="ShortNamesDescription" value="为了兼容旧的16位DOS系统，Windows会为全部的文件/文件夹生成8个字符的短文件名供其使用，这也会造成额外的磁盘写入。但我们平常基本不会用到，可以关闭。" />
+    <element key="Optimize" value="进行优化" />
+    <element key="Restore" value="恢复到之前的设置" />
+    <element key="Active" value="已启用" />
+    <element key="Deactive" value="已禁用" />
+    <element key="Status" value="状态" />
+    <element key="OptimizedSettings" value="优化设置" />
+    <element key="RestoreAll" value="还原" />
+    <element key="OptimizeAll" value="优化" />
+    <element key="RestoreAllInfo" value="全部还原" />
+    <element key="OptimizeAllInfo" value="全部优化" />
+    <element key="Update" value="更新" />
+    <element key="UpdateInfo" value="检查新版本" />
+    <element key="Support" value="支持" />
+    <element key="SupportInfo" value="前往支持网站" />
+    <element key="UpdateExists" value="有可用更新" />
+    <element key="UpdateExistsInfo" value="有更新的版本，是否下载？" />
+    <element key="UpdateCheck" value="在启动时检查新版本？" />
+    <element key="TipText" value="SSD Fresh 是一个免费软件，如果您喜欢本软件，您可以给我们一些小小的捐助。&#xD;&#xA;&#xD;&#xA;您的捐助可以帮助我们把软件做得更好。同时您可以获得一个没有广告的SSD Fresh增强版本。" />
+    <element key="TipYesHeader" value="是的，我愿意捐款" />
+    <element key="TipYesText" value="捐款$10，资助我们的开发，获得SSD Fresh增强版" />
+    <element key="TipNo" value="不，我暂时不想捐款" />
+    <element key="TipText2" value="SSD Fresh 是一个免费软件，如果您喜欢本软件，您可以给我们一些小小的捐助。&#xD;&#xA;&#xD;&#xA;您的捐助可以帮助我们把软件做得更好。同时您可以获得一个没有广告的SSD Fresh增强版本。" />
+    <element key="tooltipOptimized" value="此项目已经被优化" />
+    <element key="tooltipManual" value="此项目还没有被优化，如果您不需要此功能，可以手动选择优化。" />
+    <element key="tooltipUnoptimized" value="此项目还没有被优化，但是我们推荐您优化此项。" />
+    <element key="SmartData.IDHeader" value="编号" />
+    <element key="SmartData.HeaderHexId" value="十六进制编号" />
+    <element key="SmartData.NameHeader" value="项目" />
+    <element key="SmartData.HeaderValue" value="当前" />
+    <element key="SmartData.WorstHeader" value="最坏" />
+    <element key="SmartData.HeaderThreshold" value="阀值" />
+    <element key="SmartData.HeaderRow" value="原始数据" />
+    <element key="SmartData.Drive" value="硬盘：" />
+    <element key="DriveInformation.UsedDiskSpace" value="已用空间" />
+    <element key="DriveInformation.FreeDiskSpace" value="可用空间" />
+    <element key="DriveInformation.Yes" value="是" />
+    <element key="DriveInformation.No" value="否" />
+    <element key="DriveInformation.DriveName" value="硬盘型号" />
+    <element key="DriveInformation.DriveType" value="硬盘类型" />
+    <element key="DriveInformation.DriveSize" value="硬盘大小" />
+    <element key="DriveInformation.SSD" value="是否为SSD" />
+    <element key="DriveInformation.PartitionNumber" value="分区数" />
+    <element key="DriveInformation.DiskName" value="卷标" />
+    <element key="DriveInformation.DiskSize" value="分区大小" />
+    <element key="DriveInformation.FileSystem" value="文件系统" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T 数据" />
+    <element key="DriveInformation.MemoryUsage" value="空间使用情况" />
+    <element key="DriveInformation.DriveInformation" value="磁盘信息" />
+    <element key="Overview.WarningHeader" value="警告" />
+    <element key="Overview.WarningText" value="在您的系统中没有发现SSD，本程序专为使用SSD的系统设计，如果您没有SSD，我们建议您不要使用SSD Fresh。" />
+    <element key="Overview.QuestionText" value="如果您确信SSD已经正确安装，请向我们报告本错误以便于改进软件。" />
+    <element key="Overview.ButtonTitle" value="是的，我正在使用SSD" />
+    <element key="Overview.ButtonInfo" value="发送错误报告并继续" />
+    <element key="SmartData.Back" value="返回" />
+    <element key="DriveInformation.NotAvailable" value="不可用" />
+    <element key="Overview.Error" value="没有发现数据" />
+    <element key="Overview.ErrorText" value="无法读取驱动器数据。可能是相应接口没有激活或者是您没有相应的系统权限。" />
+    <element key="trim" value="Trim 功能" />
+    <element key="trimDescription" value="Trim 能优化 SSD 的寿命和性能，如果您的驱动器支持此功能，请将其启用。" />
+    <element key="LanguageMissing" value="没有您的语言或者翻译不完整？" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Deparsoul" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="2012/7/22 13:20:52" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="zh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Chinese - China [zh-CN]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="CN" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>91</count>
+    <element key="AppName" value="SSD جديدة" />
+    <element key="menuItem.Overview" value="نظرة عامة" />
+    <element key="menuItem.Optimize" value="الأمثل" />
+    <element key="menuItem.Settings" value="الاعدادات والدعم" />
+    <element key="Version" value="الاصدار:" />
+    <element key="Language" value="اللغة" />
+    <element key="defragsvc" value="إلغاء التجزئة" />
+    <element key="defragsvcDescription" value="ولذلك، فإنه ينصح بشدة تنشيط عملية إلغاء التجزئة.SSD منذ سواقات نفس الوقت الوصول لجميع خلايا الذاكرة، هناك لا حاجة تخزينها بصورة متماسكة. وبا?ضافة إلى ذلك، ينشئ عملية إلغاء التجزئة يضرب ويرتي، التي تقلل من عمر . " />
+    <element key="WSearch" value="الفهرسة" />
+    <element key="WSearchDescription" value="لتسريع البحث، يقوم الوندوز بإنشاء فهرس. ولكن هذا يؤدي عمليات الكتابة على فرقة، مما يقلل من العمر. إذا كنت تستخدم الوندوز البحث إلا نادراً أو ابدأ، ننصح بإيقاف تشغيل هذه الوظيفة." />
+    <element key="SysMain" value="جلب الخدمة الممتازة" />
+    <element key="SysMainDescription" value="" />
+    <element key="NtfsAccessTime" value="الطابع الزمني" />
+    <element key="NtfsAccessTimeDescription" value="يخزن وندوز وقت الوصول للوصول إلى كافة الملفات. يكتب يضرب هذا ينتج لا لزوم لها ومما سيقلل من عمر فرقة الخاص بك. ننصح بتعطيل هذه الميزة بشدة." />
+    <element key="Prefech" value="انعاش" />
+    <element key="PrefechDescription" value="الجلب المسبق يدعم التحميل للتطبيقات المستخدمة بشكل متكرر إلى ذاكرة الوصول العشوائي. بسبب أوقات وصول سريع قبالة سواقات، هذه الدالة لا طائل منه ويمكن تعطيلها." />
+    <element key="Bootdefrag" value="إلغاء التجزئة لملفات التمهيد" />
+    <element key="BootDefragDescription" value="SSD وبسبب الطريقة أن يتم تخزين الملفات في سواقات، إلغاء تجزئة لملفات التمهيد لا معنى له ويجب أن يكون معطلاً حيث أنه يقلل من عمر بك ." />
+    <element key="EventLogging" value="تسجيل احداث ويندوز" />
+    <element key="EventLoggingDescription" value="الخاص بك.SSD الوندوز يسجل بشكل دائم تغييرات تكوين النظام، فضلا عن حوادث وأحداث أخرى من الخدمات والبرامج المختلفة. وهذا يخلق قبضة الكتابة لا لزوم لها، ويقلل من عمر " />
+    <element key="SystemRestore" value="استعادة النظام" />
+    <element key="SystemRestoreDescription" value="الوندوزيقوم بإنشاء نقاط استعادة لعمليات تثبيت البرامج وتغييرات كبيرة في نظام ويندوز، والتي يمكن استعادتها في حالة أن يحدث خطأ. هذه وظيفة وتنتج عمليات الكتابة، وينبغي أن يتم تعطيلها إذا كنت تستخدم أداة النسخ الاحتياطي وإذا كان غير مطلوب لخيار الاسترداد." />
+    <element key="ShortNames" value="إنشاء اسم 8.3" />
+    <element key="ShortNamesDescription" value="\الخاص بك. التطبيقات الحالية لا تحتاج هذه الأسماء، ولهذا السبب يمكن تعطيل لها.SSD بت، وندوز بإنشاء أسماء قصيرة عن الملفات والمجلدات، والذي ينتج في قبضة الكتابة إضافية إلى DOS 16 من أجل التوافق مع التطبيقات القديمة   " />
+    <element key="Optimize" value="تحسين" />
+    <element key="Restore" value="استعادة من النسخة الاحتياطية" />
+    <element key="Active" value="تنشيط" />
+    <element key="Deactive" value="الغاء التنشيط" />
+    <element key="Status" value="الحالة" />
+    <element key="OptimizedSettings" value="إعدادات التحسين" />
+    <element key="RestoreAll" value="استعادة" />
+    <element key="OptimizeAll" value="تحسين" />
+    <element key="RestoreAllInfo" value="استعادة كافة النسخ الاحتياطية" />
+    <element key="OptimizeAllInfo" value="اعدادات تحسين الكل" />
+    <element key="Update" value="تحديث" />
+    <element key="UpdateInfo" value="التحقق من وجود إصدار جديد" />
+    <element key="Support" value="الدعم" />
+    <element key="SupportInfo" value="إلى الأمام لدعم الموقع" />
+    <element key="UpdateExists" value="تحديث متوفر" />
+    <element key="UpdateExistsInfo" value="يتوفر تحديث. هل تريد تحميله؟" />
+    <element key="UpdateCheck" value="التحقق من وجود إصدار جديد عند بدء التشغيل؟" />
+    <element key="TipText" value="الطازجة مجاني، ولكن إذا كنت تستخدم بانتظام ثم نتوقع تلميح صغير SSD. &#xD;&#xA;&#xD;&#xA;  ، وهو نسخة من دون الإعلان والحوار هذا&quot;SSD Fresh Plus&quot;الرجاء مساعدتنا في تحسين هذا البرنامج من قبل تعطينا معلومات سرية صغيرة. وبعد ذلك سوف تتلقى تلقائيا" />
+    <element key="TipYesHeader" value="نعم، أود أن تعطي نصيحة صغيرة" />
+    <element key="TipYesText" value="SSD Fresh Plus&quot; مع نصيحة صغيرة من 10 فقط، - هل يمكن أن تساعدنا من خلال دعم تطوير التطبيقات لدينا وسوف تتلقى" />
+    <element key="TipNo" value="لا، لا أريد أن أعطى معلومات سرية" />
+    <element key="TipText2" value="SSD Fresh مجاني، ولكن إذا كنت تستخدم بانتظام ثم نتوقع تلميح صغير&#xD;&#xA;&#xD;&#xA; ، وهو نسخة من دون الإعلان والحوار هذا &quot;SSD Fresh Plus&quot; الرجاء مساعدتنا في تحسين هذا البرنامج من قبل تعطينا معلومات سرية صغيرة. وبعد ذلك سوف تتلقى تلقائيا " />
+    <element key="tooltipOptimized" value="هذا هو الاعداد الأمثل" />
+    <element key="tooltipManual" value="هذا الإعداد لا تزال ليست الأمثل. الرجاء تحديد يدوياً، إذا كنت بحاجة إلى هذه الوظيفة" />
+    <element key="tooltipUnoptimized" value="هذا الإعداد لا يزال غير الأمثل، وينصح بتغييرة" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="الاسم" />
+    <element key="SmartData.HeaderValue" value="القيمة" />
+    <element key="SmartData.WorstHeader" value="أسوأ" />
+    <element key="SmartData.HeaderThreshold" value="عتبة" />
+    <element key="SmartData.HeaderRow" value="البيانات الخام" />
+    <element key="SmartData.Drive" value="محرك الأقراص:" />
+    <element key="DriveInformation.UsedDiskSpace" value="المساحة المستخدمة  على القرص" />
+    <element key="DriveInformation.FreeDiskSpace" value="المساحة الحرة على القرص" />
+    <element key="DriveInformation.Yes" value="نعم" />
+    <element key="DriveInformation.No" value="لا" />
+    <element key="DriveInformation.DriveName" value="اسم محرك الأقراص الثابتة" />
+    <element key="DriveInformation.DriveType" value="نوع محرك الأقراص الثابتة" />
+    <element key="DriveInformation.DriveSize" value="حجم القرص الصلب" />
+    <element key="DriveInformation.SSD" value="SSD هو محرك الأقراص هذا " />
+    <element key="DriveInformation.PartitionNumber" value="عدد الأقسام" />
+    <element key="DriveInformation.DiskName" value="اسم محرك القرص" />
+    <element key="DriveInformation.DiskSize" value="حجم محرك القرص" />
+    <element key="DriveInformation.FileSystem" value="نوع نظام الملفات" />
+    <element key="DriveInformation.ShowSmart" value="بيانات سمارت" />
+    <element key="DriveInformation.MemoryUsage" value="الذاكرة المستخدمة" />
+    <element key="DriveInformation.DriveInformation" value="معلومات محرك الأقراص" />
+    <element key="Overview.WarningHeader" value="تحذير" />
+    <element key="Overview.WarningText" value="على هذا النظام SSD Fresh سوف تكون بعض إعدادات المعاقين التي ينبغي تنشيط عادة للأقراص الصلبة العادية. ثيريفوريم، إذا كنت لا تستخدم فرقة، ننصحك بعدم استخدام SSD على النظامك. هذا البرنامج يقوم بضبط إعدادات النظام لاحتياجات محركات SSD. إذا كنت تستخدم البرنامج دون الحاجة SSD، لم يتم العثور على " />
+    <element key="Overview.QuestionText" value="إذا كنت متأكدا من أن استخدام SSD، يرجى ان ترسل الينا تقريرا خطأ حتى نتمكن من تحسين التطبيق لدينا" />
+    <element key="Overview.ButtonTitle" value="نعم، أنا باستخدام SSD" />
+    <element key="Overview.ButtonInfo" value="إرسال التقرير والمواصلة" />
+    <element key="SmartData.Back" value="للخلف" />
+    <element key="DriveInformation.NotAvailable" value="غير متوفر" />
+    <element key="Overview.Error" value="لا توجد بيانات محرك الأقراص" />
+    <element key="Overview.ErrorText" value="لا يمكن قراءة بيانات محرك الأقراص. ربما الواجهة المطلوبة معطلة، غير متوفرة أو لديك حقوق غير كافية على هذا النظام. كما لا تدعم الأجهزة الظاهرية هذه الواجهة.&#xD;&#xA; يمكنك استخدام الأمثل SSD إذا كنت متأكداً من أن نظامك يحتوي على " />
+    <element key="trim" value="وظائف تشذيب الوندوز" />
+    <element key="trimDescription" value="الخاص بك يدعم هذه الوظيفة. ابحث عنه على موقع ويب الخاص بالشركة المصنعة SSD ، ينبغي تفعيل هذه الوظيفة. ما إذا كان سيتم استخدام هذه الدالة يتوقف على ما إذا كان (SSD) لزيادة مدى العمر والأداء من أقراص الحالة الصلبة " />
+    <element key="LanguageMissing" value="لغتك مفقود أو غير مكتملة؟" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="16/07/2012 08:55:43 ص" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="ar" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Arabic - Jordan [ar-JO]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="JO" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

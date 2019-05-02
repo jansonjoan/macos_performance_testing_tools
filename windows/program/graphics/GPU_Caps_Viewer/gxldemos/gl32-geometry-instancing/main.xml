@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<glsl_hacker>
+	
+  <window name="win3d01" title="Geometry Instancing (OpenGL 3.3+)" 
+          width="800" height="400" display_progress_bar="1"
+          gl_version_major="3" gl_version_minor="2"
+          build_opengl_extensions_list="0" />
+ 
+	<script name="init_scene" run_mode="INIT" >
+		<raw_data><![CDATA[	
+    
+function GH_InitRandom()
+	math.randomseed(os.time()) -- seed and pop
+end
+
+function GH_random(a, b)
+	if (a > b) then
+		local c = b
+		b = a
+		a = c
+	end
+	local delta = b-a
+	return (a + math.random()*delta)
+end
+
+
+
+
+
+local lib_dir = gh_utils.get_scripting_libs_dir() 		
+local framework_dir = lib_dir .. "lua/framework_v1/"
+dofile(framework_dir .. "kx.lua") -- kx framework.
+
+kx_init_begin(framework_dir)
+
+
+
+
+
+
+
+
+
+
+
+winW, winH = gh_window.getsize()
+
+font = gh_utils.font_create("Tahoma", 14)
+
+
+use_postfx = 1
+
+    
+local aspect = 1.333
+if (winH > 0) then
+  aspect = winW / winH
+end  
+camera = gh_camera.create_persp(60, aspect, 0.1, 1000.0)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+gh_camera.setpos(camera, 0, 0, 50)
+gh_camera.setlookat(camera, 0, 0, 0)
+gh_camera.setupvec(camera, 0, 1, 0, 0)
+
+gh_utils.set_progress_bar_percent(20)
+gh_utils.set_progress_bar_caption("Cameras created - 20%% completed")
+gh_utils.thread_sleep(100)
+
+
+
+
+local abs_path = 0
+
+gpu_prog_01 = gh_gpu_program.create_from_file("gi2.glsl", abs_path)
+gh_node.setname(gpu_prog_01, "gpu_prog_01")
+
+gh_utils.set_progress_bar_percent(40)
+gh_utils.set_progress_bar_caption("GPU programs created - 40%% completed")
+gh_utils.thread_sleep(100)
+
+
+-- mesh = gh_mesh.create_sphere(1.0, 10, 10)
+--mesh = gh_mesh.create_box(0.75, 0.75, 0.75, 1, 1, 1)
+--mesh = gh_mesh.create_box(1.5, 1.5, 1.5, 1, 1, 1)
+mesh = gh_mesh.create_box(1.0, 1.0, 1.0, 1, 1, 1)
+
+GH_InitRandom()
+
+num_instances = 50000
+gh_mesh.init_instancing(mesh, num_instances)
+local instance_index = 0
+local i
+for i=0, num_instances do
+  x = GH_random(-100, 100)
+  y = GH_random(-50, 50)
+  z = 0
+  gh_mesh.set_instance_position(mesh, instance_index, x, y, z)
+  x = GH_random(-60, 60)
+  y = GH_random(-60, 60)
+  z = GH_random(-60, 60)
+  gh_mesh.set_instance_orientation(mesh, instance_index, x, y, z)
+  --gh_mesh.set_instance_axis_angle(mesh, instance_index, 0, 1, 0, x)
+  instance_index = instance_index+1
+end
+
+gh_utils.set_progress_bar_percent(60)
+gh_utils.set_progress_bar_caption("Mesh created and instancing initialized - 60%% completed")
+gh_utils.thread_sleep(100)
+
+tex02 = gh_texture.create_from_file("./10912-diffuse.jpg", 0, abs_path)
+
+gh_utils.set_progress_bar_percent(80)
+gh_utils.set_progress_bar_caption("Textures loaded - 80%% completed")
+gh_utils.thread_sleep(100)
+
+-- Just to see the progress bar at 100% ;)
+gh_utils.set_progress_bar_percent(100)
+gh_utils.set_progress_bar_caption("Demo initialization ok - 100%% completed")
+gh_utils.thread_sleep(100)
+
+
+gh_renderer.set_vsync(0)
+gh_renderer.set_scissor_state(1)
+
+
+
+kx_init_end()
+
+		]]></raw_data>
+	</script> 
+
+  
+	<script name="kill_scene" run_mode="TERMINATE" >
+		<raw_data><![CDATA[	
+
+kx_terminate()
+
+		]]></raw_data>
+	</script> 
+  
+  
+  
+  
+	<script name="update_scene" run_mode="FRAME" >
+		<raw_data><![CDATA[	
+
+kx_frame_begin(0.2, 0.2, 0.2)
+
+local elapsed_time = kx_gettime()
+   
+
+   
+
+gh_renderer.set_viewport_scissor(0, 0, winW, winH)
+--gh_renderer.clear_color_depth_buffers(0.1, 0.1, 0.3, 1.0, 1.0)
+
+gh_renderer.set_depth_test_state(1)
+    
+if (tex02 > 0) then
+  gh_texture.bind(tex02, 0)
+end
+
+  
+    
+if (camera > 0) then
+  -- local cam_pos_x = 40.0 * math.cos(elapsed_time * 0.1)
+  -- local cam_pos_y = 40.0 * math.cos(elapsed_time * 0.1)
+  -- local cam_pos_z = 40.0 * math.sin(elapsed_time * 0.1)
+  -- gh_camera.setpos(camera, cam_pos_x, cam_pos_y, cam_pos_z)
+
+  gh_camera.setpos(camera, 0, 0, 30)
+  --gh_camera.setpos(camera, 50.0* math.sin(elapsed_time * 0.2), 20.0* math.sin(elapsed_time * 0.8), 30.0 + 25.0* math.cos(elapsed_time * 1.1))
+  gh_camera.bind(camera)
+end
+
+    
+if (gpu_prog_01 > 0) then
+  gh_gpu_program.bind(gpu_prog_01)
+  gh_gpu_program.uniform4f(gpu_prog_01, "light_position", 0.0, 100.0, 100.0, 1.0)
+  gh_gpu_program.uniform1f(gpu_prog_01, "time", elapsed_time)
+end
+
+if (mesh > 0) then 
+  gh_object.render(mesh)
+end
+
+kx_write_text(10, 20, 1.0, 1.0, 0.0, 1.0, "Geometry Instancing Test - " .. num_instances .. " boxes")
+  
+   
+local show_osi = kx_get_osi_state()
+kx_frame_end(show_osi)
+   
+
+		]]></raw_data>
+</script> 
+
+
+	<script name="resize_scene" run_mode="SIZE" >
+		<raw_data><![CDATA[	
+
+kx_resize()
+    
+winW, winH = gh_window.getsize(0)
+
+local aspect = 1.333
+if (winH > 0) then
+  aspect = winW / winH
+end  
+
+if (camera > 0) then
+  gh_camera.update_persp(camera, 60, aspect, 0.1, 1000.0)
+  gh_camera.set_viewport(camera, 0, 0, winW, winH)
+end
+
+gh_utils.font_set_viewport_info(font, 0, 0, winW, winH)
+
+		]]></raw_data>
+	</script> 
+  
+</glsl_hacker>

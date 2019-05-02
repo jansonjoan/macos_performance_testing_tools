@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<glsl_hacker>
+	
+  <window name="win3d01" title="Simple triangle (GL3.0)" 
+                  width="1280" height="720"
+                  gl_version_major="3" gl_version_minor="2" />
+  
+ 
+  
+	<script name="init_scene" run_mode="INIT" >
+		<raw_data><![CDATA[	
+   
+    
+    
+-- Get the size of the current 3D window    
+--
+winW, winH = gh_window.getsize(0)
+
+
+
+
+-- Perspective camera.
+--
+local aspect = winW / winH
+camera_params = { fov=60, znear=0.1, zfar=1000.0 }
+camera = gh_camera.create_persp(camera_params.fov, aspect, camera_params.znear, camera_params.zfar)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+gh_camera.set_position(camera, 0, 0, 2)
+gh_camera.set_lookat(camera, 0, 0, 0, 1)
+gh_camera.set_upvec(camera, 0, 1, 0, 0)
+
+
+
+
+-- The GPU program for this demo: a simple vertex color program.
+-- The GLSL source code is at the end of this XML file.
+--
+vertex_color_prog = gh_node.getid("vertex_color_prog")
+
+
+
+
+
+local use_std_vertex_attribs = 1 -- standard vertex attribs like gxl3d_Position.
+local num_user_vertex_attribs = 0 -- no custom vertex attrib arrays.
+local separate_vertex_arrays = 1 -- Separate (1) or interleaved (0) vertex attribs.
+local vertex_alignment = 0
+local alloc_vertex_particles = 0
+gh_mesh.set_vertex_alloc_params(use_std_vertex_attribs, num_user_vertex_attribs, separate_vertex_arrays, vertex_alignment, alloc_vertex_particles)
+
+
+-- Creation of the most simple mesh: a triangle made up of 3 vertices.
+--
+triangle = gh_mesh.create_v2()
+local num_vertices = 3
+local num_faces = 0 -- non-indexed rendering
+local ret = gh_mesh.alloc_mesh_data(triangle, num_vertices, num_faces)
+if (ret == 1) then
+  gh_mesh.set_vertex_position(triangle, 0, -1, -1, 0, 1)
+  gh_mesh.set_vertex_position(triangle, 1, 0, 1, 0, 1)
+  gh_mesh.set_vertex_position(triangle, 2, 1, -1, 0, 1)
+
+  gh_mesh.set_vertex_color(triangle, 0, 1, 0, 0, 1)
+  gh_mesh.set_vertex_color(triangle, 1, 0, 1, 0, 1)
+  gh_mesh.set_vertex_color(triangle, 2, 0, 0, 1, 1)
+end 
+
+
+
+
+-- Creation of a reference grid.
+-- More parameters to customize the grid are available here:
+-- http://www.geeks3d.com/glslhacker/blog/20141117/how-to-render-a-reference-grid/
+--
+-- grid = gh_utils.grid_create()
+-- gh_utils.grid_set_geometry_params(grid, 10, 10, 20, 20)
+
+
+gh_renderer.vsync(0)
+
+		]]></raw_data>
+	</script> 
+
+
+  
+  
+	<script name="terminate_scene" run_mode="TERMINATE" >
+		<raw_data><![CDATA[	
+
+
+		]]></raw_data>
+	</script> 
+
+
+  
+ 
+
+
+  
+	<script name="update_scene" run_mode="FRAME" >
+		<raw_data><![CDATA[	
+   
+
+local elapsed_time = gh_utils.get_elapsed_time()
+
+
+gh_camera.bind(camera)
+
+
+gh_renderer.clear_color_depth_buffers(0.2, 0.2, 0.2, 1.0, 1.0)
+   
+
+gh_renderer.set_depth_test_state(1)
+
+
+-- Bind vertex_color_prog to make it the active GPU program.
+--
+gh_gpu_program.bind(vertex_color_prog)
+
+
+-- Render the triangle and the grid
+--
+gh_object.set_euler_angles(triangle, 0, elapsed_time*33.0, 0)
+gh_object.render(triangle)
+--gh_object.render(grid)
+
+
+
+		]]></raw_data>
+	</script> 
+	
+
+	<script name="resize_scene" run_mode="SIZE" >
+		<raw_data><![CDATA[	
+
+winW, winH = gh_window.getsize(0)
+
+local aspect = winW / winH
+gh_camera.update_persp(camera, camera_params.fov, aspect, camera_params.znear, camera_params.zfar)
+gh_camera.set_viewport(camera, 0, 0, winW, winH)
+
+		]]></raw_data>
+	</script> 
+  
+
+
+  <gpu_program name="vertex_color_prog" >
+    <raw_data_vs><![CDATA[	 
+#version 150 
+in vec4 gxl3d_Position;
+in vec4 gxl3d_Color;
+uniform mat4 gxl3d_ModelViewProjectionMatrix;
+out vec4 Vertex_Color;
+void main()
+{
+  gl_Position = gxl3d_ModelViewProjectionMatrix * gxl3d_Position;
+  Vertex_Color = gxl3d_Color;
+}
+  ]]></raw_data_vs>
+    <raw_data_ps><![CDATA[	 
+#version 150
+in vec4 Vertex_Color;
+out vec4 FragColor;
+void main()
+{
+  FragColor = Vertex_Color;
+}
+    ]]></raw_data_ps>
+  </gpu_program>
+
+  
+</glsl_hacker>

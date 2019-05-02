@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Visió General" />
+    <element key="menuItem.Optimize" value="Optimització" />
+    <element key="menuItem.Settings" value="Configuració i Suport" />
+    <element key="Version" value="Versió:" />
+    <element key="Language" value="Idioma" />
+    <element key="defragsvc" value="Desfragmentació" />
+    <element key="defragsvcDescription" value="Atès que els SSD tenen el mateix temps d'accés per a totes les cèl•lules de memòria, no hi ha necessitat d'emmagatzemar de manera coherent. A més d'això, el procés de desfragmentació genera wrie hits, que redueixen el temps de vida del SSD. Per tant, es recomana desactivar el procés de desfragmentació." />
+    <element key="WSearch" value="Indexació" />
+    <element key="WSearchDescription" value="Per accelerar la recerca, Windows crea un índex. Però això causa operacions d'escriptura en el SSD, el que minimitza el temps de vida. Si utilitzeu de tan en tant la cerca de Windows, us recomanem desactivar aquesta funcionalitat." />
+    <element key="SysMain" value="Servei Superfech" />
+    <element key="SysMainDescription" value="Prefech dóna suport a la precàrrega d'aplicacions d'ús freqüent en la memòria RAM. A causa dels temps d'accés ràpids de la SSD d'aquesta funció és inútil. Per tant, aquest servei pot ser desactivat juntament amb la funció Prefech." />
+    <element key="NtfsAccessTime" value="Marca de temps" />
+    <element key="NtfsAccessTimeDescription" value="Windows emmagatzema el temps d'accés per a cada accés a un arxiu. Això produeix accessos d'escriptura innecessaris i per tant reduirà la vida útil del seu SSD. Desactivar aquesta funció és molt recomanable." />
+    <element key="Prefech" value="Prefech" />
+    <element key="PrefechDescription" value="Prefech millora la precàrrega d'aplicacions d'ús freqüent en la memòria RAM. A causa del ràpid temps d'accés dels SSD, aquesta funció no serveix per a res i es pot desactivar." />
+    <element key="Bootdefrag" value="La desfragmentació d'arxius d'inici" />
+    <element key="BootDefragDescription" value="A causa de la forma en què la informació s'emmagatzemen en discos SSD, una desfragmentació d'arxius d'inici no té sentit i ha de ser desactivada, ja que redueix la vida útil del SSD.." />
+    <element key="EventLogging" value="Registre d'esdeveniments de Windows" />
+    <element key="EventLoggingDescription" value="Windows registra permanentment els canvis de configuració del sistema, així com els errors i altres esdeveniments de diversos serveis i programes. Això crea accessos d'escriptura innecessaris i redueix la vida útil del seu SSD.&#xD;&#xA;" />
+    <element key="SystemRestore" value="Restauració del Sistema" />
+    <element key="SystemRestoreDescription" value="Windows crea punts de restauració d’instal•lacions de programari i els grans canvis en el sistema de Windows, que es pot restaurar en cas que es produeixi un error. Aquesta funció produeix processos d'escriptura i ha de ser desactivada si s'utilitza una eina de còpia de seguretat i si no es requereix l'opció de recuperació." />
+    <element key="ShortNames" value="8.3 Creació de noms" />
+    <element key="ShortNamesDescription" value="Per a la compatibilitat amb aplicacions de DOS de 16 bits, Windows genera noms curts per a les carpetes i arxius, el que resulta en accessos d'escriptura addicionals al seu SSD. Les aplicacions actuals no tenen aquests noms, pel que poden ser desactivats." />
+    <element key="Optimize" value="Optimizar" />
+    <element key="Restore" value="Restaurar des de còpia de seguretat" />
+    <element key="Active" value="Activat" />
+    <element key="Deactive" value="Desactivat" />
+    <element key="Status" value="Estat" />
+    <element key="OptimizedSettings" value="Ajustaments optimitzats" />
+    <element key="RestoreAll" value="Restaurar" />
+    <element key="OptimizeAll" value="Optimitzar" />
+    <element key="RestoreAllInfo" value="Restaurar totes les còpies de seguretat" />
+    <element key="OptimizeAllInfo" value="Optimitzar els ajustos" />
+    <element key="Update" value="Actualitzar" />
+    <element key="UpdateInfo" value="Comprovar nova versió" />
+    <element key="Support" value="Donar suport&#xD;&#xA;" />
+    <element key="SupportInfo" value="Enviar a la web de suport" />
+    <element key="UpdateExists" value="Actualització disponible" />
+    <element key="UpdateExistsInfo" value="Hi ha una actualització disponible. Vols descarregar-la?" />
+    <element key="UpdateCheck" value="Comprovar nova versió al inici?" />
+    <element key="TipText" value="SSD Fresh és de franc, però si el fa servir regularment agrairíem una petita contribució econòmica.&#xD;&#xA;&#xD;&#xA;Ajudeu-nos a millorar aquest programari amb  una petita contribució. Posteriorment rebreu automàticament &quot;SSD Fresh Plus&quot;, una versió sense publicitat i aquest diàleg.&#xD;&#xA;" />
+    <element key="TipYesHeader" value="Sí, m'agradaria donar una petita contribució econòmica" />
+    <element key="TipYesText" value="Amb una petita contribució de només 10 €, - que ens pot ajudar mitjançant el suport al desenvolupament de les nostres aplicacions i rebreu &quot;SSD Fresh Plus&quot;" />
+    <element key="TipNo" value="No, no vull donar una contribució economica" />
+    <element key="TipText2" value="SSD Fresh és de franc, però si el fa servir regularment agrairíem una petita contribució econòmica.&#xD;&#xA;&#xD;&#xA;Ajudeu-nos a millorar aquest programari amb  una petita contribució. Posteriorment rebreu automàticament &quot;SSD Fresh Plus&quot;, una versió sense publicitat i aquest diàleg.&#xD;&#xA;" />
+    <element key="tooltipOptimized" value="Aquest ajust està optimitzat!" />
+    <element key="tooltipManual" value="Aquesta opció encara no està optimitzada. Si us plau seleccioneu-ho manualment, si necessiteu aquesta funcionalitat.&#xD;&#xA;" />
+    <element key="tooltipUnoptimized" value="Aquesta opció encara no està optimitzada i es recomana un canvi!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Nom" />
+    <element key="SmartData.HeaderValue" value="Valor" />
+    <element key="SmartData.WorstHeader" value="Pitjor" />
+    <element key="SmartData.HeaderThreshold" value="Threshold" />
+    <element key="SmartData.HeaderRow" value="Raw data" />
+    <element key="SmartData.Drive" value="Disc:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Espai de disc utilitzat" />
+    <element key="DriveInformation.FreeDiskSpace" value="Espai de disc lliure" />
+    <element key="DriveInformation.Yes" value="Si" />
+    <element key="DriveInformation.No" value="No" />
+    <element key="DriveInformation.DriveName" value="Nom del disc dur" />
+    <element key="DriveInformation.DriveType" value="Tipus d'unitat de disc dur" />
+    <element key="DriveInformation.DriveSize" value="Mida del disc dur" />
+    <element key="DriveInformation.SSD" value="És aquesta unitat un SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Nombre de particions" />
+    <element key="DriveInformation.DiskName" value="Nom de la unitat" />
+    <element key="DriveInformation.DiskSize" value="Mida del disc" />
+    <element key="DriveInformation.FileSystem" value="Sistema d'Arxius" />
+    <element key="DriveInformation.ShowSmart" value="Dades S.M.A.R.T." />
+    <element key="DriveInformation.MemoryUsage" value="Ús de memòria" />
+    <element key="DriveInformation.DriveInformation" value="Informació de la unitat" />
+    <element key="Overview.WarningHeader" value="Advertència" />
+    <element key="Overview.WarningText" value="No s'ha trobat cap SSD al sistema. Aquest programa ajusta la configuració del sistema a les necessitats de les unitats SSD. Si utilitzeu el programa sense tenir un disc SSD, alguns ajustos que normalment han de ser activats per als discs durs normals, es desactivaran. Amb conseqüència, si no utilitzeu un SSD, t'aconsellem no utilitzar SSD Fresh en aquest sistema." />
+    <element key="Overview.QuestionText" value="Si està segur d'usar un SSD, si us plau envieu un informe d'error perquè puguem millorar la nostra aplicació." />
+    <element key="Overview.ButtonTitle" value="Sí, estic fent servir un SSD" />
+    <element key="Overview.ButtonInfo" value="Envieu un informe i continuar" />
+    <element key="SmartData.Back" value="Back" />
+    <element key="DriveInformation.NotAvailable" value="No Disponible" />
+    <element key="Overview.Error" value="No s’han trobar dades al disc" />
+    <element key="Overview.ErrorText" value="No és pot llegir les dades del disc. Potser la interfície necessària està desactivada, no està disponible o té drets insuficients sobre aquest sistema. Les màquines virtuals no són compatibles amb aquesta interfície.&#xD;&#xA;Si està segur que el seu sistema conté un SSD pot utilitzar l'optimització" />
+    <element key="trim" value="Funció Windows TRIM" />
+    <element key="trimDescription" value="Per millorar la vida útil  i la eficiència del Disc de Estat Sòlid (SSD), aquesta funció tindria que estar activada. La utilització de aquesta funció serà utilitzada depenent de que el SSD la suporti. Comprovi-ho a la Web del fabricant." />
+    <element key="LanguageMissing" value="El seu lenguatge falta o esta incomplert" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Joan Hernandez" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="13/08/2013 00:24:00" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="ca" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Catalan [ca]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="1" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>107</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Übersicht" />
+    <element key="menuItem.Optimize" value="Optimierung" />
+    <element key="menuItem.Settings" value="Einstellungen &amp; Support" />
+    <element key="Version" value="Version:" />
+    <element key="Language" value="Sprache" />
+    <element key="defragsvc" value="Windows-Defragmentierung" />
+    <element key="defragsvcDescription" value="Im Gegensatz zu anderen Festplatten hat die Defragmentierung einer SSD keine Auswirkung auf die Zugriffszeit, da SSDs auf alle Speicherzellen gleich schnell zugreifen können.Darüber hinaus führen die bei der Defragmentierung generierten Schreibzugriffe zu einer Verkürzung der Lebensdauer Ihrer SSD.  Die Deaktivierung der Defragmentierung wird deshalb dringend empfohlen." />
+    <element key="WSearch" value="Indizierung" />
+    <element key="WSearchDescription" value="Zur schnelleren Suche legt Windows einen Index an. Dieser verursacht allerdings Schreibzugriffe, die sich wiederum auf die Lebensdauer der SSD auswirken. Wenn Sie die Suchfunktion von Windows kaum verwenden oder Ihnen die Geschwindigkeit dabei nicht wichtig ist, raten wir Ihnen diese Funktionalität abzuschalten." />
+    <element key="SysMain" value="Superfech Service" />
+    <element key="SysMainDescription" value="Prefech bewirkt ein Vorladen von häufig verwendeten Programmen in den RAM-Speicher. Bei den schnellen Zugriffszeiten der SSDs macht diese Funktion allerdings keinen Sinn. Deshalb kann dieser Dienst zusammen mit der Prefech-Funktion deaktiviert werden." />
+    <element key="NtfsAccessTime" value="Speichern der Zugriffszeit" />
+    <element key="NtfsAccessTimeDescription" value="Windows speichert bei jedem Dateizugriff die Zugriffszeit, den sogenannten Timestamp,  ab. Da dieses unnötige Schreibzugriffe produziert und dadurch die Lebensdauer der SSD senkt, wird eine Deaktivierung dieser Funktion dringend empfohlen." />
+    <element key="Prefech" value="Vorladen von Programmen" />
+    <element key="PrefechDescription" value="Windows lädt standardmäßig häufig verwendete Programme in den RAM-Speicher vor. Diese Funktion wird Prefetch genannt. Bei den schnellen Zugriffszeiten der SSDs macht diese Funktion allerdings keinen Sinn, weshalb diese Funktion deaktiviert werden kann." />
+    <element key="Bootdefrag" value="Defragmentierung der Boot-Dateien" />
+    <element key="BootDefragDescription" value="Analog zur Defragmentierung macht auch die Defragmentierung der Boot-Dateien aufgrund der unnötigen Schreibzugriffe und der gleichen Zugriffszeit auf der gesamten SSD keinen Sinn und kann deshalb deaktiviert werden." />
+    <element key="EventLogging" value="Windows Protokollierung" />
+    <element key="EventLoggingDescription" value="Windows zeichnet permanent Änderungen der Systemkonfiguration, sowie Abstürze und andere Ereignisse von verschiedenen Diensten und Programmen auf. Dieses erzeugt unnötig Schreibzugriffe, welche die Lebensdauer der SSD verringern." />
+    <element key="SystemRestore" value="Systemwiederherstellung" />
+    <element key="SystemRestoreDescription" value="Bei Software-Installationen und wichtigen Änderungen am System legt Windows automatisch Wiederherstellungspunkte an, welche bei Fehlern eingespielt werden können. Diese Funktion erzeugt jedoch Schreibzugriffe und sollte deaktiviert werden, falls Sie ein Backup-Tool nutzen und die Wiederherstellung nicht benötigen." />
+    <element key="ShortNames" value="Kurze Namen" />
+    <element key="ShortNamesDescription" value="Windows legt für jeden Ordner und jede Datei im System einen verkürzten Namen an, damit diese auch von alten DOS-Programmen gelesen werden können. Diese Funktion wird heute für gewöhnlich nicht mehr benötigt und kann darum deaktiviert werden." />
+    <element key="AHCISetting" value="AHCI-Einstellung"/>
+    <element key="AHCISettingDescription" value="Achtung: Diese Einstellung dient nur als Hinweis auf mögliches Optimierungspotential für Experten, daher ist eine Änderungen an dieser Stelle nicht möglich.&#xD;&#xA;AHCI ist ein Schnittstellen-Standard für SATA-Festplatten. SSD-Festplatten sollten mit diesem Standard angesprochen werden, da Sie sonst nicht die volle Leistung erbringen können."/>
+    <element key="AHCISetting.Tutorial.Back" value="Zurück" />
+    <element key="AHCISetting.Tutorial.BackInfo" value="Zurück zur Optimierung" />
+    <element key="AHCISetting.Tutorial.Title" value="Anleitung für die AHCI-Einstellung" />
+    <element key="AHCISetting.Tutorial.Description" value="Der folgende Text erklärt, welche Schritte notwendig sind, um die AHCI-Einstellung zu aktivieren. " />
+    <element key="AHCISetting.Tutorial.Warning" value="ACHTUNG! Diese Anleitung sollten nur erfahrene Nutzer nutzen. Unter Umständen können Sie Ihr System unbrauchbar machen, daher erstellen Sie vorher ein Backup Ihres Systems. Jede Änderung geschieht auf EIGENE Gefahr." />
+    <element key="AHCISetting.Tutorial.Requirements" value="Voraussetzungen:" />
+    <element key="AHCISetting.Tutorial.RequirementsDesc" value="- Administratorrechte&#xD;&#xA;- Aktuelle und installierte Windows AHCI-Treiber von Ihrem Motherboard-Hersteller" />
+    <element key="AHCISetting.Tutorial.Steps" value="Schritte:" />
+    <element key="AHCISetting.Tutorial.StepsDesc" value="1. Öffnen Sie den Registrierungseditor von Windows (regedit.exe).&#xD;&#xA;2. Öffnen Sie den Schlüssel 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci'.&#xD;&#xA;3. Setzen Sie den Eintrag 'Start' auf den Wert '0' und, falls vorhanden, löschen Sie den Eintrag 'StartOverride'.&#xD;&#xA;4. Starten Sie Ihren PC neu und aktivieren Sie AHCI über das BIOS." />
+    <element key="AHCISetting.Tutorial.StepsDescWin8" value="1. Öffnen Sie den Registrierungseditor von Windows (regedit.exe).&#xD;&#xA;2. Öffnen Sie den Schlüssel 'HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\storahci'.&#xD;&#xA;3. Setzen Sie den Eintrag 'Start' auf den Wert '0' und, falls vorhanden, löschen Sie den Eintrag 'StartOverride'.&#xD;&#xA;4. Starten Sie Ihren PC neu und aktivieren Sie AHCI über das BIOS." />
+    <element key="AHCISetting.Tutorial.Tipps" value="Tipps und Hinweise:" />
+    <element key="AHCISetting.Tutorial.TippsDesc" value="- Die Startreihenfolge könnte sich durch das Umstellen auf AHCI verändern.&#xD;&#xA;- Wenn Ihr System nicht startet, stellen Sie die BIOS-Einstellungen auf die alten Werte und prüfen Sie die Windows-Einstellungen." />
+    <element key="Optimize" value="Optimieren" />
+    <element key="Restore" value="Backup einspielen" />
+    <element key="ShowTutorial" value="Anleitung anzeigen" />
+    <element key="Active" value="Aktiviert" />
+    <element key="Deactive" value="Deaktiviert" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Optimierte Einstellungen" />
+    <element key="RestoreAll" value="Wiederherstellen" />
+    <element key="OptimizeAll" value="Optimieren" />
+    <element key="RestoreAllInfo" value="Alle Backups einspielen" />
+    <element key="OptimizeAllInfo" value="Alle Einstellungen optimieren" />
+    <element key="Update" value="Aktualisierung" />
+    <element key="UpdateInfo" value="Prüfung auf neue Version" />
+    <element key="Support" value="Support" />
+    <element key="SupportInfo" value="Weiterleitung zur Support-Webseite" />
+    <element key="UpdateExists" value="Update verfügbar" />
+    <element key="UpdateExistsInfo" value="Eine neue Version ist verfügbar. Möchten Sie diese herunterladen?" />
+    <element key="UpdateCheck" value="Beim Programmstart auf Updates prüfen?" />
+    <element key="TipText" value="SSD Fresh ist kostenfrei. Allerdings würden wir uns sehr über ein kleines Trinkgeld freuen.&#xD;&#xA;&#xD;&#xA;Sie helfen uns damit, unsere Programme weiter zu verbessern und erhalten zudem als kleines Dankeschön SSD Fresh Plus - eine Version ohne Registrierungsbildschirm und diesen Dialog." />
+    <element key="TipYesHeader" value="Ja, ich gebe ein kleines Trinkgeld" />
+    <element key="TipYesText" value="Mit einem kleinen Trinkgeld von 10,- € sichern Sie die Weiterentwicklung und erhalten von uns SSD Fresh Plus." />
+    <element key="TipNo" value="Nein, ich möchte kein Trinkgeld geben" />
+    <element key="TipText2" value="SSDFresh ist kostenfrei, es wird bei dauerhafter Nutzung allerdings ein kleines Trinkgeld erwartet. &#xD;&#xA;&#xD;&#xA;Sie helfen uns damit, die Software weiter zu entwickeln und erhalten zudem als kleines Dankeschön &quot;SSD Fresh Plus&quot; - eine Version ohne Werbung und diesen Dialog." />
+    <element key="tooltipOptimized" value="Diese Einstellung ist optimiert!" />
+    <element key="tooltipManual" value="Diese Einstellung ist bisher nicht optimiert. Wählen Sie bitte selbst aus, ob Sie sie benötigen." />
+    <element key="tooltipUnoptimized" value="Diese Einstellung ist bisher nicht optimiert und eine Änderung wird empfohlen!" />
+    <element key="SmartData.IDHeader" value="Id." />
+    <element key="SmartData.HeaderHexId" value="Hex-Id." />
+    <element key="SmartData.NameHeader" value="Name" />
+    <element key="SmartData.HeaderValue" value="Aktueller Wert" />
+    <element key="SmartData.WorstHeader" value="Schlechtester Wert" />
+    <element key="SmartData.HeaderThreshold" value="Grenzwert" />
+    <element key="SmartData.HeaderRow" value="Rohdaten" />
+    <element key="SmartData.Drive" value="Laufwerk:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Belegter Speicher" />
+    <element key="DriveInformation.FreeDiskSpace" value="Freier Speicher" />
+    <element key="DriveInformation.Yes" value="ja" />
+    <element key="DriveInformation.No" value="nein" />
+    <element key="DriveInformation.DriveName" value="Name der Festplatte" />
+    <element key="DriveInformation.DriveType" value="Festplattentyp" />
+    <element key="DriveInformation.DriveSize" value="Festplattengröße" />
+    <element key="DriveInformation.SSD" value="SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Anzahl der Partitionen" />
+    <element key="DriveInformation.DiskName" value="Name des Laufwerks" />
+    <element key="DriveInformation.DiskSize" value="Laufwerksgröße" />
+    <element key="DriveInformation.FileSystem" value="Dateisystem" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. Daten" />
+    <element key="DriveInformation.MemoryUsage" value="Speicherverbrauch" />
+    <element key="DriveInformation.DriveInformation" value="Laufwerksinformationen" />
+    <element key="Overview.WarningHeader" value="Warnung" />
+    <element key="Overview.WarningText" value="Auf Ihrem System wurde keine SSD gefunden. Dieses Programm passt Ihr System an die Bedürfnisse einer SSD an. Falls Sie das Programm ohne SSD verwenden, werden einige Einstellungen deaktiviert, welche bei einer normalen Festplatte aktiviert sein sollten, um effizienter zu arbeiten. Wir raten in Ihrem Fall von der Verwendung von SSD Fresh auf diesem System ab." />
+    <element key="Overview.QuestionText" value="Sollten Sie sich sicher sein, eine SSD zu verwenden, senden Sie uns bitte einen Fehlerreport, damit wir unsere Software verbessern können." />
+    <element key="Overview.ButtonTitle" value="Ja, ich verwende eine SSD" />
+    <element key="Overview.ButtonInfo" value="Bericht senden und fortfahren" />
+    <element key="SmartData.Back" value="Zurück" />
+    <element key="DriveInformation.NotAvailable" value="Nicht verfügbar" />
+    <element key="Overview.Error" value="Keine Festplattendaten gefunden" />
+    <element key="Overview.ErrorText" value="Festplattendaten konnten nicht ausgelesen werden. Möglicherweise ist die benötigte Schnittstelle deaktiviert, nicht vorhanden oder Sie besitzen nicht die benötigten Rechte auf diesem System. Auch Virtuelle Maschinen unterstützen die Schnittstelle nicht. &#xD;&#xA;Wenn Sie sicher sind, dass Sie eine SSD haben, können Sie dennoch die Optimierungen durchführen. " />
+    <element key="trim" value="Windows Trim-Funktion" />
+    <element key="trimDescription" value="Um die Lebensdauer und die Performance von Solid State Disks (SSD) zu verbessern, sollte die TRIM-Funktion aktiviert sein. Ob diese Funktion allerdings verwendet wird, hängt davon ab, ob Ihre SSD diese Funktion unterstützt. Schauen Sie dazu auf der Webseite des Herstellers nach." />
+    <element key="LanguageMissing" value="Ihre Sprache fehlt oder ist nicht vollständig?" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="18.03.2011 12:23:22" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="de" />
+    <element key="AbFlexTrans.SpecialInfo.Language.ID" value="v129449210026238606-708838" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="German [de]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

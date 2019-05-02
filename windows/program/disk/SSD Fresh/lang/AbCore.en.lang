@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>179</count>
+    <element key="AbCore.AbLiteRegistrationGUI.Link.Skip" value="Skip registration -->" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.PleaseRegister" value="Skipping the registration :-(" />
+    <element key="AbCore.AbUpdater.MessageConnect" value="Connect" />
+    <element key="AbCore.AbUpdater.MessageDownload" value="Download" />
+    <element key="AbCore.AbUpdater.MessageUpdate" value="Update" />
+    <element key="AbCore.AbUpdater.MessageReady" value="Finishing" />
+    <element key="AbCore.AbUpdater.MessageCancel" value="Cancel Process" />
+    <element key="AbCore.AbUpdater.MessageContinue" value="Close" />
+    <element key="AbCore.AbUpdater.MessageSuccessNoUpdate" value="No update is necessary. You are already using the latest version." />
+    <element key="AbCore.AbUpdater.MessageSuccessSettingUpdate" value="A security update has been downloaded.&#xD;Please click on 'close' to restart the program." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdate" value="A new major update has been downloaded.&#xD;Please click on 'close' to launch the setup." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdateWebsite" value="A new major update is available for downloaded.&#xD;Please click on 'close' to visit the download page." />
+    <element key="AbCore.AbUpdater.MessageFailure" value="Unable to perform an update check.&#xD;Please ensure that this PC is connected to the internet and please retry to start the update check again in a couple of hours." />
+    <element key="AbCore.AbSurvey.Ask" value="We are sorry that you want to uninstall the software.&#xD;&#xA;Please help us to improve future versions and tell &#xD;&#xA;us the reason for uninstalling the software.&#xD;&#xA;&#xD;&#xA;Would you please help us by filling out a short&#xD;&#xA;survey? &#xD;&#xA;&#xD;&#xA;This will only take about two minutes of your time.&#xD;&#xA;(an internet connection is required)" />
+    <element key="AbCore.AbSurvey.Url" value="http://www.abelssoft.net/survey/index.php?sid=3" />
+    <element key="AbCore.AbNewsletterAbo.Url" value="https://abelssoft.de/k/newsletterSubscribeEn.do?email=%1&amp;groupid=2&amp;sectorid=3&amp;mail=true" />
+    <element key="AbCore.AbNewsbox.NeverShow" value="Don't show those newsboxes in the future" />
+    <element key="AbCore.AbNewsbox.Close" value="Close Newsbox &gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.MainText" value="Stay updated: Subscribe to our Newsletter and we will automatically inform you about new releases and updates." />
+    <element key="AbCore.AbNewsletterAbo.EmailText" value="Your email address:" />
+    <element key="AbCore.AbNewsletterAbo.Button" value="Subscribe now &gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.Success" value="Thanks a lot. We have successfully added you to our newsletter. You will receive your discount certificate within the next minutes via email." />
+    <element key="AbCore.AbNewsletterAbo.Offline" value="Unfortunately you seem to be offline now. Please try again later." />
+    <element key="AbCore.AbNewsletterAbo.InvalidEmail" value="This email address is invalid. Please insert a valid address." />
+    <element key="AbCore.LiteReg.NoInternet.Privacy" value="Cannot access the internet. Please get online and try again or find a current version of the privacy statement under: https://shop.abelssoft.net/privacy" />
+    <element key="AbCore.LiteReg.NoInternet.Agb" value="Cannot access the internet. Please get online and try again or find a current version of the Terms and Conditions under: http://www.abelssoft.de/agb" />
+    <element key="AbCore.AbLiteRegistrationGUI.Window.Title" value="Free Registration" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro" value="You need to unlock this software before using it. This is a one time and free step." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading1" value="You need to unlock this software. Please fill out this form:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.FirstName" value="Your first name:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.LastName" value="Your last name:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Register" value="Get free unlock mail now &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Or" value="or" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading2" value="Did you already receive your unlock code? - In this case, please enter it here:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Code" value="Unlock code:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.RegisterUsingKey" value="Unlock &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Invalid" value="This unlock code is invalid. Please doublecheck it. Feel free to contact us if there are any problems: contact@abelssoft.net" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Valid" value="Thanks a lot. You may now use the software." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid" value="We have just emailed you your personal unlock link. Please check your email and click the unlock link. Please check if your email address has been entered correctly in case that you do not receive an email from us within the next 5 minutes, and also check your spam-folders. Please contact us at contact@abelssoft.net for any questions." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestInvalid" value="As we couldn't verify your activation, please write an email to our support to get an activation code." />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskClose" value="If you close this window before registering then the software will not be started. Do you want to close the program?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskCloseTitle" value="Close Program?" />
+    <element key="AbCore.AbLiteRegistrationGUI.ManualURL" value="https://www.abelssoft.de/k/regLite.do?a=%1&amp;l=%2&amp;af=%3" />
+    <element key="AbCore.AbLiteRegistrationGUI.EmailRequestURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=true&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbLiteRegistrationGUI.InstantRegistrationURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=false&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbBugReporter.title" value="A Problem has occured" />
+    <element key="AbCore.AbBugReporter.maintext" value="Please help us to analyse this problem and click on 'send' to send us a copy of the error message." />
+    <element key="AbCore.AbBugReporter.cancel" value="Don't Send" />
+    <element key="AbCore.AbBugReporter.send" value="Send Report" />
+    <element key="AbCore.AbBugReporter.connecting" value="Status: Connecting to Server..." />
+    <element key="AbCore.AbBugReporter.sending" value="Status: Sending Report" />
+    <element key="AbCore.AbBugReporter.success" value="We have successfully receive the error report. Thanks a lot." />
+    <element key="AbCore.AbBugReporter.failure" value="Unable to send report. Please ensure that you have a working internet connection." />
+    <element key="AbCore.AbScheduler.NoTaskInfo" value="Scheduler not active at the moment." />
+    <element key="AbCore.AbScheduler.NotPlanned" value="Not planned" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitializedTitle" value="Scheduler" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitialized" value="Could not create task." />
+    <element key="AbCore.AbScheduler.lblWelcome" value="Welcome to the Scheduler Wizard" />
+    <element key="AbCore.AbScheduler.lblNextRunTime" value="Next scheduled run:" />
+    <element key="AbCore.AbScheduler.btnRemoveSchedule" value="Remove scheduled job" />
+    <element key="AbCore.AbScheduler.btnCreateSchedule" value="Create scheduled job" />
+    <element key="AbCore.AbScheduler.BackButton" value="Back" />
+    <element key="AbCore.AbScheduler.NextButton" value="Next" />
+    <element key="AbCore.AbScheduler.FirstDescription" value="Please choose a method" />
+    <element key="AbCore.AbScheduler.SecondDescription" value="Please choose the interval" />
+    <element key="AbCore.AbScheduler.ThirdDescription" value="Please choose the time and recurrence" />
+    <element key="AbCore.AbScheduler.FinishedDescription" value="Finished. Please click on the button below to schedule the job." />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan0" value="Daily intervals" />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan1" value="Weekly intervals" />
+    <element key="AbCore.AbScheduler.radioGroupEvents0" value="Schedule by time" />
+    <element key="AbCore.AbScheduler.radioGroupEvents1" value="Start on every logon" />
+    <element key="AbCore.AbScheduler.lblTime" value="Time:" />
+    <element key="AbCore.AbScheduler.checkStartOnBatteries" value="Do not start, if computer runs on battery." />
+    <element key="AbCore.AbScheduler.lblPriority" value="Priority:" />
+    <element key="AbCore.AbScheduler.Priorities.Idle" value="Lowest" />
+    <element key="AbCore.AbScheduler.Priorities.BelowNormal" value="Low" />
+    <element key="AbCore.AbScheduler.Priorities.Normal" value="Normal" />
+    <element key="AbCore.AbScheduler.Priorities.AboveNormal" value="High" />
+    <element key="AbCore.AbScheduler.Priorities.High" value="Highest" />
+    <element key="AbCore.AbBugReporter.CheckBoxEmail" value="Send email adress:" />
+    <element key="AbCore.AbBugReporter.TextEmail" value="Please help us to improve our software. You can send us an email address for possible questions to you. This information is optional." />
+    <element key="AbCore.AbBugReporter.SendAndUpdate" value="Send reports and check for updates" />
+    <element key="AbCore.AbFontInstaller.Installing" value="installing ... " />
+    <element key="AbCore.AbFontInstaller.Download" value="download ... " />
+    <element key="AbCore.AbFontInstaller.Success" value="Installation successful" />
+    <element key="AbCore.AbFontInstaller.Title" value="Installing font" />
+    <element key="AbCore.AbFontInstaller.Headline" value="Downloading font ..." />
+    <element key="AbCore.AbBugReporter.DownloadAndInstallFont" value="Install font" />
+    <element key="AbCore.AbBugReporter.ProblemOccured1" value="Error found on your system." />
+    <element key="AbCore.AbBugReporter.ProblemOccured2" value="A font is not installed correctly: " />
+    <element key="AbCore.AbBugReporter.InstallDescription" value="You can download and install the correct font now." />
+    <element key="AbCore.AbBugReporter.DownloadInstall" value="Download and install font" />
+    <element key="AbCore.AbInfoForms.Controls.TitleControl.Undertitle" value="Buy full version for %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lblTitle" value="Enable %1 day full version" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lbl30DaysText" value="This is a fully functional version of %1. It can be used for %2 days. You can get your unlock code clicking on the button below." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Text" value="Buy the full version for: %1" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Description" value="Full Power: Complete full version without any restrictions. Buy online now." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Text" value="Enable %1 day full version" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Description" value="Test %1 %2 for free. Click here to get a %2 days license." />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnClose" value="Exit" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.Title" value="This feature is only available in the full version." />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesDescription" value="Get information about the benefits of the full version" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesText" value="More Information" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoText" value="Back" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoDescription" value="Continue working with %1" />
+    <element key="AbCore.AbInfoForms.Controls.Benefits.BenefitListControl.lblHeaderBenefit" value="Advantages at a glance" />
+    <element key="AbCore.AbInfoForms.Controls.Links.SmallLink.LinkText" value="Buy now online" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Text" value="Buy now online" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Description" value="Click here for the full version (%1, immediate delivery)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus1" value="%1 days test version has expired" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus2" value="%1 days test version still usable for %2 day(s)" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestStarts" value="0 days" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestEnds" value="%1 days" />
+    <element key="AbCore.AbInfoForms.Controls.UpgradeControl.lblBuyHead" value="Buy full version for only %1" />
+    <element key="AbCore.AbInfoForms.Forms.UpgradeForm.btnClose" value="I don´t want to buy" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.UseProgramWithoutCode" value="Use Program without unlock code this time" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.ReRequestCode" value="Re-Request code" />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid.Notify" value="We have sent you an activation link for the software. If you get no email within 3 minutes, please check your spam folders and if you have entered the correct email adress. Please contact us at contact@abelssoft.net for any questions." />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFound" value="We have found a new update for %1. Do you want to update?" />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFoundTitle" value="New Update found" />
+    <element key="AbSecurePassword.Paste" value="Paste" />
+    <element key="AbSecurePassword.DeleteError" value="Oops, while removing parts of the password something seems to went wrong. Please type in the password again." />
+    <element key="AbSecurePassword.DeleteErrorTitle" value="Error" />
+    <element key="AbCore.AbFontInstaller.DownloadError" value="The font file could not be downloaded" />
+    <element key="AbCore.AbFontInstaller.DownloadSuccess" value="Download successful" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.WaitingUntilOpenMailClick" value="Please check your mail (also your junk mail) and click the link we sent you." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingText" value="Unlocking Software... please wait..." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.ThanksForActivating" value="The software has been activated..." />
+    <element key="AbCore.AbNewsletterAbo.SpamEmail" value="We cannot send to this email adress. Please try another one." />
+    <element key="AbCore.AbNewsletterAbo.EmptyEmail" value="Please enter your email adress." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro.CheckingForAutomaticInternetActivation" value="Checking for internet customer activation..." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.UnlockingTextRequestSupport" value="Please contact our support under contact@abelssoft.net to obtain a key." />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Cancel" value="Cancel" />
+    <element key="AbCore.AbLiteRegistrationGUI.Link.NoInternetConnection" value="No Internet Connection?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.KnownCustomer" value="This application is now activated. Thanks for your interest in our products!" />
+    <element key="AbCore.AbLiteRegistrationGUI.Success.AlreadyRegisteredForProduct" value="You have already activated this product. Thanks a lot!" />
+    <element key="AbCore.AbNewsletterAbo.ShouldntStartWithWww" value="The email address you entered starts with 'www.', usually email adresses don't do so." />
+    <element key="AbCore.AbNewsletterAbo.NeedInternetAccessToRegister" value="You need an active internet connection to register. Also allow the program to get an internet connection when asked by your firewall software." />
+    <element key="AbCore.AbLiteRegistrationGUI.SupportEmail" value="contact@abelssoft.net" />
+    <element key="AbCore.AbGui.EnsureInternetWorksThenTryAgain" value="Ensure that this program can access the internet, then click here to try again." />
+    <element key="AbCore.AbGui.IgnoreThisTypeOfNotification" value="Ignore this type of notification" />
+    <element key="AbCore.AbApi.NeueVersion" value="New Version" />
+    <element key="AbCore.AbApi.InstallButtonTooltip" value="Close the program, download the update and install it" />
+    <element key="AbCore.AbGui.InstallUpdate" value="Install" />
+    <element key="AbCore.AbGui.RegistrationSuccessfulAppFree" value="Registration was successful. The application is unlocked." />
+    <element key="AbCore.AbApi.DownloadFromLoginAreaTooltip" value="Open a browser to download the file from login area" />
+    <element key="AbCore.AbApi.GoToWebLoginArea" value="Go to web-login" />
+    <element key="AbCore.AbApi.LanguageFileUpdated" value="Language files were updated!" />
+    <element key="AbCore.AbApi.NetworkIssueText" value="Problem accessing the internet - did you prevent access to the internet with a firewall?" />
+    <element key="AbCore.AbApi.ConfirmAction" value="Please confirm" />
+    <element key="AbCore.AbApi.IgnoreVersionXwhenLookingForAutoUpdates" value="Ignore version {0} when automatically looking for updates" />
+    <element key="AbCore.AbGui.TryAgain" value="Try again" />
+    <element key="AbCore.AbGui.IgnoreVersion" value="Ignore this version" />
+    <element key="AbCore.AbGui.UpdateAvailable" value="Update available" />
+    <element key="AbCore.AbGui.GoToPromotionUrl" value="Visit offer" />
+    <element key="AbCore.AbGui.Ok" value="Ok" />
+    <element key="AbCore.AbGui.Cancel" value="Cencel" />
+    <element key="AbCore.AbGui.Yes" value="Yes" />
+    <element key="AbCore.AbGui.No" value="No" />
+    <element key="AbCore.AbLiteRegistrationGUI.Checkbox.Terms" value="Yes, I have read the terms and privacy policy." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.TermsWarning" value="Please confirm that you have read the terms and privacy policy!" />
+    <element key="AbCore.AbLiteRegistrationGUI.Link.Terms" value="Show terms" />
+    <element key="AbCore.AbLiteRegistrationGUI.Link.PrivacyPolicy" value="Show privacy policy" />
+    <element key="AbCore.AbGui.ErrorHappened" value="An error has occurred" />
+    <element key="AbCore.AbGui.SendBugReport" value="Send report?" />
+    <element key="AbCore.AbGui.CommonWords.Close" value="Close" />
+    <element key="AbCore.AbGui.ThanksForReportingBug" value="Thanks for reporting that error. We will try to fix it as soon as we can." />
+    <element key="AbCore.AbGui.ClickToClipboardText" value="Click to copy to clipboard" />
+    <element key="AbCore.AbGui.ShareNow" value="Share now:" />
+    <element key="AbCore.AbFlexTrans.Thanks" value="Thanks to" />
+    <element key="AbCore.AbFlexTrans.By" value="Officially by" />
+    <element key="AbCore.AbFlexTrans.Anonymous" value="Anonymous" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="06.12.2013 15:23:46" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="en" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="English [en]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="AbCore" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="2.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="4" />
+  </data>
+</LanguageInfo>

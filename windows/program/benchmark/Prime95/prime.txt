@@ -1,0 +1,13 @@
+V24OptionsConverted=1
+WGUID_version=2
+StressTester=1
+UsePrimenet=0
+Left=208
+Top=208
+Right=1648
+Bottom=975
+W1=0 0 1422 343 0 -1 -1 -1 -1
+W2=0 343 1422 687 0 -1 -1 -1 -1
+
+[PrimeNet]
+Debug=0

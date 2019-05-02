@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>92</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Overblikk" />
+    <element key="menuItem.Optimize" value="Optimalisering" />
+    <element key="menuItem.Settings" value="Instillinger &amp; Støtte" />
+    <element key="Version" value="Versjon:" />
+    <element key="Language" value="Språk" />
+    <element key="defragsvc" value="Defragmentering" />
+    <element key="defragsvcDescription" value="Siden SSDs har samme aksesstid for alle minneceller, er det ikke nødvendig å lagre  sammenhengende. I tillegg til dette, lager defragmenteringen nye skrivetreff, noe som reduserer levetiden til SSD. Derfor er det sterkt anbefalt å deaktivere defragmenteringen." />
+    <element key="WSearch" value="Innholdslister" />
+    <element key="WSearchDescription" value="For å øke hastigheten på søk, oppretter Windows en innholdsliste. Men dette fører til skriveoperasjoner på SSD, noe som minimerer levetiden. Hvis du bruker Windows søkefunksjon sjelden eller aldri, anbefaler vi å slå den av." />
+    <element key="SysMain" value="Mellomlagring" />
+    <element key="SysMainDescription" value="Mellomlagring støtter forhåndslastning av ofte brukte programmer i RAM. På grunn av den raske tilgangstiden for SSD, er denne funksjonen unyttig og kan deaktiveres sammen med forhåndshenting" />
+    <element key="NtfsAccessTime" value="Tidsmerking" />
+    <element key="NtfsAccessTimeDescription" value="Windows lagrer tidspunktet for hver gang du åpner en fil. Dette gir unødvendige skriving på disken, noe som dermed vil redusere levetiden på SSD. Deaktivering av denne funksjonen er sterkt å anbefale." />
+    <element key="Prefech" value="Forhåndshenting" />
+    <element key="PrefechDescription" value="Forhåndshenting støtter forhåndslastning av ofte brukte programmer i RAM. På grunn av den raske tilgangstiden for SSD, er denne funksjonen unyttig og kan følgelig deaktiveres." />
+    <element key="Bootdefrag" value="Defragmentering av oppstartsfilene" />
+    <element key="BootDefragDescription" value="På grunn av måten filene er lagret i SSD,er en defragmentering av oppstartsfilene meningsløs, og bør derfor deaktiveres for ikke å redusere levetiden på din SSD." />
+    <element key="EventLogging" value="Windows hendelseslogg" />
+    <element key="EventLoggingDescription" value="Windows registrerer hele tiden endringer på systemkonfigurasjoner, samt krasjer og andre hendelser fra ulike tjenester og programmer. Dette skaper unødvendige skriving på disken og reduserer levetiden på SSD." />
+    <element key="SystemRestore" value="Systemgjenoppretting" />
+    <element key="SystemRestoreDescription" value="Windows lagerr gjenopprettingspunkter for programvareinstallasjoner og store endringer i Windows-systemet, i tilfelle det oppstår en feil. Denne funksjonen produserer skriveprosesser og bør deaktiveres dersom du bruker et backup-verktøy, og dersom det ikke er nødvendig å tilbakeføre til slik det var før den siste installasjonen" />
+    <element key="ShortNames" value="Lage åttebokstavers navn (8.3)" />
+    <element key="ShortNamesDescription" value="For kompatibilitet med gamle 16-bits DOS-program, oppretter Windows korte navn til mapper og filer, noe som resulterer i ekstra skriving på din SSD. Nye program trenger ikke den type navning, derfor kan funksjonen deaktiveres." />
+    <element key="Optimize" value="Optimaliser" />
+    <element key="Restore" value="Gjenopprett fra sikkerhetskop" />
+    <element key="Active" value="Aktivert" />
+    <element key="Deactive" value="Deaktivert" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="De beste innstillingene" />
+    <element key="RestoreAll" value="Gjenopprett" />
+    <element key="OptimizeAll" value="Optimaliser" />
+    <element key="RestoreAllInfo" value="Gjenopprett alle sikkerhetskopier" />
+    <element key="OptimizeAllInfo" value="Optimaliser alle innstillinger" />
+    <element key="Update" value="Oppdater" />
+    <element key="UpdateInfo" value="Se etter ny versjon" />
+    <element key="Support" value="Hjelp og støtte" />
+    <element key="SupportInfo" value="Gå videre til internettsiden for hjelp og støtte" />
+    <element key="UpdateExists" value="Oppdatering tilgjengelig" />
+    <element key="UpdateExistsInfo" value="En ny versjon er tilgjengelig. Ønsker du å laste den ned?" />
+    <element key="UpdateCheck" value="Se etter ny verjon ved oppstart?" />
+    <element key="TipText" value="SSD Fresh er gratis, men hvis du bruker det regelmessig så håper vi på et lite bidrag.&#xD;&#xA;Vennligst hjelp oss å forbedre denne programvaren ved å gi et lite bidrag. Etterpå vil du automatisk motta &quot;SSD Fresh Plus&quot;, en versjon uten reklame og denne dialogen." />
+    <element key="TipYesHeader" value="Ja, jeg ønsker å gi litt støtte" />
+    <element key="TipYesText" value="Med et bidrag på kun 50, - kan du hjelpe oss ved å støtte utviklingen av våre programmer, og du vil motta &quot;SSD Fresh Plus&quot;" />
+    <element key="TipNo" value="Nei, jeg ønsker å gi litt støtte" />
+    <element key="TipText2" value="SSD Fresh er gratis, men hvis du bruker det regelmessig så håper vi på et lite bidrag.&#xD;&#xA;Vennligst hjelp oss å forbedre denne programvaren ved å gi et lite bidrag. Etterpå vil du automatisk motta &quot;SSD Fresh Plus&quot;, en versjon uten reklame og denne dialogen." />
+    <element key="tooltipOptimized" value="Denne innstillingen er optimalisert" />
+    <element key="tooltipManual" value="Denne innstillingen er fortsatt ikke optimalisert. Vennligst velg manuelt, hvis du trenger denne funksjonaliteten." />
+    <element key="tooltipUnoptimized" value="Denne innstillingen er fortsatt ikke optimalisert og en endring anbefales!" />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Navn" />
+    <element key="SmartData.HeaderValue" value="Verdi" />
+    <element key="SmartData.WorstHeader" value="Størst" />
+    <element key="SmartData.HeaderThreshold" value="Lager" />
+    <element key="SmartData.HeaderRow" value="Rådata" />
+    <element key="SmartData.Drive" value="Disk:" />
+    <element key="DriveInformation.UsedDiskSpace" value="Brukt lagringsplass" />
+    <element key="DriveInformation.FreeDiskSpace" value="Ledig lagringsplass" />
+    <element key="DriveInformation.Yes" value="ja" />
+    <element key="DriveInformation.No" value="nei" />
+    <element key="DriveInformation.DriveName" value="Harddisknavn" />
+    <element key="DriveInformation.DriveType" value="Harddisktype" />
+    <element key="DriveInformation.DriveSize" value="Harddiskstørrelse" />
+    <element key="DriveInformation.SSD" value="Er dette en SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Antall partisjoner" />
+    <element key="DriveInformation.DiskName" value="Disknavn" />
+    <element key="DriveInformation.DiskSize" value="Diskstørrelse" />
+    <element key="DriveInformation.FileSystem" value="Filsystem" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T. data" />
+    <element key="DriveInformation.MemoryUsage" value="Brukt diskplass" />
+    <element key="DriveInformation.DriveInformation" value="Disk informasjon" />
+    <element key="Overview.WarningHeader" value="Varsel" />
+    <element key="Overview.WarningText" value="Ingen SSD har blitt funnet på systemet ditt. Dette programmet justerer systeminnstillinger til behovene til SSD-disker. Hvis du bruker programmet uten å ha en SSD, vil noen innstillinger være deaktivert som bør normalt være aktivert for vanlige harddisker. Derfor, hvis du ikke bruker en SSD, anbefaler vi deg ikke å bruke SSD Fresh på dette systemet." />
+    <element key="Overview.QuestionText" value="Hvis du er sikker på at du bruker en SSD, kan du sende oss en feilrapport så vi kan forbedre vårt produkt." />
+    <element key="Overview.ButtonTitle" value="Ja, jeg bruker en SSD" />
+    <element key="Overview.ButtonInfo" value="Send rapporten og fortsett" />
+    <element key="SmartData.Back" value="Tilbake" />
+    <element key="DriveInformation.NotAvailable" value="Ikke tilgjengelig" />
+    <element key="Overview.Error" value="Ingen data funnet" />
+    <element key="Overview.ErrorText" value="Kunne ikke lese data fra disken. Kanskje det nødvendige grensesnittet er deaktivert, utilgjengelig eller du ikke har tilstrekkelige rettigheter på dette systemet. Virtuelle maskiner støtter heller ikke dette grensesnittet.&#xD;&#xA;Hvis du er sikker på at systemet inneholder en SSD kan du bruke optimaliseringen!" />
+    <element key="trim" value="Windows justeringsfunksjon" />
+    <element key="trimDescription" value="For å øke levetiden og ytelsen til Solid State Disker (SSD), bør denne funksjonen aktiveres. Hvorvidt denne funksjonen blir brukt, avhenger av om SSD støtter denne funksjonen. Undersøk dette på produsentens hjemmeside." />
+    <element key="LanguageMissing" value="Er språket ditt mangelfullt eller fraværende?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Alf Ivar Berg" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="16.12.2013 12:00:45" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="no" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Norwegian [no]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="SSDFresh" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>

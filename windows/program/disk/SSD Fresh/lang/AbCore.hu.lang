@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>131</count>
+    <element key="AbCore.AbUpdater.MessageConnect" value="Csatlakozás" />
+    <element key="AbCore.AbUpdater.MessageDownload" value="Letöltés" />
+    <element key="AbCore.AbUpdater.MessageUpdate" value="Frissítés" />
+    <element key="AbCore.AbUpdater.MessageReady" value="Befejezés" />
+    <element key="AbCore.AbUpdater.MessageCancel" value="Megszakítás" />
+    <element key="AbCore.AbUpdater.MessageContinue" value="Bezárás" />
+    <element key="AbCore.AbUpdater.MessageSuccessNoUpdate" value="Nincs szüksége frissítésre. Ön a legújabb verziót használja." />
+    <element key="AbCore.AbUpdater.MessageSuccessSettingUpdate" value="Egy biztonsági frissítés került letöltésre. Kattintson a 'Bezárás' gombra a program újraindításához." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdate" value="Egy fontos frissítés került letöltésre. Kattintsin a 'Bezárás' gombra a telepítés elindításához." />
+    <element key="AbCore.AbUpdater.MessageSuccessMajorUpdateWebsite" value="Egy fontos frissítés érhető el. Kattintson a 'Bezárás' gombra a letöltési oldal megtekintéséhez." />
+    <element key="AbCore.AbUpdater.MessageFailure" value="Nem lehetett végrehajtani a frissítések ellenőrzését. Ellenőrizze, hogy a gépe kapcsolódva van-e az Internethez, majd próbálja meg újra a frissítést később." />
+    <element key="AbCore.AbSurvey.Ask" value="Mi sajnáljuk, hogy el akarja távolítani a programot. Kérem segítsen nekünk, hogy jobbá tegyük az újabb verziókat, mondja el a véleményét nekünk.  Szeretne segíteni nekünk, egy rövid vélemény- kutatás kitöltésével?  Ehhez csak egy-két percre van szükség. (internetkapcsolat szükséges)" />
+    <element key="AbCore.AbSurvey.Url" value="https://www.abelssoft.net/survey/index.php?sid=3" />
+    <element key="AbCore.AbNewsletterAbo.Url" value="https://abelssoft.de/k/newsletterSubscribeEn.do?email=%1&amp;groupid=2&amp;sectorid=3&amp;mail=true" />
+    <element key="AbCore.AbNewsbox.NeverShow" value="Ne mutassa a hírek ablakát a jövőben" />
+    <element key="AbCore.AbNewsbox.Close" value="Bezárás &gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.MainText" value="Ön előfizethet a hírlevelünkre, és így automatikusan információkat kaphat az új kiadásokról és frissítésekről." />
+    <element key="AbCore.AbNewsletterAbo.EmailText" value="Az Ön e-mail címe:" />
+    <element key="AbCore.AbNewsletterAbo.Button" value="Feliratkozás hírlevélre &gt;&gt;" />
+    <element key="AbCore.AbNewsletterAbo.Success" value="Köszönjük. Ön sikeresen feliratkozott a hírlevelünkre. Néhány percen belül elküldjük Önnek a fizetési tanúsítványát." />
+    <element key="AbCore.AbNewsletterAbo.Offline" value="Úgy tűnik Ön kapcsolat nélküli módban van. Próbálja meg később." />
+    <element key="AbCore.AbNewsletterAbo.InvalidEmail" value="Az e-mail cím érvénytelen. Adjon meg egy érvényes címet, vagy zárja be az ablakot." />
+    <element key="AbCore.AbLiteRegistrationGUI.Window.Title" value="Free Regisztráció" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Intro" value="A program használatához egy kódra van szüksége. Azt ingyenesen megkaphatja, ehhez töltse ki a következő űrlapot és mi levélben megküldjük az Ön feloldó kódját." />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading1" value="Önnek egy kódra van szüksége. Kérem töltse ki az űrlapot:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.FirstName" value="Keresztnév:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.LastName" value="Vezetéknév:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.Register" value="Ingyenes kód beszerzése &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Or" value="vagy" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Heading2" value="Már rendelkezik egy kóddal? - Ebben az esetben adja meg azt itt:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Label.Code" value="Kód:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.RegisterUsingKey" value="Feloldás &gt;&gt;" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Invalid" value="A megadott kód érvénytelen. Kérem ellenőrizze azt. Ha további problémája van, vegye fel a kapcsolatot velünk: contact@abelssoft.net" />
+    <element key="AbCore.AbLiteRegistrationGUI.Message.Code.Valid" value="Köszönjük. Ön már használhatja a programot." />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid" value="Mi levélben küldjük meg az Ön személyes kódját. Ellenőrizze a leveleit, majd a kódot adja meg az ablak megfelelő mezőjében. Amennyiben a következő 5 percben nem kap levelet tőlünk, kérem ellenőrizze, hogy az Ön által megadott e-mail címet helyesen adta-e meg. Ha kérdése van, itt veheti fel a kapcsolatot velünk: contact@abelssoft.net" />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestInvalid" value="Köszönjük. Nyissa meg a böngészőjét és látogassa meg ezt a webhelyet, hogy megkaphassa a kódját:" />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskClose" value="Ha a regisztráció előtt bezárja ezt az ablakot, a program nem fog elindulni. Bezárja a programot?" />
+    <element key="AbCore.AbLiteRegistrationGUI.Box.AskCloseTitle" value="Bezárja a programot?" />
+    <element key="AbCore.AbLiteRegistrationGUI.ManualURL" value="https://www.abelssoft.de/k/r.do?a=%1&amp;l=%2&amp;af=%3" />
+    <element key="AbCore.AbLiteRegistrationGUI.EmailRequestURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=true&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbLiteRegistrationGUI.InstantRegistrationURL" value="https://www.abelssoft.de/k/regLiteAuto.do?mail=false&amp;a=%1&amp;l=%2&amp;af=%3&amp;cm=%4&amp;cf=%5&amp;cl=%6" />
+    <element key="AbCore.AbBugReporter.title" value="Egy hiba történt" />
+    <element key="AbCore.AbBugReporter.maintext" value="Kérem segítsen nekünk a problémát elemezni. Kattintson a 'Küldés' gombra, hogy mi is megkapjuk a hibaüzenetet." />
+    <element key="AbCore.AbBugReporter.cancel" value="Nincs küldés" />
+    <element key="AbCore.AbBugReporter.send" value="Küldés" />
+    <element key="AbCore.AbBugReporter.connecting" value="Állapot: Kapcsolódás a kiszolgálóhoz..." />
+    <element key="AbCore.AbBugReporter.sending" value="Állapot: Jelentés küldése" />
+    <element key="AbCore.AbBugReporter.success" value="Mi sikeresen megkaptuk a hibajelentést. Köszönjük." />
+    <element key="AbCore.AbBugReporter.failure" value="Nem lehetett elküldeni a jelentést. Ellenőrizze, hogy működik-e a kapcsolata." />
+    <element key="AbCore.AbScheduler.NoTaskInfo" value="Az ütemező jelenleg nem aktív." />
+    <element key="AbCore.AbScheduler.NotPlanned" value="Nincs ütemezés" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitializedTitle" value="Ütemező" />
+    <element key="AbCore.AbScheduler.SchedulerNotInitialized" value="Nem sikerült létrehozni a feladatot." />
+    <element key="AbCore.AbScheduler.lblWelcome" value="Üdvözli az Ütemezési varázsló" />
+    <element key="AbCore.AbScheduler.lblNextRunTime" value="Következő ütemezés:" />
+    <element key="AbCore.AbScheduler.btnRemoveSchedule" value="Feladat törlése" />
+    <element key="AbCore.AbScheduler.btnCreateSchedule" value="Feladat létrehozása" />
+    <element key="AbCore.AbScheduler.BackButton" value="Vissza" />
+    <element key="AbCore.AbScheduler.NextButton" value="Tovább" />
+    <element key="AbCore.AbScheduler.FirstDescription" value="Válassza ki a módszert" />
+    <element key="AbCore.AbScheduler.SecondDescription" value="Válassza ki az intervallumot" />
+    <element key="AbCore.AbScheduler.ThirdDescription" value="Válassza ki az időpontot és az ismétlés idejét" />
+    <element key="AbCore.AbScheduler.FinishedDescription" value="Kész. Kattintson a lenti gombra a feladat ütemezéséhez." />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan0" value="Naponta" />
+    <element key="AbCore.AbScheduler.radioGroupTimeplan1" value="Hetente" />
+    <element key="AbCore.AbScheduler.radioGroupEvents0" value="Ütemezés időpont alapján" />
+    <element key="AbCore.AbScheduler.radioGroupEvents1" value="Indítás bejelentkezéskor" />
+    <element key="AbCore.AbScheduler.lblTime" value="Időpont:" />
+    <element key="AbCore.AbScheduler.checkStartOnBatteries" value="Ne indítsa el, ha a gép akkumulátort használ." />
+    <element key="AbCore.AbScheduler.lblPriority" value="Prioritás:" />
+    <element key="AbCore.AbScheduler.Priorities.Idle" value="Legalacsonyabb" />
+    <element key="AbCore.AbScheduler.Priorities.BelowNormal" value="Alacsony" />
+    <element key="AbCore.AbScheduler.Priorities.Normal" value="Normál" />
+    <element key="AbCore.AbScheduler.Priorities.AboveNormal" value="Magas" />
+    <element key="AbCore.AbScheduler.Priorities.High" value="Legmagasabb" />
+    <element key="AbCore.AbBugReporter.CheckBoxEmail" value="" />
+    <element key="AbCore.AbBugReporter.TextEmail" value="" />
+    <element key="AbCore.AbBugReporter.SendAndUpdate" value="" />
+    <element key="AbCore.AbFontInstaller.Installing" value="" />
+    <element key="AbCore.AbFontInstaller.Download" value="" />
+    <element key="AbCore.AbFontInstaller.Success" value="" />
+    <element key="AbCore.AbFontInstaller.Title" value="" />
+    <element key="AbCore.AbFontInstaller.Headline" value="" />
+    <element key="AbCore.AbBugReporter.DownloadAndInstallFont" value="" />
+    <element key="AbCore.AbBugReporter.ProblemOccured1" value="" />
+    <element key="AbCore.AbBugReporter.ProblemOccured2" value="" />
+    <element key="AbCore.AbBugReporter.InstallDescription" value="" />
+    <element key="AbCore.AbBugReporter.DownloadInstall" value="" />
+    <element key="AbCore.AbInfoForms.Controls.TitleControl.Undertitle" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lblTitle" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.lbl30DaysText" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Text" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnBuyFullVersion.Description" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Text" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnEnable30DaysVersion.Description" value="" />
+    <element key="AbCore.AbInfoForms.Controls.EnableTestPeriodControl.btnClose" value="" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.Title" value="" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesDescription" value="" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkYesText" value="" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoText" value="" />
+    <element key="AbCore.AbInfoForms.Forms.BlockPremiumFunctionForm.LinkNoDescription" value="" />
+    <element key="AbCore.AbInfoForms.Controls.Benefits.BenefitListControl.lblHeaderBenefit" value="" />
+    <element key="AbCore.AbInfoForms.Controls.Links.SmallLink.LinkText" value="" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Text" value="" />
+    <element key="AbCore.AbInfoForms.Controls.Links.BigCommandLink.Description" value="" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus1" value="" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.TestTimeStatus2" value="" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestStarts" value="" />
+    <element key="AbCore.AbInfoForms.Controls.RemainingTime.RemainingTimeControl.lblTestEnds" value="" />
+    <element key="AbCore.AbInfoForms.Controls.UpgradeControl.lblBuyHead" value="" />
+    <element key="AbCore.AbInfoForms.Forms.UpgradeForm.btnClose" value="" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.UseProgramWithoutCode" value="" />
+    <element key="AbCore.AbLiteRegistrationGUI.Button.ReRequestCode" value="" />
+    <element key="AbCore.AbLiteRegistrationGUI.RequestValid.Notify" value="" />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFound" value="" />
+    <element key="AbCore.AbUpdater.GuiBasedUpdateCheck.NewUpdateFoundTitle" value="" />
+    <element key="AbSecurePassword.Paste" value="" />
+    <element key="AbSecurePassword.DeleteError" value="" />
+    <element key="AbSecurePassword.DeleteErrorTitle" value="" />
+    <element key="AbCore.AbFontInstaller.DownloadError" value="" />
+    <element key="AbCore.AbFontInstaller.DownloadSuccess" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Dr. Sven Abels, Abelssoft GmbH" />
+    <element key="AbFlexTrans.SpecialInfo.Translator2" value="Dr. Sven Abels, Abelssoft GmbH" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="11.05.2008 00:00:00" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="hu" />
+    <element key="AbFlexTrans.SpecialInfo.Language.ID" value="v128385482570987970-591292" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Hungarian [hu]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="AbCore" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="2.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="2" />
+  </data>
+</LanguageInfo>

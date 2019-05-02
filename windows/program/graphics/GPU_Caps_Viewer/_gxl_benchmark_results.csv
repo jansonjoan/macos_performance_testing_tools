@@ -1,0 +1,5 @@
+renderer,api_version,demo_name,width,height,msaa,fullscreen,avg_fps,score,duration_ms
+GTX 1060 6GB,Vulkan 1.0.24,vk_shadertoy_geomechanical,1920,1080,Off,yes,144,1436,10000
+GeForce GTX 1060 6GB/PCIe/SSE2,4.5.0 NVIDIA 376.53,gl21_cellshading,1920,1080,Off,yes,2350,23424,10000
+GTX 1060 6GB,Vulkan 1.0.24,vk_shadertoy_geomechanical,1920,1080,Off,yes,143,1421,10000
+GeForce GTX 1060 6GB/PCIe/SSE2,4.5.0 NVIDIA 376.53,gl21_cellshading,1920,1080,Off,yes,2354,23435,10000

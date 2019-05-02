@@ -1,0 +1,45 @@
+###########################
+###  Shader Complexity
+###
+###  This file contains Optimal shader complexity values for GPU:3D
+###  and POWER SUPPLY Tests
+###  OCCT parses this file and stops at the first match
+###
+###  Format : Mask;complexity
+###
+###  Wildcards :
+###  * : any combination of any number of characters
+###  ? : any characters
+###  The mask is case-insensitive
+###
+###########################
+
+
+
+###########################
+###      Nvidia
+###########################
+
+####### GeForce8 Series
+GeForce*8???;8
+
+####### GeForce9 Series
+GeForce*9???;8
+GeForce*GTS*250;8
+GeForce*GTS*240;8
+GeForce*GTS*150;8
+
+####### GT200 Series
+GeForce*GT?*2??;7
+GeForce*GT?*2??;7
+
+
+###########################
+###      ATI
+###########################
+
+Radeon*HD*3???;3
+Radeon*HD*4???;3
+
+
+##### End of file #########

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageInfo>
+  <data>
+    <count>107</count>
+    <element key="AppName" value="SSD Fresh" />
+    <element key="menuItem.Overview" value="Generalidades" />
+    <element key="menuItem.Optimize" value="Optimización" />
+    <element key="menuItem.Settings" value="Ajuste y apoyo" />
+    <element key="Version" value="Versión:" />
+    <element key="Language" value="Idioma" />
+    <element key="defragsvc" value="Defragmentación" />
+    <element key="defragsvcDescription" value="Dado que los discos SSD tienen el mismo tiempo de acceso para todas las células de memorai, no es necesario almacenarlas de forma coherente. Además, el proceso de defragmentación genera hitos, que reducen la vida del disco SSD. Por lo tanto es muy recomendable desactivar el proceso de defragmentación" />
+    <element key="WSearch" value="Indexado" />
+    <element key="WSearchDescription" value="Para acelerar las busquedas, Windows crea un indice. Pero esto causa operaciones de escritura en el discoSSD, lo que minimiza su vida útil. Si usa la búsqueda de windows raramente o nunca, le aconsejamos desactivar esta funcionalidad." />
+    <element key="SysMain" value=" Generalidades" />
+    <element key="SysMainDescription" value="Prefetch soporta la precarga de aplicaciones usadas frecuentemente en la RAM. A causa de los tiempos de acceso rápidos del disco SSD esta función es innecesaria. Por lo tanto, este servicio puede ser desactivado junto con la función Prefech." />
+    <element key="NtfsAccessTime" value="Marca de tiempo" />
+    <element key="NtfsAccessTimeDescription" value="Windows almacena el tiempo de acceso para cada acceso a un fichero. Esto produce litros de escritura innecesarios y además así reduce la vida útil del disco SSD. Se recomienda encarecidamente desactivar esta característica." />
+    <element key="Prefech" value="Prefetch" />
+    <element key="PrefechDescription" value="Prefetch" />
+    <element key="Bootdefrag" value="Defragmentación de ficheros de arranque" />
+    <element key="BootDefragDescription" value="A causa de la manera en la que los ficheros se almacenan en los discos SSD, no tiene sentido una defragmentación de los ficheros de arranque y debería desactivarse ya que esto reduce la vida útil del disco SSD" />
+    <element key="EventLogging" value="Logging de eventos de Windows" />
+    <element key="EventLoggingDescription" value="Windows graba permanentemente los cambios en la configuración del sistema, al igual que los errores del mismo y otros eventos de varios servicios y programas. Esto crea tiempos de acceso innecesarios y reduce la vida del disco SSD." />
+    <element key="SystemRestore" value="Systemrestore" />
+    <element key="SystemRestoreDescription" value="Windows crea puntos de restauración para las instalaciones de software y cambios importantes en el sistema, que puede ser restaurado en caso de que ocurre un error. Esta función produce accesos de escritura y debería ser desactivada se está usando una herramienta para realizar copias de seguridad y si la opción de recuperación no es necesaria." />
+    <element key="ShortNames" value="Creación de nombres 8.3" />
+    <element key="ShortNamesDescription" value="Para compatibilidad con las antiguas aplicaciones DOS de 16 bits, windows crea nombres cortos para ficheros y carpetas, lo que resulta en tiempos de acceso adicional a su SSD. Las aplicaciones actuales lo necesitan esos nombres, por lo que se puede desactivar esa característica." />
+    <element key="AHCISetting" value="Ajuste AHCI" />
+    <element key="AHCISettingDescription" value="Advertencia: este ajuste sirve como un consejo para una potencial posible optimización realizada sólo por expertos. Los cambios todavía no se han realizado. AHCI es una interfaz estándar para discos SATA. Los discos SSD deberían conectarse utilizando AHCI para lograr un pleno rendimiento." />
+    <element key="AHCISetting.Tutorial.Back" value="Atrás" />
+    <element key="AHCISetting.Tutorial.BackInfo" value="Atrás a la optimización" />
+    <element key="AHCISetting.Tutorial.Title" value="Tutorial de ajustes AHCI" />
+    <element key="AHCISetting.Tutorial.Description" value="El siguiente tutorial explica cómo optimizar los ajustes AHCI para mejorar el rendimiento del disco SSD." />
+    <element key="AHCISetting.Tutorial.Warning" value="ADVERTENCIA! Este tutorial está dedicado a expertos solamente. Podría dejar su sistema inutilizado, así que por favor hago una copia. Siga este tutorial bajo su PROPIA responsabilidad." />
+    <element key="AHCISetting.Tutorial.Requirements" value="Reuisitos" />
+    <element key="AHCISetting.Tutorial.RequirementsDesc" value="-derechos de administrador -el driver actualizado AHCI soportado por el fabricante de su placa Madre." />
+    <element key="AHCISetting.Tutorial.Steps" value="Pasos:" />
+    <element key="AHCISetting.Tutorial.StepsDesc" value="1. Abrá el editor del registro de windows (regedit.exe) 2.Abrá la clave del registro &quot;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Msahci&quot; 3.-Coloque el Valor del registro &quot;Start&quot; a  &quot;0&quot; y, si existe, borre el Valor del registro &quot;StartOverride&quot;" />
+    <element key="AHCISetting.Tutorial.StepsDescWin8" value="1. Abrá el editor del registro de windows (regedit.exe) 2.Abrá la clave del registro &quot;HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Storahci&quot; 3.-Coloque el Valor del registro &quot;Start&quot; a  &quot;0&quot; y, si existe, borre el Valor del registro &quot;StartOverride&quot;" />
+    <element key="AHCISetting.Tutorial.Tipps" value="Información adicional" />
+    <element key="AHCISetting.Tutorial.TippsDesc" value="-el orden de arranque puede cambiar cuando se cambia al modo AHCI. -si su sistema no arranca , cambie a los antiguos ajustes de la BIOS y compruebe los ajustes de windows." />
+    <element key="Optimize" value="Optimizar" />
+    <element key="Restore" value="Restaurar desde copia de seguridad" />
+    <element key="ShowTutorial" value="Mostrar tutorial" />
+    <element key="Active" value="Activado" />
+    <element key="Deactive" value="Desactivado" />
+    <element key="Status" value="Status" />
+    <element key="OptimizedSettings" value="Ajustes optimizados" />
+    <element key="RestoreAll" value="Restaurar" />
+    <element key="OptimizeAll" value="Optimizar" />
+    <element key="RestoreAllInfo" value="Restaurar todos las copias de seguridad" />
+    <element key="OptimizeAllInfo" value="Optimizar todos los ajustes" />
+    <element key="Update" value="Actualizar" />
+    <element key="UpdateInfo" value="Comprobar actualizaciones" />
+    <element key="Support" value="Soporte" />
+    <element key="SupportInfo" value="Para apoyar la web" />
+    <element key="UpdateExists" value="Actualización disponible" />
+    <element key="UpdateExistsInfo" value="Existe una actualización disponible. ¿desea descargarla?" />
+    <element key="UpdateCheck" value="Comprobaron nueva versione al inicio?" />
+    <element key="TipText" value="SSD de fresh es gratuito pero sí lo usa regularmente le agradeceríamos un pequeño donativo. Por favor, ayudarnos a mejorar el software con una pequeña donación. Posteriormente y de forma automática, recibirá &quot;SSD  Fresh Plus&quot;, la versión del software sin anuncios ni este diálogo." />
+    <element key="TipYesHeader" value="Sí, me gustaría aportar un pequeño un pequeño donativo" />
+    <element key="TipYesText" value="Con una pequeña propina de sólo 10,-puede ayudarnos dando apoyo al desarrollo de nuestras aplicaciones y recibirá &quot; SSD Fresh Plus&quot;" />
+    <element key="TipNo" value="No, no quiero hacer un donativo." />
+    <element key="TipText2" value="SSD de fresh es gratuito pero sí lo usa regularmente le agradeceríamos un pequeño donativo. Por favor, ayudarnos a mejorar el software con una pequeña donación. Posteriormente y de forma automática, recibirá &quot;SSD  Fresh Plus&quot;, la versión del software sin anuncios ni este diálogo." />
+    <element key="tooltipOptimized" value="Este ajuste esta optimizado" />
+    <element key="tooltipManual" value="Este ajuste en esta optimizado. Por favor seleccione lo manualmente, si necesita esta funcionalidad" />
+    <element key="tooltipUnoptimized" value="Este ajuste no está optimizado y se recomienda modificarlo." />
+    <element key="SmartData.IDHeader" value="Id" />
+    <element key="SmartData.HeaderHexId" value="Hex-Id" />
+    <element key="SmartData.NameHeader" value="Name" />
+    <element key="SmartData.HeaderValue" value="Value" />
+    <element key="SmartData.WorstHeader" value="Worst" />
+    <element key="SmartData.HeaderThreshold" value="Threshold" />
+    <element key="SmartData.HeaderRow" value="Raw data" />
+    <element key="SmartData.Drive" value="Drive: el" />
+    <element key="DriveInformation.UsedDiskSpace" value="Espacio del disco utilizado" />
+    <element key="DriveInformation.FreeDiskSpace" value="Espacio del disco libre" />
+    <element key="DriveInformation.Yes" value="Sí" />
+    <element key="DriveInformation.No" value="No" />
+    <element key="DriveInformation.DriveName" value="Nombre del disco" />
+    <element key="DriveInformation.DriveType" value="Tipo de disco" />
+    <element key="DriveInformation.DriveSize" value="Tamaño del disco" />
+    <element key="DriveInformation.SSD" value="Es este disco un SSD" />
+    <element key="DriveInformation.PartitionNumber" value="Número de particiones" />
+    <element key="DriveInformation.DiskName" value="Nombre del disco" />
+    <element key="DriveInformation.DiskSize" value="Tamaño del disco" />
+    <element key="DriveInformation.FileSystem" value="Sistema de archivos" />
+    <element key="DriveInformation.ShowSmart" value="S.M.A.R.T data" />
+    <element key="DriveInformation.MemoryUsage" value="Uso del espacio del disco" />
+    <element key="DriveInformation.DriveInformation" value="Información del disco" />
+    <element key="Overview.WarningHeader" value="Advertencia" />
+    <element key="Overview.WarningText" value="No se ha localizado ningún disco SSD en su sistema. Este programa adecúa los ajustes de su sistema a las necesidades de los discos SSD. Se utiliza el programa sin disponer de uno de estos discoSSD, algunos ajustes, que normalmente estarían activados para discos duros normales serán desactivados. Por lo tanto si no utiliza un disco SSD, le recomendamos no utilizar SSD Fresh en este sistema." />
+    <element key="Overview.QuestionText" value="Si está seguro de usar un disco SSD, por favor envíenos un informe de errores para que podamos mejorar nuestra aplicacion" />
+    <element key="Overview.ButtonTitle" value="Sí, estoy usando un disco SSD." />
+    <element key="Overview.ButtonInfo" value="Enviar informe y continuar" />
+    <element key="SmartData.Back" value="Atrás" />
+    <element key="DriveInformation.NotAvailable" value="No" />
+    <element key="Overview.Error" value="No se encuentran datos en el disco." />
+    <element key="Overview.ErrorText" value="No se puede leer los datos del disco. Quizás la interfaz necesaria esta desactivada, no disponible o no tiene suficientes derechos en el sistema. Tampoco las máquinas virtuales soportan este interfaz. Se está seguro de que su sistema contiene un disco SSD puede usar la optimización!" />
+    <element key="trim" value="Windows Trim function" />
+    <element key="trimDescription" value="Para aumentar la duración y el rendimiento de los discoSSD estado sólido (SSD), esta función debería estar activada. El que esta función sea usada depende de sí su SSD soporta esta función. Averigüelo en la web de su fabricante" />
+    <element key="LanguageMissing" value="¿Su idioma no aparece o incompleto?" />
+    <element key="AbFlexTrans.SpecialInfo.Translator1" value="Jose M. Fuentes" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Date" value="04/04/2014 14:42:13" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Culture.Name" value="es" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Name" value="Spanish - Spain [es-ES]" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Subculture.Name" value="ES" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program" value="AbCore" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Program.Version" value="1.0" />
+    <element key="AbFlexTrans.SpecialInfo.Language.Version" value="1" />
+  </data>
+</LanguageInfo>
